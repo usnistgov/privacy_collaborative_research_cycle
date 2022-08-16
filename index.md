@@ -1,19 +1,16 @@
----
-layout: default
-title: Home
----
 
-
+<link rel="stylesheet" href="https://pages.nist.gov/privacy_collaborative_research_cycle/static/css/NISTPages.css">
 <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script>
 <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 
+
 <title>Collaborative Research Cycle</title>
 
 
-# Collaborative Research Cycle
+# Collaborative Research Cycle!
 
 ## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by NIST Privacy Engineering Program
 
