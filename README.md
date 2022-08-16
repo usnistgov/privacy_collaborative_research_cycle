@@ -1,3 +1,6 @@
-# Privacy Collaborative Research Cycle
+# REFPROP-docs
+A repository containing information about REFPROP for public consumption
 
-This is the source code that powers the NIST Pages instance of the Privacy Collaborative Research Cycle. To view the page with its intended interface please go to [https://pages.nist.gov/privacy_collaborative_research_cycle](https://pages.nist.gov/privacy_collaborative_reserach_cycle/). Contact [Gary.Howarth@nist.gov](mailto:gary.howarth@nist.gov) with questions.
+This repository is the home of [the FAQ page for REFPROP](https://github.com/usnistgov/REFPROP-docs/wiki)
+
+For questions about the contents of this repository, please email [Ian Bell](mailto:ian.bell@nist.gov)
