@@ -8,7 +8,7 @@
 
 ## Welcome to the homepage of the NIST Privacy Engineering Program's Collaborative Research Cycle (CRC)!***
 
-updated 16 AUG 2022
+This page was updated 16 AUG 2022.
 
 ***[For news and updates, please follow this link to join CRC's Google group](group!)***
 
