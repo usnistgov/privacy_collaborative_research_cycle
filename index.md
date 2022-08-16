@@ -13,7 +13,7 @@ title: Home
 <title>Collaborative Research Cycle</title>
 
 
-# Collaborative Research Cycle!
+# Collaborative Research Cycle
 
 ## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by NIST Privacy Engineering Program
 
