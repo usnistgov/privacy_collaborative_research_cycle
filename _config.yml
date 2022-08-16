@@ -1,5 +1,6 @@
 # Site settings
-title: The Privacy Enhancing Technology Collabortice Research Cycle
-description: "This site hosts the Privacy Engineering Program's Collaborative Research Cycle project."
-baseurl: "/privacy_collaborative_research_cycle" # the subpath of your site, e.g. /blog
-url: "https://pages.nist.gov/" # the base hostname & protocol for your site
+title: "Collaborative Research Cycle"
+description: "Documentation for the NIST Collaborative Research Cycle."
+
+baseurl: "/privacy_collaborative_research_cycle"
+rooturl: ""
