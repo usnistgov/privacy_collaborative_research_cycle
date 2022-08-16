@@ -2,6 +2,13 @@
 <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
 
 <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+<link rel="stylesheet" href="https://pages.nist.gov/privacy_collaborative_research_cycle/static/css/NISTStyle.css">
+
+<link rel="stylesheet" href="https://pages.nist.gov/privacy_collaborative_research_cycle/static/css/NISTPages.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
 
 <title>Collaborative Research Cycle</title>
 
