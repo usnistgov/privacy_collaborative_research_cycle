@@ -1,0 +1,40 @@
+# Site settings
+title: The Privacy Enhancing Technology Collabortice Research Cycle
+description: "This site hosts the Privacy Engineering Program's Collaborative Research Cycle project."
+baseurl: "/privacy_collaborative_research_cycle" # the subpath of your site, e.g. /blog
+url: "https://pages.nist.gov/" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+exclude:
+- ".ruby-version"
+- ".jekyll-metadata"
+- ".gitignore"
+- ".travis.yml"
+- todo.txt
+- resources
+- Gemfile
+- Gemfile.lock
+- Makefile
+- vendor
+- README.md
+- CONTRIBUTING.md
+- LICENSE.md
+
+# GitHub information
+org_name: usnistgov
+repo_name: privacy_collaborative_research_cycle
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Home
+  url: /privacy_collaborative_research_cycle
+- text: NIST Privacy Engineering Program Home
+  url: https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering
+- text: Other Privacy Engineering tools from NIST
+  url: https://github.com/usnistgov/PrivacyEngCollabSpace
+
+
+host: 0.0.0.0
