@@ -1,3 +1,5 @@
+<script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
 <title>Collaborative Research Cycle</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -31,5 +33,3 @@ NIST will release a test dataset (expected 6 SEP 2022) and will invite the publi
 Participants will be use the Acceleration Bundle to investigate the performance of varying approaches. The CRC will invite participants to submit papers (10 pages or fewer) describing their findings. Authors of accepted papers will be invited to give a talk at the culminating conference (expected 20 SEP 2023). Papers may be published as part of a conference proceedings, in which case, authors will retain their respective copyrights.
 
 For questions, contact Gary Howarth at [gary.howarth@nist.gov](mailto:gary.howarth@nist.gov).
-
-<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
