@@ -2,44 +2,26 @@
 <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script>
 <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
 <title>Public Safety Analytics Resources</title>
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-# Public Safety Analytics Resource Compendium
+# Collaborative Research Cycle
 
-The compendium, linked below, was prepared by [yet2](https://www.yet2.com/) and sponsored by NIST's [Public Safety Communications Research Division](https://pscr.gov) under contract number 80JSC017D0029.
+## Welcome to the homepage of the NIST Privacy Engineering Program's Collaborative Research Cycle (CRC)!***
 
-NIST and yet2 do not endorse any of these resources or claim this compendium to be comprehensive.
+updated 16 AUG 2022
 
-## Compendium Access
+***[For news and updates, please follow this link to join CRC's Google group](group!)***
 
-[Access the compendium as an MS Excel workbook here.](https://github.com/usnistgov/Public_Safety_Analytics_Resources/raw/main/Compendium%20of%20Open%20Resources%20for%20Multimodal%20Emergency%20Awareness%20AI%20Analytics.xlsx) 
+*All information provided here is provisional and may change at any time.*
 
-## Contributions
+The CRC is a cooperative program to advance research in privacy enhancing technologies. Specifically, the CRC is asking researchers to investigate the performance of varying synthetic data generating methods. The CRC will enable the research community to compare differing methods using common evaluation metrics. No prizes will be awarded in this program.
 
-The NIST PSCR program is seeking to identify open-source software frameworks, toolkits and algorithms, datasets, and standards/best practices that could assist in the development of AI-based analytic tools to support real-time analysis of streaming data from public safety communications and data streams that public safety officials must monitor to maintain situation awareness.
+## Phase 1: Exploratory Workshop -- expected Oct 2022 - Feb 2023
 
-Please email gary.howarth@nist.gov or [open an Issue](https://github.com/usnistgov/Public_Safety_Analytics_Resources/issues/new/choose) through out Github site to suggest contributions.
+NIST will release a test dataset (expected 6 SEP 2022) and will invite the public to use algorithms to use the dataset to create private, synthetic data. Workshop participants are invited to submit one or more synthetic datasets with an abstract explaining their methods. The CRC will [evaluate the synthetic data performance using a variety of methods](https://github.com/usnistgov/SDNist/). The CRC will release abstracts, submitted synthetic data, and machine-readable evaluation results in an *Acceleration Bundle*. Participants will be invited to a 'Demo Day' (expected 8 FEB 2023) to discuss their methods.
 
-The types of AI software tools of interest support automated data analysis and span the following domains:
-- Natural language text processing
-- Automated audio and speech processing
-- Computer vision and video analytics
-- Social media analysis
-- Data-stream enhancement, optimization, and compression
-- GIS data analysis
-- Sensor data analysis relevant for public safety
+## Phase 2: Explainatory Workshop -- expected Feb 2023 - Aug 2023
 
-The types of data resources of interest (spanning the analytic domains listed above) include the following:
-- Datasets that are ground-truth annotated and relevant to public safety ,for training and testing analytic technologies in the domains listed above
-- Typical datasets that are ground-truth annotated, to be used for training and testing analytic technologies in the domains listed above
-- Non-labeled data resources that are highly relevant to public safety use cases
+Participants will be use the Acceleration Bundle to investigate the performance of varying approaches. The CRC will invite participants to submit papers (10 pages or fewer) describing their findings. Authors of accepted papers will be invited to give a talk at the culminating conference (expected 20 SEP 2023). Papers may be published as part of a conference proceedings, in which case, authors will retain their respective copyrights.
 
-The types of data specifications of interest (spanning the analytic domains listed above) include these:
-- Best practices, open formats, and standards supporting the application of the tools listed above to operational data, especially to data types relevant to public safety.
-
-The types of software frameworks of interest (spanning the analytic domains listed above) include the following:
-- Analytic tool development frameworks, especially for multimodal and real-time tools
-- Analytic tool evaluation frameworks
-- Streaming data simulation and integration frameworks that support repeatable experiments
-- Analytic data annotation and research data management frameworks
+For questions, contact Gary Howarth at [gary.howarth@nist.gov](mailto:gary.howarth@nist.gov).
