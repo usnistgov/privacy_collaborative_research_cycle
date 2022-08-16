@@ -9,7 +9,7 @@
 
 
 
-# Collaborative Research Cycle
+# Collaborative Research Cycles!
 
 ## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by NIST Privacy Engineering Program
 
