@@ -6,7 +6,7 @@ title: Home
 
 # Collaborative Research Cycles
 
-## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by NIST Privacy Engineering Program***
+## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by NIST Privacy Engineering Program
 
 This page was updated 16 AUG 2022.  
 
