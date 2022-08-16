@@ -1,9 +1,7 @@
----
-layout: default
-title: "CRC"
----
+<script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script>
+<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="{{ site.baseurl }}/static/css/NISTPages.css">
 
 <title>Collaborative Research Cycle</title>
 
