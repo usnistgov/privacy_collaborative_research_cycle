@@ -10,26 +10,26 @@
 
 
 
-<title>Collaborative Research Cycle</title>
+<title>Collaborative Research Cycle Homepage</title>
 
 
-# Collaborative Research Cycle
+# Collaborative Research Cycle Homepage
 
-## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by NIST Privacy Engineering Program
+## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by the [NIST Privacy Engineering Program](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering).
 
 This page was updated 16 AUG 2022.
 
-*All information provided here is provisional and may change at any time.*
+*All information provided here is provisional and may change at any time. More detailed information will be released as the program progresses.*
 
 
 ***[For news and updates, please follow this link to join CRC's Google group](group!)***
 
 
-The CRC is a cooperative program to advance research in privacy enhancing technologies. Specifically, the CRC is asking researchers to investigate the performance of varying synthetic data generating methods. The CRC will enable the research community to compare differing methods using common evaluation metrics. No prizes will be awarded in this program.
+The CRC is a cooperative program to advance research in privacy-enhancing technologies. Specifically, the CRC is asking researchers to investigate the performance of varying synthetic data generating methods. The CRC will enable the research community to compare differing methods using common evaluation metrics. No prizes will be awarded in this program.
 
 ### Phase 1: Exploratory Workshop -- expected Oct 2022 - Feb 2023
 
-NIST will release a test dataset (expected 6 SEP 2022) and will invite the public to use algorithms to use the dataset to create private, synthetic data. Workshop participants are invited to submit one or more synthetic datasets with an abstract explaining their methods. The CRC will [evaluate the synthetic data performance using a variety of methods](https://github.com/usnistgov/SDNist/). The CRC will release abstracts, submitted synthetic data, and machine-readable evaluation results in an *Acceleration Bundle*. Participants will be invited to a 'Demo Day' (expected 8 FEB 2023) to discuss their methods.
+NIST will release a test dataset (expected 6 SEP 2022) and will invite the public to use algorithms create private, synthetic data using the test dataset. Workshop participants will be invited to submit one or more synthetic datasets with an abstract explaining their methods. The CRC will [evaluate the synthetic data performance using a variety of methods](https://github.com/usnistgov/SDNist/). The CRC will release abstracts, submitted synthetic data, and machine-readable evaluation results in an *Acceleration Bundle*. Participants will be invited to a 'Demo Day' (expected 8 FEB 2023) to discuss their approaches. Participants will be encouraged to submit a wide variety of synthesized data, not only the best performing.
 
 ### Phase 2: Explainatory Workshop -- expected Feb 2023 - Aug 2023
 
