@@ -22,7 +22,7 @@ This page was updated 16 AUG 2022.
 *All information provided here is provisional and may change at any time. More detailed information will be released as the program progresses.*
 
 
-***[To join CRC's Google group, send a blank message to CRC+subscribe@lists.nist.gov, and follow the instructions in the reply.](mailto:CRC+subscribe@lists.nist.gov)***
+***[To join CRC's listserv, send a blank message to CRC+subscribe@list.nist.gov, and follow the instructions in the reply.](mailto:CRC+subscribe@list.nist.gov)***
 
 
 The CRC is a cooperative program to advance research in privacy-enhancing technologies. Specifically, the CRC is asking researchers to investigate the performance of varying synthetic data generating methods. The CRC will enable the research community to compare differing methods using common evaluation metrics. No prizes will be awarded in this program.
