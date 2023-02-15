@@ -17,9 +17,12 @@
 
 ## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by the [NIST Privacy Engineering Program](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering).
 
-This page was updated 13 FEB 2023.
+This page was updated 14 FEB 2023.
 
 *All information provided here is provisional and may change at any time. More detailed information will be released as the program progresses.*
+
+
+***We intend to provide more detailed program information, launch SDNist V2, and to be ready to recieve data submissions 21 Feb 2023!***
 
 
 ***[To register to participate in the CRC, please complete this form.](https://docs.google.com/forms/d/e/1FAIpQLSde8IklaZFEXlCBb0g_EVh6rf7tyxfCsB5yieZ-8hBomlRTGQ/viewform?usp=sf_link)***
