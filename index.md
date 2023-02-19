@@ -9,36 +9,222 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 
+The CRC is a program run by the [[NIST Privacy Engineering
+Program]{.ul}](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering)
+and designed to spur research, innovation, and understanding of data
+deidentification techniques.
 
-<title>Collaborative Research Cycle Homepage</title>
+Have questions? Please contact NIST scientist [[Gary
+Howarth]{.ul}](mailto:gary.howarth@nist.gov?subject=%5BCRC%5D) or
+crowd-source them by [[joining the CRC
+list-serv.]{.ul}](http://CRC+subscribe@list.nist.gov?subject=subscribe)
 
+TLDR: 
+=====
 
-# Collaborative Research Cycle Homepage
+The CRC invites researchers to contribute de-identified records from the
+[[NIST Diverse Community
+Excerpts]{.ul}](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts)
+along with a brief abstract listing their methods. In May 2023, the CRC
+plans to release a machine-readable *research acceleration bundle* of
+all contributions along with detailed evaluations using the [[SDNist
+report tool]{.ul}](https://github.com/usnistgov/SDNist/). We invite
+researchers to use the acceleration bundle to perform analysis and
+submit their findings in 3-page-or-less *[[tiny
+papers]{.ul}](https://iclr.cc/Conferences/2023/CallForTinyPapers)* to a
+workshop to be held in November 2023. Submitted papers and
+NIST-contributed research will be packaged in a set of conference
+proceedings we expect to release in January 2024. Prizes and awards are
+not part of this program.
 
-## Welcome to the homepage of the Collaborative Research Cycle (CRC), hosted by the [NIST Privacy Engineering Program](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering).
+How to Participate: 
+===================
 
-This page was updated 14 FEB 2023.
+Exploratory phase (February - May 2023)
+---------------------------------------
 
-*All information provided here is provisional and may change at any time. More detailed information will be released as the program progresses.*
+1.  [[Join the CRC
+    > list-serv]{.ul}](http://CRC+subscribe@list.nist.gov?subject=subscribe).
+    > (optional)
 
+2.  [[Register your
+    > team.]{.ul}](https://docs.google.com/forms/d/e/1FAIpQLSde8IklaZFEXlCBb0g_EVh6rf7tyxfCsB5yieZ-8hBomlRTGQ/viewform?usp=sf_link)
 
-***We intend to provide more detailed program information, launch SDNist V2, and to be ready to recieve data submissions 21 Feb 2023!***
+3.  De-identify the [[NIST Diverse Community
+    > Excerpts]{.ul}](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts).
 
+4.  Use the [[SDNist report
+    > tool]{.ul}](https://github.com/usnistgov/SDNist/) to analyze your
+    > de-identified data.
 
-***[To register to participate in the CRC, please complete this form.](https://docs.google.com/forms/d/e/1FAIpQLSde8IklaZFEXlCBb0g_EVh6rf7tyxfCsB5yieZ-8hBomlRTGQ/viewform?usp=sf_link)***
+5.  Watch our introductory video (to be released 7 March 2023).
 
+6.  Submit data with an abstract. (submission links are sent after your
+    > team registers)
 
-***[To join CRC's listserv, send a blank message to CRC+subscribe@list.nist.gov, and follow the instructions in the reply.](mailto:CRC+subscribe@list.nist.gov)***
+    a.  Submit data by March 10th, and we'll walk through your
+        > evaluation results with you during office hours on March 13th.
 
+7.  Attend office hours (see calendar below). We will send links out to
+    > the list-serv and registered teams before the sessions. (optional)
 
-The CRC is a cooperative program to advance research in privacy-enhancing technologies. Specifically, the CRC is asking researchers to investigate the performance of varying synthetic data generating methods. The CRC will enable the research community to compare differing methods using common evaluation metrics. No prizes will be awarded in this program.
+8.  Make data contributions by 9 May 2023 to have your data included in
+    > the research acceleration bundle.
 
-### Phase 1: Exploratory Workshop -- expected Feb. 2023 - May 2023
+9.  Join us or watch the recording of our Exploratory Workshop (16 May
+    > 2023).
 
-We plan to invite the public to use algorithms to create private, synthetic data using the the [Diverse Community Excerpt Data](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts). The test dataset has a limited number of features (22 columns), and is drawn from highly diverse Census PUMAs. Workshop participants may be invited to submit one or more synthetic datasets with an abstract explaining their methods. The CRC plans to [evaluate the synthetic data performance methods found in this repository.](https://github.com/usnistgov/SDNist/). The CRC plans to release abstracts, submitted synthetic data, and machine-readable evaluation results in an *Acceleration Bundle*. Participants may be invited to a 'Demo Day' (expected May 2023) to discuss their approaches. Participants are encouraged to submit a wide variety of synthesized data, not just the best performing data. 
+Exploratory phase (May - September 2023)
+----------------------------------------
 
-### Phase 2: Explanatory Workshop -- expected May 2023 - Dec. 2023
+1.  Download the research acceleration bundle and explore!
 
-Participants will be asked use the Acceleration Bundle to investigate the performance of varying approaches.  There will be no mandate to address any specific topics. Topics might include examination of performance on data types, trends between geographic regions, effiency and utility of machine learning models, or any other germane dataset. The CRC plans to invite participants to submit papers (3 pages or fewer plus appendicies) describing their findings. The CRC plans to invite authors of accepted papers to give a talk at the culminating conference (Dec. 2023). Papers may be published as part of conference proceedings.
+2.  Pick a problem or two to play around with for yourself.
 
-For questions, contact Gary Howarth at [gary.howarth@nist.gov](mailto:gary.howarth@nist.gov).
+3.  Follow our seminar series and blog posts as we share new things that
+    > we learn from your submissions, submissions from others, and from
+    > our subject matter experts.
+
+4.  Conduct some analysis, research some ideas, and/or find something
+    > interesting.
+
+5.  Write your findings in a 3-page-or-less tiny paper.
+
+    a.  For more information on the structure of tiny *papers*, click
+        > [[here]{.ul}](https://iclr.cc/Conferences/2023/CallForTinyPapers).
+
+    b.  Contributors may also append proofs, data, additional
+        > experiments, etc. to their Tiny papers if they wish.
+
+6.  Submit an abstracts (25 SEP 2023) and then a paper (29 SEP 2023).
+
+7.  Await notification on peer-review.
+
+8.  Prepare a poster or slides as requested.
+
+9.  Attend the explanatory workshop 7 NOV 2023.
+
+10. See your work contribute to our integrated proceedings in
+    > January 2024.
+
+Citing This Program:
+====================
+
+-   If you publish work that utilizes the SDNist Deidentified Data Tool,
+    > please cite the software. Citation recommendation:
+
+> Task C., Bhagat K., and Howarth G.S. (2023), SDNist v2: Deidentified
+> Data Report Tool, National Institute of Standards and Technology,
+> [[https://doi.org/10.18434/mds2-2943]{.ul}](https://doi.org/10.18434/mds2-2943)
+> (NOTE: DOI is not yet active, but should be by 1 MAR 2023).
+
+-   If you publish work that utilizes the NIST Diverse Community Excerpt
+    > Data, please cite the resource. Citation recommendation:
+
+> Task C., Bhagat K., and Howarth G.S. (2023), NIST Diverse Community
+> Excerpt Data, National Institute of Standards and
+> Technology,[[https://doi.org/10.18434/mds2-2895]{.ul}](https://doi.org/10.18434/mds2-2895)
+> (NOTE: DOI is not yet active, but should be live by 1 MAR 2023).
+
+-   We plan to package the proceedings of this program NIST Special
+    > Publication and we will provide detailed citation information upon
+    > publication.
+
+Hints,Tips, and Recommendations: 
+================================
+
+-   This program is designed to encourage apples-to-apples comparisons
+    > of various synthetic generator and de-identification techniques.
+    > Following these tips improves the likelihood of fair, meaningful
+    > comparisons.
+
+-   Read through the
+    > [[SDNist]{.ul}](https://github.com/usnistgov/SDNist) and [[NIST
+    > Diverse Community Data
+    > Excerpts]{.ul}](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts)
+    > READMEs.
+
+-   You will submit CSV data and your abstract. We will package those
+    > along with the SDNist evaluation reports in the research
+    > acceleration bundle.
+
+-   There are two main abstract types: those asserting publicly
+    > verifiable formal privacy (e.g., differential privacy), and
+    > everything else. To participate in the verifiable formal privacy
+    > track, you are expected to share a link to your code base so the
+    > community can verify your claims.
+
+-   The data has 22 features. In order to facilitate comparisons of
+    > techniques we recommend deidentifiying the entire feature set or
+    > choose one of the following subsets:
+
+    -   Full features without weights or INDP
+
+    -   Basic 9 features: AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT,
+        > EDU, PINCP_DECILE, DVET, DEYE
+
+    -   Small categorical: SEX, RAC1P, PUMA, PINCP_DECILE, OWN_RENT
+
+    -   Tiny categorical: RAC1P, PUMA
+
+-   If you use differential privacy we ask you to provide values of
+    > epsilon and delta. If using a relaxation of differential privacy
+    > (e.g., Rényi DP), we ask you to convert your privacy guarantees to
+    > epsilon and delta values and highly recommend you set delta =
+    > 10^-5^ and from there determine your value of epsilon.
+
+Timeline:
+=========
+
+These dates are subject to change.
+
++--------------+-------------------------------------------------+
+| **Date**     | **Event**                                       |
++==============+=================================================+
+| Feb 21, 2023 | SDNist V2 launch CRC open for submissions       |
++--------------+-------------------------------------------------+
+| Mar 7, 2023  | CRC releases instructional video                |
++--------------+-------------------------------------------------+
+| Mar 13, 2023 | Office hours session 1 (11AM ET)                |
++--------------+-------------------------------------------------+
+| Mar 20, 2023 | CRC releases call for abstracts for Exploratory |
++--------------+-------------------------------------------------+
+| Mar 22, 2023 | Office hours session 2 (11AM ET)                |
++--------------+-------------------------------------------------+
+| Apr 5, 2023  | Office hours session 3 (11AM ET)                |
++--------------+-------------------------------------------------+
+| Apr 19, 2023 | Office hours session 4 (11AM ET)                |
++--------------+-------------------------------------------------+
+| May 1, 2023  | Notifications / release of Exploratory agenda   |
++--------------+-------------------------------------------------+
+| May 3, 2023  | Office hours session 5 (11AM ET)                |
++--------------+-------------------------------------------------+
+| May 9, 2023  | CRC closes for submissions                      |
++--------------+-------------------------------------------------+
+| May 16, 2023 | Exploratory Workshop                            |
+|              |                                                 |
+|              | Final release of acceleration bundle            |
+|              |                                                 |
+|              | Release of call for abstracts/papers            |
++--------------+-------------------------------------------------+
+| Jun 14, 2023 | Office hours session 6 (11AM ET)                |
++--------------+-------------------------------------------------+
+| Jul 12, 2023 | Office hours session 7 (11AM ET)                |
++--------------+-------------------------------------------------+
+| Aug 16, 2023 | Office hours session 8 (11AM ET)                |
++--------------+-------------------------------------------------+
+| Sep 12, 2023 | Optional early abstract submission for feedback |
++--------------+-------------------------------------------------+
+| Sep 25, 2023 | Explanatory abstracts due                       |
++--------------+-------------------------------------------------+
+| Sep 29, 2023 | Explanatory tiny papers due                     |
++--------------+-------------------------------------------------+
+| Oct 17, 2023 | Explanatory tiny paper notifications            |
++--------------+-------------------------------------------------+
+| Nov 7, 2023  | Explanatory Workshop                            |
++--------------+-------------------------------------------------+
+| Dec 12, 2023 | Optional final tiny paper camera-ready          |
++--------------+-------------------------------------------------+
+| Jan 9, 2024  | CRC releases project findings and proceedings   |
++--------------+-------------------------------------------------+
+
