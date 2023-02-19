@@ -17,8 +17,10 @@
 </p>
 
 
+This page was updated 14 FEB 2023.
 
-The CRC is a program run by the[ NIST Privacy Engineering Program](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering) and designed to spur research, innovation, and understanding of data deidentification techniques.
+
+The CRC is a program run by the [NIST Privacy Engineering Program](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering) and designed to spur research, innovation, and understanding of data deidentification techniques.
 
 Have questions? Please contact NIST scientist [Gary Howarth](mailto:gary.howarth@nist.gov?subject=[CRC]) or crowd-source them by [joining the CRC list-serv.](http://CRC+subscribe@list.nist.gov?subject=subscribe)
 
