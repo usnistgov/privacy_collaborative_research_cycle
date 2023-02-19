@@ -98,7 +98,7 @@ The CRC invites researchers to contribute de-identified records from the [NIST D
 These dates are subject to change.
 
 | Date &nbsp;  |&nbsp;--&nbsp;| Event                                           |
-|  ---------:  |&nbsp;--&nbsp;| :------------------------------------------     |
+|  ---------:  |     ---      | :------------------------------------------     |
 | 21 FEB 2023  |&nbsp;--&nbsp;| SDNist V2 launch CRC open for submissions       |
 |  7 MAR 2023  |&nbsp;--&nbsp;| CRC releases instructional video                |
 | 13 MAR 2023  |&nbsp;--&nbsp;| Office hours session 1 (11AM ET)                |
@@ -110,8 +110,8 @@ These dates are subject to change.
 |  3 MAY 2023  |&nbsp;--&nbsp;| Office hours session 5 (11AM ET)                |
 |  9 MAY 2023  |&nbsp;--&nbsp;| CRC closes for submissions                      |
 | 16 MAY 2023  |&nbsp;--&nbsp;| ***Exploratory Workshop***                      |
-|              |&nbsp;--&nbsp;| - Final release of acceleration bundle          |
-|              |&nbsp;--&nbsp;| - Release of call for abstracts/papers          |
+|              |              | - Final release of acceleration bundle          |
+|              |              | - Release of call for abstracts/papers          |
 | 14 JUN 2023  |&nbsp;--&nbsp;| Office hours session 6 (11AM ET)                |
 | 12 JUL 2023  |&nbsp;--&nbsp;| Office hours session 7 (11AM ET)                |
 | 15 AUG 2023  |&nbsp;--&nbsp;| Office hours session 8 (11AM ET)                |
