@@ -97,9 +97,9 @@ The CRC invites researchers to contribute de-identified records from the [NIST D
 
 These dates are subject to change.
 
-| Date &nbsp;  |&nbsp;| &nbsp; Event                                    |
-|  ---------:  |      | :------------------------------------------     |
-| 21 FEB 2023  |      | SDNist V2 launch CRC open for submissions       |
+| Date &nbsp;  |   -- | &nbsp; Event                                    |
+|  ---------:  |   -- | :------------------------------------------     |
+| 21 FEB 2023  |   -- | SDNist V2 launch CRC open for submissions       |
 |  7 MAR 2023  |      | CRC releases instructional video                |
 | 13 MAR 2023  |      | Office hours session 1 (11AM ET)                |
 | 20 MAR 2023  |      | CRC releases call for abstracts for Exploratory |
