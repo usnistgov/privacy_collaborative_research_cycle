@@ -8,7 +8,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Collaborative Research Cycle Homepage</title> 
+# Collaborative Research Cycle Homepage
 
 <p align="center">
 	<img src="images/image1.png"
