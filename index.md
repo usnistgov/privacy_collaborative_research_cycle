@@ -97,29 +97,29 @@ The CRC invites researchers to contribute de-identified records from the [NIST D
 
 These dates are subject to change.
 
-| Date &nbsp;  |&nbsp;--&nbsp;| Event                                           |
-|  ---------:  |     ---      | :------------------------------------------     |
-| 21 FEB 2023  |&nbsp;--&nbsp;| SDNist V2 launch CRC open for submissions       |
-|  7 MAR 2023  |&nbsp;--&nbsp;| CRC releases instructional video                |
-| 13 MAR 2023  |&nbsp;--&nbsp;| Office hours session 1 (11AM ET)                |
-| 20 MAR 2023  |&nbsp;--&nbsp;| CRC releases call for abstracts for Exploratory |
-| 22 MAR 2023  |&nbsp;--&nbsp;| Office hours session 2 (11AM ET)                |
-|  5 MAR 2023  |&nbsp;--&nbsp;| Office hours session 3 (11AM ET)                |
-| 19 APR 2023  |&nbsp;--&nbsp;| Office hours session 4 (11AM ET)                |
-|  1 MAY 2023  |&nbsp;--&nbsp;| Notifications / release of Exploratory agenda   |
-|  3 MAY 2023  |&nbsp;--&nbsp;| Office hours session 5 (11AM ET)                |
-|  9 MAY 2023  |&nbsp;--&nbsp;| CRC closes for submissions                      |
-| 16 MAY 2023  |&nbsp;--&nbsp;| ***Exploratory Workshop***                      |
-|              |              | - Final release of acceleration bundle          |
-|              |              | - Release of call for abstracts/papers          |
-| 14 JUN 2023  |&nbsp;--&nbsp;| Office hours session 6 (11AM ET)                |
-| 12 JUL 2023  |&nbsp;--&nbsp;| Office hours session 7 (11AM ET)                |
-| 15 AUG 2023  |&nbsp;--&nbsp;| Office hours session 8 (11AM ET)                |
-| 12 SEP 2023  |&nbsp;--&nbsp;| Optional early abstract submission for feedback |
-| 25 SEP 2023  |&nbsp;--&nbsp;| Explanatory abstracts due                       |
-| 29 SEP 2023  |&nbsp;--&nbsp;| Explanatory tiny papers due                     |
-| 17 OCT 2023  |&nbsp;--&nbsp;| Explanatory tiny paper notifications            |
-|  7 NOV 2023  |&nbsp;--&nbsp;| ***Explanatory Workshop***                      |
-| 12 DEC 2023  |&nbsp;--&nbsp;| Optional final tiny paper camera-ready          |
-|  9 JAN 2024  |&nbsp;--&nbsp;| CRC releases project findings and proceedings   |
+|     Date.    |&nbsp;-- &nbsp;| Event                                           |
+|  ---------:  |      --       | :------------------------------------------     |
+| 21 FEB 2023  |      --       | SDNist V2 launch CRC open for submissions       |
+|  7 MAR 2023  |      --       | CRC releases instructional video                |
+| 13 MAR 2023  |      --       | Office hours session 1 (11AM ET)                |
+| 20 MAR 2023  |      --       | CRC releases call for abstracts for Exploratory |
+| 22 MAR 2023  |      --       | Office hours session 2 (11AM ET)                |
+|  5 MAR 2023  |      --       | Office hours session 3 (11AM ET)                |
+| 19 APR 2023  |      --       | Office hours session 4 (11AM ET)                |
+|  1 MAY 2023  |      --       | Notifications / release of Exploratory agenda   |
+|  3 MAY 2023  |      --       | Office hours session 5 (11AM ET)                |
+|  9 MAY 2023  |      --       | CRC closes for submissions                      |
+| 16 MAY 2023  |      --       | ***Exploratory Workshop***                      |
+|              |               | - Final release of acceleration bundle          |
+|              |               | - Release of call for abstracts/papers          |
+| 14 JUN 2023  |      --       | Office hours session 6 (11AM ET)                |
+| 12 JUL 2023  |      --       | Office hours session 7 (11AM ET)                |
+| 15 AUG 2023  |      --       | Office hours session 8 (11AM ET)                |
+| 12 SEP 2023  |      --       | Optional early abstract submission for feedback |
+| 25 SEP 2023  |      --       | Explanatory abstracts due                       |
+| 29 SEP 2023  |      --       | Explanatory tiny papers due                     |
+| 17 OCT 2023  |      --       | Explanatory tiny paper notifications            |
+|  7 NOV 2023  |      --       | ***Explanatory Workshop***                      |
+| 12 DEC 2023  |      --       | Optional final tiny paper camera-ready          |
+|  9 JAN 2024  |      --       | CRC releases project findings and proceedings   |
 
