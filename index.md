@@ -10,9 +10,13 @@
 
 <title>Collaborative Research Cycle Homepage</title> 
 
+<img src="images/image1.png"
+     alt="diagram of a collaborative cycle"
+     style="float: left; margin-right: 10px;" 
+     width=600/>
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/image1.png "diagram of a collaborative cycle")
 
 
 The CRC is a program run by the[ NIST Privacy Engineering Program](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering) and designed to spur research, innovation, and understanding of data deidentification techniques.
