@@ -1,7 +1,6 @@
-<script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script> 
+<script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script> <title>Collaborative Research Cycle Homepage</title> 
 
 
-# Welcome to the Collaborative Research Cycle (CRC) Homepage
 
 ![alt_text](images/image1.png "image_tooltip")
 
