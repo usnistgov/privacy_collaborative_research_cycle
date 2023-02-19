@@ -10,10 +10,12 @@
 
 <title>Collaborative Research Cycle Homepage</title> 
 
-<img src="images/image1.png"
-     alt="diagram of a collaborative cycle"
-     style="float: center;" 
-     width=600/>
+<p align="center">
+	<img src="images/image1.png"
+   	  alt="diagram of a collaborative cycle"
+    	 style="float: center;" 
+    	 width=800/>
+</p>
 
 
 
