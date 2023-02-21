@@ -28,7 +28,9 @@ This page was updated 22 FEB 2023.
 
 The [NIST Privacy Engineering Program](https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering) has launched the Collaborative Research Cycle (CRC) to spur research, innovation, and understanding of data deidentification techniques.
 
-The [NIST Differential Privacy Challenge Series](https://www.nist.gov/ctl/pscr/open-innovation-prize-challenges/past-prize-challenges/2020-differential-privacy-temporal) saw huge gains in synthetic data generation performance and the publication of a variety of open source tools. Yet, evaluating and benchmarking synthetic data remains difficult. NIST has now released new data and evaluation tools to investigate the performance of synthetic data generators. The [Diverse Community Excerpt Data](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts) are real-world, limited-feature data (24 columns), drawn from the American Community Survey and divided into three distinct geographic partitions. The complimentary [SDNist Deidentified Data Report Generator](https://github.com/usnistgov/SDNist) provides a suite of both machine- and human-readable outputs with more than ten metrics including univariate and multivariate statistics, database distance metrics, principal component analysis, propensity, basic privacy evaluation, and other information-rich tools. 
+The [NIST Differential Privacy Challenge Series](https://www.nist.gov/ctl/pscr/open-innovation-prize-challenges/past-prize-challenges/2020-differential-privacy-temporal) saw huge gains in synthetic data generation performance and the publication of a variety of open source tools. Yet, evaluating and benchmarking synthetic data remains difficult. NIST seeks to assist to the research community in overcoming research barriers by releasing new data and evaluation tools to investigate the performance of synthetic data generators. 
+
+The [Diverse Community Excerpt Data](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts) are real-world, limited-feature data (24 columns), drawn from the American Community Survey and divided into three distinct geographic partitions. The complimentary [SDNist Deidentified Data Report Generator](https://github.com/usnistgov/SDNist) provides a suite of both machine- and human-readable outputs with more than ten metrics including univariate and multivariate statistics, database distance metrics, principal component analysis, propensity, basic privacy evaluation, and other information-rich tools. 
 
 The CRC collects, evaluates, and packages contributed deidentified Diverse Community Excerpt Data as a *research acceleration bundle*. The CRC invites researchers to use this *research acceleration bundle* for investigation, comparison, and analysis and to submit their findings to a workshop
 
@@ -96,7 +98,7 @@ Please contact NIST scientist [Gary Howarth](mailto:gary.howarth@nist.gov?subjec
 ## Hints, Tips, and Recommendations:
 
 
-* [Check out the introductory slide deck](PDFs/CRC_NIST_introduction.pdf)
+* [Check out the introductory slide deck (6MB)](PDFs/CRC_NIST_introduction.pdf)
 * This program is designed to encourage apples-to-apples comparisons of various synthetic generator and de-identification techniques. Following these tips improves the likelihood of fair, meaningful comparisons.
 * Read through the [SDNist](https://github.com/usnistgov/SDNist) and [NIST Diverse Community Data Excerpts](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts) READMEs.
 * You will submit CSV data and your abstract. We will package those along with the SDNist evaluation reports in the research acceleration bundle.
