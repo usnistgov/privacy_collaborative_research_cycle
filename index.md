@@ -30,13 +30,12 @@ The [NIST Privacy Engineering Program](https://www.nist.gov/itl/applied-cybersec
 
 The [NIST Differential Privacy Challenge Series](https://www.nist.gov/ctl/pscr/open-innovation-prize-challenges/past-prize-challenges/2020-differential-privacy-temporal) saw huge gains in synthetic data generation performance and the publication of a variety of open source tools. Yet, evaluating and benchmarking synthetic data remains difficult. NIST has now released new data and evaluation tools to investigate the performance of synthetic data generators. The [Diverse Community Excerpt Data](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts) are real-world, limited-feature data (24 columns), drawn from the American Community Survey and divided into three distinct geographic partitions. The complimentary [SDNist Deidentified Data Report Generator](https://github.com/usnistgov/SDNist) provides a suite of both machine- and human-readable outputs with more than ten metrics including univariate and multivariate statistics, database distance metrics, principal component analysis, propensity, basic privacy evaluation, and other information-rich tools. 
 
-***The CRC collects, evaluates, and packages contributed deidentified Diverse Community Excerpt Data as a _research acceleration bundle_. The CRC invites researchers to use this _research acceleration bundle_ for investigation, comparison, and analysis and to submit their findings to a workshop***
-
+The CRC collects, evaluates, and packages contributed deidentified Diverse Community Excerpt Data as a *research acceleration bundle*. The CRC invites researchers to use this *research acceleration bundle* for investigation, comparison, and analysis and to submit their findings to a workshop
 
 
 ## Program Summary in Four Sentences:
 
-The CRC invites researchers to contribute deidentified records from the [NIST Diverse Community Excerpts](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts) along with a brief abstract listing their methods. In May 2023, the CRC plans to release a machine-readable _research acceleration bundle_ of all contributions along with detailed evaluations using the [SDNist report tool](https://github.com/usnistgov/SDNist/). We invite researchers to use the acceleration bundle to perform analysis and submit their findings in 3-page-or-less_ [tiny papers](https://iclr.cc/Conferences/2023/CallForTinyPapers)_ to a workshop to be held in November 2023. Submitted papers and NIST-contributed research will be packaged in a set of conference proceedings we expect to release in January 2024. Prizes and awards are not part of this program.
+The CRC invites researchers to contribute deidentified records from the [NIST Diverse Community Excerpts](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts) along with a brief abstract listing their methods. In May 2023, the CRC plans to release a machine-readable _research acceleration bundle_ of all contributions along with detailed evaluations using the [SDNist report tool](https://github.com/usnistgov/SDNist/). We invite researchers to use the acceleration bundle to perform analysis and submit their findings in 3-page-or-less _[tiny papers](https://iclr.cc/Conferences/2023/CallForTinyPapers)_ to a workshop to be held in November 2023. Submitted papers and NIST-contributed research will be packaged in a set of conference proceedings we expect to release in January 2024. Prizes and awards are not part of this program.
 
 
 ## Questions? 
@@ -55,7 +54,7 @@ Please contact NIST scientist [Gary Howarth](mailto:gary.howarth@nist.gov?subjec
 4. Use the[ SDNist report tool ](https://github.com/usnistgov/SDNist/)to analyze your de-identified data.
 5. Watch our introductory video (to be released 7 March 2023).
 6. Submit data with an abstract. (submission links are sent after your team registers)
-    1. Submit data by March 10th, and we’ll walk through your evaluation results with you during office hours on March 13th.
+    a. Submit data by March 10th, and we’ll walk through your evaluation results with you during office hours on March 13th.
 7. Attend office hours (see calendar below). We will send links out to the list-serv and registered teams before the sessions. (optional)
 8. Make data contributions by 9 May 2023 to have your data included in the research acceleration bundle.
 9. Join us or watch the recording of our Exploratory Workshop (16 May 2023).
@@ -70,8 +69,8 @@ Please contact NIST scientist [Gary Howarth](mailto:gary.howarth@nist.gov?subjec
 3. Follow our seminar series and blog posts as we share new things that we learn from your submissions, submissions from others, and from our subject matter experts.
 4. Conduct some analysis, research some ideas, and/or find something interesting.
 5. Write your findings in a 3-page-or-less tiny paper.
-    1. For more information on the structure of tiny_ papers_, click[ here](https://iclr.cc/Conferences/2023/CallForTinyPapers).
-    2. Contributors may also append proofs, data, additional experiments, etc. to their Tiny papers if they wish.
+    a. For more information on the structure of _tiny papers_, click[ here](https://iclr.cc/Conferences/2023/CallForTinyPapers).
+    b. Contributors may also append proofs, data, additional experiments, etc. to their Tiny papers if they wish.
 6. Submit an abstracts (25 SEP 2023) and then a paper (29 SEP 2023).
 7. Await notification on peer-review.
 8. Prepare a poster or slides as requested.
