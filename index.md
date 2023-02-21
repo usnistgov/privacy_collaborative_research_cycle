@@ -85,7 +85,7 @@ The CRC invites researchers to contribute de-identified records from the [NIST D
 ## Hints,Tips, and Recommendations:
 
 
-* [Check out the introductory slide deck](PDFs/CRC_NIST_Introduction.pdf)
+* [Check out the introductory slide deck (6MB)](PDFs/CRC_NIST_introduction.pdf)
 * This program is designed to encourage apples-to-apples comparisons of various synthetic generator and de-identification techniques. Following these tips improves the likelihood of fair, meaningful comparisons.
 * Read through the [SDNist](https://github.com/usnistgov/SDNist) and [NIST Diverse Community Data Excerpts](https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts) READMEs.
 * You will submit CSV data and your abstract. We will package those along with the SDNist evaluation reports in the research acceleration bundle.
