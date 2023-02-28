@@ -9,6 +9,6 @@ The pages site was built with html5up :
 Images From https://www.flaticon.com
  * <a href="https://www.flaticon.com/free-icons/research" title="research icons">Research icons created by srip - Flaticon</a>
  * <a href="https://www.flaticon.com/free-icons/gear" title="gear icons">Gear icons created by Eucalyp - Flaticon</a>
- * <a href="https://www.flaticon.com/free-icons/consulting" title="consulting icons">Consulting icons created by Pixel perfect - Flaticon</a>
+ * <a href="https://www.flaticon.com/free-icons/responsibility" title="responsibility icons">Responsibility icons created by surang - Flaticon</a>
  * <a href="https://www.flaticon.com/free-icons/transition" title="transition icons">Transition icons created by Freepik - Flaticon</a>
 

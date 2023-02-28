@@ -11,20 +11,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
+
+
 		<!-- NIST Javascript -->
-		<script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script>
+		<!-- <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> -->
 		<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
 
 		<!-- NIST CSS -->
 		<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-		<link rel="stylesheet" href="https://pages.nist.gov/privacy_collaborative_research_cycle/static/css/NISTStyle.css">
-		<link rel="stylesheet" href="static/css/NISTPages.css">
-
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../static/css/NISTPages.css">
+		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
+	
 	<body class="landing is-preload">
 		<div id="page-wrapper">
-
 			<!-- Header -->
 				<header id="header" class="alt">
 					<div>
@@ -86,7 +86,7 @@
 
 					<section class="box special">
 						<header class="major">
-							<h2>Sub Heading</h2>
+							<h2>Understanding Data Deidentification</h2>
 							<p>The 
 								<a href="https://www.nist.gov/itl/applied-cybersecurity/privacy-engineering">
 									NIST Privacy Engineering Program</a> has launched the 
@@ -153,10 +153,17 @@
 									proceedings we expect to release in January 2024. 
 									Prizes and awards are not part of this program.
 									<ul>
-										<li><a href="pages/participate.html">Participate</a></li>
-										<li><a href="pages/results_blog.html">Results Blog</a></li>
-										<li><a href ="pages/techniques.html">Techniques</a></li>
-										<li><a href="pages/citing.html">How to Cite</a></li>
+										<li><a href="pages/participate.html">Participate</a>
+										: Learn more about how to participate</li>
+										<li><a href="pages/results_blog.html">Results Blog</a>
+										: See what interesting things we’ve discovered so far, 
+										check out our results blog.</li>
+										<li><a href ="pages/techniques.html">Techniques</a>
+										: Look through our current collection of privacy approaches 
+										(if you’d like to add one we’re missing, 
+										<a href="pages/participate.html">go here!</a>)</li>
+										<li><a href="pages/citing.html">How to Cite</a>
+										: If you’d like to reference these resources in your own work.</li>
 									</ul>
 								</p>
 							</div>
@@ -357,9 +364,10 @@
 
 			<!-- CTA -->
 				<section id="cta">
-					<h2>Download SDNist Version 2</h2>
-					<p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
-					<form>
+					<h2><a style="color: white; border-bottom: 0px;" 
+						href="https://github.com/usnistgov/SDNist">Download SDNist Version 2</a></h2>
+					<p>Use our Benchmark Data and Tools in your own research or teaching</p>
+					<!-- <form>
 						<div class="row gtr-50 gtr-uniform">
 							<div class="col-8 col-12-mobilep">
 								<input type="email" name="email" id="email" placeholder="Email Address" />
@@ -368,14 +376,25 @@
 								<input type="submit" value="Sign Up" class="fit" />
 							</div>
 						</div>
-					</form>
+					</form> -->
 				</section>
+				<footer id="footer">
+
+					<p>This website uses:</p>
+					
+					<p>|  &nbsp<a href="https://html5up.net/alpha">
+						Aplha Template</a> from <a href="https://html5up.net/">HTML5UP</a>  &nbsp|</p>
+					<p>|  &nbspImages from <a href="https://www.flaticon.com/">flaticon.com</a>  &nbsp|</p>
+					<p>|  &nbsp<a href="pages/attributions.html">Detailed Attributions</a>  &nbsp|</p>
+				</footer>
 		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+
+
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>

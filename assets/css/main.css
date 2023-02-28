@@ -12,6 +12,7 @@
 :root {
   --main-color: #40d4c1;
 	--text-color: rgb(75, 74, 74);
+	--head-text-color: rgb(85, 85, 85);
 	--alt-text-color: #a358e0;
 	/* gradient colors for links */
 	--a-text-clr-1: #0264f7;
@@ -224,7 +225,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #646464;
+		color: var(--head-text-color);
 		font-weight: 300;
 		line-height: 1em;
 		margin: 0 0 0.5em 0;
@@ -315,6 +316,10 @@
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
+	}
+
+	li {
+		color: var(--text-color);
 	}
 
 	.align-left {
@@ -3388,10 +3393,19 @@
 /* Footer */
 
 	#footer {
-		background: #f0f0f0;
-		padding: 4em 0 6em 0;
+		background: #505050;
+		padding: 1em 0 1em 0;
 		text-align: center;
+		color: white;
 	}
+		#footer a {
+			color:rgb(3, 152, 252);
+		}
+		#footer p {
+			text-align: center;
+			color: white;
+			margin: 0 0 0 0;
+		}
 
 		#footer .icons a {
 			-moz-transition: opacity 0.2s ease-in-out;
@@ -3787,6 +3801,14 @@
 				transform: translateX(0);
 			}
 
+			.listtable {
+				display: none;
+			}
+		
+			.mobile-listtable {
+				display: block !important;
+			}
+
 	}
 
 /* Mobile */
@@ -3918,6 +3940,15 @@
 					margin-left: 0;
 					padding-left: 0;
 				}
+			
+			
+		.listtable {
+			display: none;
+		}
+	
+		.mobile-listtable {
+			display: block !important;
+		}
 
 	}
 
@@ -4027,6 +4058,13 @@
 				padding: 2.5em 1em 3em 1em;
 			}
 
+			.listtable {
+				display: none;
+			}
+		
+			.mobile-listtable {
+				display: block !important;
+			}
 	}
 
 	.blog-card {
@@ -4045,6 +4083,12 @@
 	}
 	.blog-card-content {
 		margin: 10px;
+	}
+
+	.blog-card-content img {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
 	}
 
 	.blog-card-content p, ul {
@@ -4070,8 +4114,14 @@
 		box-shadow: none;
 	}
 
-	.participate hr {
-		border: 2px dotted var(--a-text-clr-1);
+	.separators hr {
+		border-width: 1px;
+		border-style: dashed;
+		border-image: linear-gradient(to right, var(--banner-g-1), var(--banner-g-2)) 1;
+	}
+
+	.participate p {
+		margin: 0 0 1em 0;
 	}
 
 	.technique-img-div p {
@@ -4081,6 +4131,22 @@
 	.listtable {
 		margin: 0 0 0.5em 0;
 		font-size: 1em;
+	}
+
+	.listtable th {
+		padding: 0 0.3em 0 0.3em !important;
+		text-align: center;
+	}
+
+	.mobile-listtable {
+		display: none;
+		margin: 0 0 0.5em 0;
+		font-size: 1em;
+	}
+
+	.mobile-listtable th {
+		padding: 0 0.3em 0 0.3em !important;
+		text-align: center;
 	}
 
 	.ul-space-above li {
