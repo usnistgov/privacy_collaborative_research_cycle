@@ -11,7 +11,7 @@
 
 :root {
   --main-color: #40d4c1;
-	--text-color: rgb(92, 92, 92);
+	--text-color: rgb(75, 74, 74);
 	--alt-text-color: #a358e0;
 	/* gradient colors for links */
 	--a-text-clr-1: #0264f7;
@@ -4076,4 +4076,13 @@
 
 	.technique-img-div p {
 		text-align: center;
+	}
+
+	.listtable {
+		margin: 0 0 0.5em 0;
+		font-size: 1em;
+	}
+
+	.ul-space-above li {
+		margin-top: 7px;
 	}
