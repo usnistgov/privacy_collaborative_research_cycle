@@ -8,8 +8,10 @@
   color: #fff;
   padding: 10px 20px 4px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  position: relative;
+  position: fixed;
+  width: 100%;
   margin-bottom: 0px;
+  z-index: 20;
 }
 .nist-header:after {
   content: "";
@@ -22,6 +24,7 @@
 .nist-header a, .nist-header a:link, .nist-header a:visited {
   color: #EEE;
   text-decoration: none;
+  border-bottom: 0px !important;
 }
 .nist-header h1 {
   margin: 0 10px 0 0;
