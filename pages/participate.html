@@ -49,13 +49,13 @@
 				<section id="main" class="container">
 					<header id="page-header">
 						<h2>How To Participate</h2>
-						<p>We invite a wide variety of participation: spend an 
+						<p>We invite a wide variety of participation: Spend an 
 							afternoon to give us a deidentified data sample or a 
 							summer exploring a math problem inspired by what we’ve 
 							observed in those samples. And we hope to have a wide 
-							variety of participants– coders, theorists, analysts. 
+							variety of participants – coders, theorists, and analysts. 
 							When we collaborate, we need everyone’s expertise. Look 
-							below to find more about how you can help out.</p>
+							below to find out more about how you can help.</p>
             <ul class="actions special">
               <li><a href="../index.html" class="button">Home</a></li>
               <li><a href="participate.html" class="button primary">Participate</a></li>
@@ -101,11 +101,13 @@
 								<li>De-identify the <a href="https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%2
 									0data%20excerpts">NIST Diverse Community Excerpts
 								</a></li>
-								<li>Use the <a href="https://github.com/usnistgov/SDNist/">SDNist report tool</a> 
-									to analyze your de-identified data.</li>
-								<li>Watch our introductory video (to be released <b>7 March 2023</b>).</li>
-								<li>Submit data with an abstract. (submission links are sent 
-									after your team registers)
+								<li>Optionally, try using the <a href="https://github.com/usnistgov/SDNist/">
+									SDNist report tool</a> to analyze your deidentified data.
+									We’ll also create a report for you when you submit your data.
+								</li>
+								<li>Watch our introductory video (to be released <b>7 March 2023</b>), or 
+									or <a href="results_blog.html#1-introductory-slides">learn more about the program here</a></li>
+								<li><a href="participate.html#data-submission-header">Submit your deidentified data.</a>
 									<ul>
 										<li> Submit data by <b>March 10th</b>, and we’ll walk 
 											through your evaluation results with you during 
@@ -114,7 +116,7 @@
 								</li>
 								<li>Attend office hours <a href="../index.html#timeline">(see timeline)</a>. 
 									We will send links out to the list-serv and registered 
-									teams before the sessions. (optional)</li>
+									teams before the sessions (optional).</li>
 								<li>Make data contributions by <b>9 May 2023</b> to have your 
 									data included in the research acceleration bundle.</li>
 								<li>Join us or watch the recording of our 
@@ -136,259 +138,444 @@
 								<li>Write your findings in a 3-page-or-less tiny paper.
 									<ul>
 										<li>For more information on the structure of <b><i>tiny papers</i></b>, 
-											click <a href="https://iclr.cc/Conferences/2023/CallForTinyPapers">here</a></li>
+											click <a href="https://iclr.cc/Conferences/2023/CallForTinyPapers">here</a>.</li>
 										<li>Contributors may also append proofs, data, additional 
-											experiments, etc. to their Tiny papers if they wish.</li>
+											experiments, etc. to their tiny papers if they wish.</li>
 									</ul>
 								</li>
-								<li>Submit an abstracts <b>(25 SEP 2023)</b> and then a paper <b>(29 SEP 2023)</b>.
+								<li>Submit an abstract <b>(25 SEP 2023)</b> and then a paper <b>(29 SEP 2023)</b>.
 								</li>
-								<li>Await notification on peer-review.</li>
+								<li>Await notification on peer review.</li>
 								<li>Prepare a poster or slides as requested.</li>
-								<li>Attend the explanatory workshop <b>7 NOV 2023</b>.</li>
-								<li>See your work contribute to our integrated proceedings in January 2024.</li>
+								<li>Attend the Explanatory Workshop <b>(7 NOV 2023)</b>.</li>
+								<li>See your work contribute to our integrated proceedings in <b>January 2024</b>.</li>
 							</ol>
 						</div>
 						<hr>
 						<div id="data-submission-header">
 							<h3>Data Submission Walkthrough</h3>
-							<p><b>Pineapple:</b><a href="PDFs/CRC_NIST_introduction.pdf">
-								Check out the introductory slide deck (6MB)</a></p>
-							<p><b>Carrot:</b> This program is designed to encourage apples-to-apples comparisons of various 
-								synthetic generator and de-identification techniques. Following these tips improves 
-								the likelihood of fair, meaningful comparisons.</p>
-							<p><b>Pancake:</b> Read through the <a href="https://github.com/usnistgov/SDNist">SDNist</a> and 
+							<p>Help us explore the behavior of deidentification 
+								algorithms on diverse data by submitting deidentified 
+								samples of our benchmark data, using privacy techniques 
+								that are intended to prepare sensitive private data for 
+								public release.</p>
+							<p><b>Do I need to be a privacy expert? :</b>
+								Nope! We want participants both inside and outside the 
+								privacy research community. There are a lot of easy-to-use 
+								tools out there aimed for the general public, 
+								and we’d like to know how they perform just as much as 
+								we’d like to understand recent research innovations.
+							</p>
+							<p><b>What's a submission? :</b>
+								To make a deidentified-data submission, first pick a 
+								privacy technique and a feature subset. 
+								Then, run the privacy technique on the data with the feature subset you chose. 
+								You can include multiple files in a data submission to try out different 
+								parameter settings on your privacy technique.
+							</p>
+							<p><b>Can I make more than one submission? :</b>
+								Yes! The more techniques and feature sets you try out, 
+								the more we’ll have, and that’s what we want. 
+								Your team will be given credit for everything you submit, 
+								and you can even attach a team logo to your submission if you like. 
+							</p>
+							<p><b>What data? :</b> 
 								<a href="https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts">
-									NIST Diverse Community Data Excerpts</a> READMEs.</p>
-							<p><b>JellyBean:</b> You will submit CSV data and your abstract. We will package 
-								those along with the SDNist evaluation reports in the research 
-								acceleration bundle.</p>
-
+									Here is the benchmark data we’d like you to deidentify for us.</a>  
+								We have three benchmark datasets – the Massachusetts data is from 
+								north of Boston, the Texas data is from near Dallas, and the National 
+								data is a collection of very diverse communities from around the nation. 
+								The data is derived from the 2019 American Community Survey; the 24 
+								features in the complete scheme were chosen because they capture many 
+								of the complexities from real-world data, while still being small, 
+								and simple enough to make more formal analysis feasible. 
+								The data folder includes lovely postcard documentation about 
+								the communities and a JSON data dictionary to make it easy to 
+								configure your privacy technique. 
+								<a href="https://github.com/usnistgov/SDNist/blob/main/nist%20diverse%20communities%20data%20excerpts/README.md">
+									The usage guidance section</a> in the readme 
+								has helpful configuration hints <b><i>(watch out for ‘N’)</i></b>.</p>
+							<p><b>What privacy technique? :</b>
+								You can pick one to try from our growing collection 
+								on the <a href="techniques.html">
+									Techniques page</a>, 
+								or you can contribute a new one we don’t have yet. 
+								If you submit a new technique 
+								(or a different library implementation of one we already have), 
+								then the submission form will prompt you for basic information about 
+								it: a short name, a one-sentence description, 
+								a full algorithm description (optional), 
+								and then any links or references that help document it. 
+								You’ll also have the option of adding a picture that 
+								people can use to identify the technique at a glance. 
+								In a few days, you’ll see the technique you contributed added to our website. 
+								<b><i>Note – you don’t need to be the creator of a privacy technique 
+									to submit data that uses it; just be sure to properly cite the 
+									source when prompted.</i></b>
+							</p>
+							<p>
+								<b>What feature set? :</b>
+								The <a href="https://github.com/usnistgov/SDNist/blob/main/nist%20diverse%20communities%20data%20excerpts/README.md">
+									full schema has 24 features</a>, 
+								but you often want to focus on just a subset of those. 
+								Some privacy algorithms are designed for smaller feature sets, 
+								and algorithm analysis may be more approachable on focused subsets. 
+								Of course, it’s also important to see how algorithms behave with 
+								larger feature sets; the best performing approach on 9 features 
+								might be the worst performing one on 21. 
+								Here are some options to try out, and you’re welcome 
+								to pick your own subset as well. 
+								A single data submission should use a single feature subset. 
+							</p>
+							<ul class="ul-space-above">
+								<li><b>All Features:</b> <i>Includes all 24 features</i></li>
+								<li><b>Simpler Features:</b> <i>Includes 21 features,</i>
+									<b><i>all except (INDP, WGTP, PWGTP)</i></b></li>
+								<li><b>Demographic-Focused Subset:</b></li>
+								<!--For desktop-->
+								<table class="alt listtable">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>MSP</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+											<th>EDU</th>
+											<th>AGEP</th>
+											<th>HOUSING_TYPE</th>
+											<th>DVET</th>
+											<th>DEYE</th>
+										</tr>
+									</thead>
+								</table>
+								<!--For Mobile-->
+								<table class="alt mobile-listtable">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>MSP</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+										</tr>
+									</thead>
+								</table>
+								<table class="alt mobile-listtable">
+									<thead>
+										<tr>
+											<th>EDU</th>
+											<th>AGEP</th>
+											<th>HOUSING_TYPE</th>
+											<th>DVET</th>
+											<th>DEYE</th>
+										</tr>
+									</thead>
+								</table>
+								<li><b>Industry-Focused Subset:</b></li>
+								<!--For desktop-->
+								<table class="alt listtable">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>MSP</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+											<th>EDU</th>
+											<th>HISP</th>
+											<th>PUMA</th>
+											<th>INDP_CAT</th>
+										</tr>
+									</thead>
+								</table>
+								<!--For Mobile-->
+								<table class="alt mobile-listtable">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>MSP</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+										</tr>
+									</thead>
+								</table>
+								<table class="alt mobile-listtable">
+									<thead>
+										<tr>
+											<th>EDU</th>
+											<th>HISP</th>
+											<th>PUMA</th>
+											<th>INDP_CAT</th>
+										</tr>
+									</thead>
+								</table>
+								<li><b>Detailed Industry Subset:</b></li>
+								<!--For desktop-->
+								<table class="alt listtable">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>MSP</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+											<th>EDU</th>
+											<th>HISP</th>
+											<th>PUMA</th>
+											<th>INDP_CAT</th>
+											<th>INDP</th>
+										</tr>
+									</thead>
+								</table>
+								<!--For Mobile-->
+								<table class="alt mobile-listtable">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>MSP</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+										</tr>
+									</thead>
+								</table>
+								<table class="alt mobile-listtable">
+									<thead>
+										<tr>
+											<th>EDU</th>
+											<th>HISP</th>
+											<th>PUMA</th>
+											<th>INDP_CAT</th>
+											<th>INDP</th>
+										</tr>
+									</thead>
+								</table>
+								<li><b>Family-Focused Subset:</b></li>
+								<!--For desktop-->
+								<table class="alt listtable">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>MSP</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+											<th>HISP</th>
+											<th>PUMA</th>
+											<th>AGE</th>
+											<th>NOC</th>
+											<th>NPF</th>
+											<th>POVPIP</th>
+										</tr>
+									</thead>
+								</table>
+								<!--For Mobile-->
+								<table class="alt mobile-listtable">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>MSP</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+										</tr>
+									</thead>
+								</table>
+								<table class="alt mobile-listtable">
+									<thead>
+										<tr>
+											<th>HISP</th>
+											<th>PUMA</th>
+											<th>AGE</th>
+											<th>NOC</th>
+											<th>NPF</th>
+											<th>POVPIP</th>
+										</tr>
+									</thead>
+								</table>
+								<li><b>Small Categorical: </b></li>
+								<table class="alt listtable" style="width: 65%">
+									<thead>
+										<tr>
+											<th>SEX</th>
+											<th>RAC1P</th>
+											<th>OWN_RENT</th>
+											<th>PINCP_DECILE</th>
+											<th>PUMA</th>
+										</tr>
+									</thead>
+								</table>
+								<li><b>Tiny Categorical:  </b></li>
+								<table class="alt listtable" style="width: 20%">
+									<thead>
+										<tr>
+											<th>RAC1P</th>
+											<th>PUMA</th>
+										</tr>
+									</thead>
+								</table>
+							</ul>
+							<br>
+							<p><b>How do I submit? :</b></p>
 							<ol type="1">
-								<li><a href="PDFs/CRC_NIST_introduction.pdf">
-									Check out the introductory slide deck (6MB)</a></li>
-								<li>This program is designed to encourage apples-to-apples comparisons of various 
-									synthetic generator and de-identification techniques. Following these tips improves 
-									the likelihood of fair, meaningful comparisons.</li>
-								<li>Read through the <a href="https://github.com/usnistgov/SDNist">SDNist</a> and 
-									<a href="https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts">
-										NIST Diverse Community Data Excerpts</a> READMEs.</li>
-								<li>You will submit CSV data and your abstract. We will package 
-									those along with the SDNist evaluation reports in the research 
-									acceleration bundle.</li>
-								<li>There are two main abstract types: those asserting publicly verifiable formal 
-									privacy (e.g., differential privacy), and everything else. To participate in 
-									the verifiable formal privacy track, you are expected to share a link to your 
-									code base so the community can verify your claims.</li>
-								<li>
-									The data has 24 features. In order to facilitate comparisons of 
-									techniques we recommend deidentifiying the entire feature set or 
-									choose one of the following subsets:
-									<ul class="ul-space-above">
-										<li><b>All Features:</b> <i>Includes all 24 features</i></li>
-										<li><b>Simpler Features:</b> <i>Includes 21 features,</i>
-											<b><i>all except (INDP, WGTP, PWGTP)</i></b></li>
-										<li><b>Demographic-Focused Subset</b></li>
-										<!--For desktop-->
-										<table class="alt listtable">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>MSP</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-													<th>EDU</th>
-													<th>AGEP</th>
-													<th>HOUSING_TYPE</th>
-													<th>DVET</th>
-													<th>DEYE</th>
-												</tr>
-											</thead>
-										</table>
-										<!--For Mobile-->
-										<table class="alt mobile-listtable">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>MSP</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-												</tr>
-											</thead>
-										</table>
-										<table class="alt mobile-listtable">
-											<thead>
-												<tr>
-													<th>EDU</th>
-													<th>AGEP</th>
-													<th>HOUSING_TYPE</th>
-													<th>DVET</th>
-													<th>DEYE</th>
-												</tr>
-											</thead>
-										</table>
-										<li><b>Industry-Focused Subset</b></li>
-										<!--For desktop-->
-										<table class="alt listtable">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>MSP</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-													<th>EDU</th>
-													<th>HISP</th>
-													<th>PUMA</th>
-													<th>INDP_CAT</th>
-												</tr>
-											</thead>
-										</table>
-										<!--For Mobile-->
-										<table class="alt mobile-listtable">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>MSP</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-												</tr>
-											</thead>
-										</table>
-										<table class="alt mobile-listtable">
-											<thead>
-												<tr>
-													<th>EDU</th>
-													<th>HISP</th>
-													<th>PUMA</th>
-													<th>INDP_CAT</th>
-												</tr>
-											</thead>
-										</table>
-										<li><b>Detailed Industry Subset</b></li>
-										<!--For desktop-->
-										<table class="alt listtable">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>MSP</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-													<th>EDU</th>
-													<th>HISP</th>
-													<th>PUMA</th>
-													<th>INDP_CAT</th>
-													<th>INDP</th>
-												</tr>
-											</thead>
-										</table>
-										<!--For Mobile-->
-										<table class="alt mobile-listtable">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>MSP</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-												</tr>
-											</thead>
-										</table>
-										<table class="alt mobile-listtable">
-											<thead>
-												<tr>
-													<th>EDU</th>
-													<th>HISP</th>
-													<th>PUMA</th>
-													<th>INDP_CAT</th>
-													<th>INDP</th>
-												</tr>
-											</thead>
-										</table>
-										<li><b>Family-Focused Subset</b></li>
-										<!--For desktop-->
-										<table class="alt listtable">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>MSP</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-													<th>HISP</th>
-													<th>PUMA</th>
-													<th>AGE</th>
-													<th>NOC</th>
-													<th>NPF</th>
-													<th>POVPIP</th>
-												</tr>
-											</thead>
-										</table>
-										<!--For Mobile-->
-										<table class="alt mobile-listtable">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>MSP</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-												</tr>
-											</thead>
-										</table>
-										<table class="alt mobile-listtable">
-											<thead>
-												<tr>
-													<th>HISP</th>
-													<th>PUMA</th>
-													<th>AGE</th>
-													<th>NOC</th>
-													<th>NPF</th>
-													<th>POVPIP</th>
-												</tr>
-											</thead>
-										</table>
-										<li><b>Small Categorical: </b></li>
-										<table class="alt listtable" style="width: 65%">
-											<thead>
-												<tr>
-													<th>SEX</th>
-													<th>RAC1P</th>
-													<th>OWN_RENT</th>
-													<th>PINCP_DECILE</th>
-													<th>PUMA</th>
-												</tr>
-											</thead>
-										</table>
-										<li><b>Tiny Categorical:  </b></li>
-										<table class="alt listtable" style="width: 20%">
-											<thead>
-												<tr>
-													<th>RAC1P</th>
-													<th>PUMA</th>
-												</tr>
-											</thead>
-										</table>
-									</ul>
-								</li>
-								<li>
-									If you use differential privacy we ask you to provide values of 
-									epsilon and delta. If using a relaxation of differential privacy 
-									(e.g., Rényi DP), we ask you to convert your privacy guarantees to 
-									epsilon and delta values and highly recommend you set 
-									delta = 10<sup>-5 </sup>and from there determine your value of epsilon.
-								</li>
+								<li>Have you registered your team?  
+									<a href="https://docs.google.com/forms/d/e/1FAIpQLSde8IklaZFEXlCBb0g_EVh6rf7tyxfCsB5yieZ-8hBomlRTGQ/viewform?usp=sf_link">
+										Do that first.</a></li>
+								<li>Prepare your deidentified data samples, with your 
+									chosen technique and feature set. 
+									Your submission can include multiple data files 
+									(up to 10) to explore running the technique with 
+									different parameter configurations or target datasets 
+									(MA, TX, or National).</li>
+								<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfv5b_2R8iwZ6SJC7G2U6uGGtyPrNX1HfK-gXEmxSLRx8xOSA/viewform?usp=sf_link">
+									Use the google form here to submit.</a> 
+									It will ask you for contact info and team name, 
+									technique and feature set, and ask you some 
+									questions about what you did to prepare the submission 
+									– what privacy the technique provides and what 
+									parameter configurations you explored. 
+									You’ll also have the option to upload an 
+									image to go with your submission and 
+									provide any additional links or references you think we should have.</li>
+								<li>If you’re using a custom technique that satisfies 
+									differential privacy, decide if you’d like to 
+									<a href="participate.html#special-process-header">
+										Assert Publicly Verifiable Differential Privacy</a>. 
+									If so, you’ll need to submit some supplementary material 
+									to help others verify that your approach correctly satisfies 
+									your stated differential-privacy guarantee. </li>
 							</ol>
 						</div>
 						<hr>
 						<div id="special-process-header">
 							<h3>Publicly Verifiable Differential Privacy - Special Submission Process</h3>
-							<ol type="1">
-							</ol>
+							<p>In the <a href="https://www.nist.gov/ctl/pscr/open-innovation-prize-challenges/past-prize-challenges/2020-differential-privacy-temporal">
+								NIST Synthetic Data Challenges</a>, NIST provided a 
+								Subject-Matter-Expert differential-privacy validation process. 
+								For the Collaborative Research Cycle, we will be doing something 
+								more transparent and collaborative instead. 
+								If you would like to assert that your submission 
+								technically satisfies Publicly Verifiable Differential 
+								Privacy, then read more here.</p>
+							<h4><b>Should I participate? :</b></h4>
+							<ul>
+								<li>Participation is optional: You are welcome to 
+									describe your technique as differentially private 
+									in the submission form without participating in 
+									the Publicly Verified Differential Privacy track, 
+									and that’s fine! It just won’t be publicly verified.
+								</li>
+								<li>
+									In particular, if you’re using a tool from a well-known 
+									differentially private library, and you haven’t 
+									added any of your own code, then you don’t need to submit 
+									for public verification.
+								</li>
+								<li>
+									However, if you’re relatively new to differential privacy, 
+									and you’re writing some of your own code, it’s a great idea 
+									to submit for verification.
+								</li>
+								<li>
+									And if you’ve been in the differential-privacy 
+									research community for quite a while, then it’s 
+									an even better idea to submit for verification. 
+									This will make it easier for other DP researchers 
+									to find your work in the archive, and more eyes on 
+									source code is almost always a good idea.
+								</li>
+							</ul>
+							<p></p>
+							<h4>
+								<b>What do I need to participate?:</b>
+							</h4>
+							<ul>
+								<li>
+									On the submission form, you can check that you’d 
+									like to assert Publicly Verifiable Differential Privacy.  
+									Then you’ll be prompted to submit a few additional items. 
+									<b><i>Note that all of these items will be shared publicly as 
+										part of the public verification process.</i></b>
+								</li>
+								<li>
+									<b>Source Code: </b>
+									You will need to link to a public code repository 
+									where your source code can be reviewed. 
+								</li>
+								<li>
+									<b>Privacy Proof and Code Guide Document: </b>
+									You will need to upload a written document that 
+									(1) includes a step-by-step walkthrough of your algorithm, 
+									(2) states where to find each of the steps in the source code, and 
+									(3) has a proof that this algorithm satisfies differential privacy 
+									for your chosen DP variant. 
+									<b><i>Note – if you’re new to DP, or even if you’re not, 
+										it helps to be very methodical about tracking the 
+										sensitivity of each of your steps. 
+										This is a different writing style than you’d use for a 
+										publication; we’re looking for something simple and unambiguous.</i></b>
+								</li>
+								<li>
+									<b>Execution Instructions: </b>
+									Provide instructions for someone to run your code and reproduce 
+									the results you got in the data that you’re submitting.
+								</li>
+								<li>
+									<b>Tuning Approach: </b>
+									This is a quick multiple-choice question in the form 
+									– when you were developing (testing and configuring) 
+									your technique, did you use any version of the benchmark data? 
+									To very strictly preserve privacy, it’s best not to use the 
+									private data during development because it could leak information 
+									that’s not protected by the privacy guarantee.  Options include:
+									<ul>
+										<li>No data was used for development (default, blind, or privacy-preserving 
+											configuration).</li>
+										<li>TX & MA data were used during development, but the submission 
+											was run on the National data (in this case, TX & MA are 
+											considered public development data, and the National 
+											data is considered the private dataset).</li>
+										<li>The same target data was used during development 
+											and for the submission (this is less strict about preserving privacy, 
+											but it is just fine for many practical purposes 
+											– however, because it provides a performance advantage, 
+											it’s important to note this.)</li>
+										<li>Other (if you’ve done something else, let us know).</li>
+									</ul>
+								</li>
+								<li>
+									<b>Public Point of Contact: </b>
+									Provide the email of the person who should be 
+									contacted if anyone has questions about your approach.
+								</li>
+							</ul>
+							<p></p>
+							<h4>
+								<b>What can I expect to occur?:</b>
+							</h4>
+							<ul>
+								<li>
+									The Publicly Verifiable Differential Privacy track is what 
+									it sounds like: we’ll package these techniques and present 
+									them to the public for verification.
+								</li>
+								<li>
+									The verification might be empirical, formal, or informal. 
+									We’ll be actively encouraging engagement from researchers 
+									whose work focuses on validating differential-privacy techniques.
+								</li>
+								<li>
+									Within the constraints of available time, we’ll also provide 
+									our own informal review and feedback on any issues we uncover.
+								</li>
+								<li>
+									If you receive feedback that uncovers issues with your 
+									technique, you can address them and submit an updated 
+									algorithm and sample data.
+								</li>
+							</ul>
 						</div>
 						<hr>
 						<div id="tiny-paper-header">
@@ -399,7 +586,7 @@
 								you’re not required to wait to start 
 								thinking about things.</p>
 							<p><b>Tiny Papers?:</b> We’re basing it off 
-								the ICLR tiny paper track– you can see some 
+								the ICLR tiny paper track – you can see some 
 								<a href="https://iclr.cc/Conferences/2023/CallForTinyPapers">
 									great examples there</a>.  We’d like you to describe 
 								your research concept/contribution as simply and 
@@ -410,24 +597,24 @@
 								but we want to know what you’ve noticed about our 
 								data/algorithms and what you’ve figured out so far. 
 								Proofs, detailed experiment results, extended related 
-								works and technical background can go in the appendix. 
+								works, and technical background can go in the appendix. 
 							</p>
 							<p><b>Contribution Type:</b> We invite participation from all areas 
 								of expertise. Purely theoretical and purely empirical submissions 
 								are both welcome, as are any mix of the two. </p>
 							<p>
-								<b>Some Open Problems:</b> What sort of problems might you 
+								<b>Some Open Problems:</b> What sorts of problems might you 
 								explore in your tiny research paper? There’s a lot of 
-								possibilities, but here’s some potential things to start 
+								possibilities, but here are some potential things to start 
 								thinking about (check out our <a href="results_blog.html#1-introductory-slides">
 									PPAI kick-off slide deck</a> for more context):
 							</p>
 							<ul>
 								<li><p><b>Through the looking glass:</b> Why (and how, and when) 
-									do data modeling techniques magnify some parts of 
+									do data-modeling techniques magnify some parts of 
 									the population and shrink others?  
-									What’s happening when GANs introduce artifacts, 
-									or marginal methods reduce diversity? </p></li>
+									What’s happening when GANs introduce artifacts 
+									or when marginal methods reduce diversity? </p></li>
 								<li><p><b>Equity and bias:</b> What happens when a minority 
 									demographic has a different pattern of feature 
 									correlations than the majority (see regression metric)? 
@@ -435,7 +622,7 @@
 									these differences and why?</p></li>
 								<li><p><b>Consistency:</b> Not only why do some methods automatically 
 									avoid record inconsistencies and others 
-									don’t– Why do different methods do better on 
+									don’t – Why do different methods do better on 
 									<i>different</i> feature categories? 
 									How does epsilon impact this? 
 									How can we improve results? </p></li>
@@ -449,7 +636,7 @@
 								<li><p><b>More exciting feature sets:</b> 
 									How do these results change when you’re 
 									running on 15 features instead of 10? Or all 24? 
-									What if you consider weights, or household joins?</p></li>
+									What if you consider weights or household joins?</p></li>
 								<li><p><b>Verification:</b> How can you verify 
 									that the “Publicly Verified Differential Privacy” 
 									submissions are in fact differentially private? 
@@ -465,7 +652,7 @@
 					<p>This website uses:</p>
 					
 					<p>|  &nbsp<a href="https://html5up.net/alpha">
-						Aplha Template</a> from <a href="https://html5up.net/">HTML5UP</a>  &nbsp|</p>
+						Alpha Template</a> from <a href="https://html5up.net/">HTML5UP</a>  &nbsp|</p>
 					<p>|  &nbsp<a href="attributions.html">Detailed Attributions</a>  &nbsp|</p>
 				</footer>
 		</div>

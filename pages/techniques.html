@@ -45,11 +45,11 @@
 			<!-- Main -->
 			<section id="main" class="container">
 				<header id="page-header">
-					<h2>Privacy Techniques In The CRC Collection So Far</h2>
+					<h2>Privacy Techniques in the CRC Collection So Far</h2>
 					<p>Look here to see which techniques we’ve collected so 
-						far, or pick an approach to try out yourself. 
-						If you think we’re missing something, or you’d like to 
-						add your own technique, just check out the 
+						far or pick an approach to try out yourself. 
+						If you think we’re missing something, or if you’d like to 
+						add your own technique, then check out the 
 						<a href="participate.html">Participate 
 						page</a> for instructions on how to submit algorithms and 
 						data samples. </p>
@@ -99,12 +99,12 @@
 								<div class="col-6">
 									<section class="box">
 										<p>SmartNoise library implementation of MST, winner of the 
-											2018 NIST Differential Priavcy Synthetic Data Challenge. 
+											2018 NIST Differential Privacy Synthetic Data Challenge. 
 											Data is generated from a differentially private PGM 
 											instantiated with noisy marginals. The structure 
 											of the PGM is a Maximum Spanning Tree (MST) capturing 
 											the most significant pair-wise feature correlations 
-											in the ground truth data. 
+											in the ground-truth data. 
 										</p>
 										<h4><b>Library: </b> 
 											<a href="https://github.com/opendp/smartnoise-sdk/tree/main/synth">
@@ -136,7 +136,7 @@
 										<p>SmartNoise library implementation of MWEM: 
 											Algorithm initializes synthetic data with random 
 											values and then iteratively refines its distribution 
-											to mimic noisy query results on ground truth data. 
+											to mimic noisy query results on ground-truth data. 
 											The split_factor parameter can be used to improve efficiency 
 											on larger feature sets. This approach satisfies differential privacy.  
 										</p>
@@ -171,9 +171,9 @@
 										<p>SmartNoise library implementation of PAC Synth from the 
 											Synthetic Data Showcase: Algorithm creates an internally 
 											consistent set of overlapping marginal counts 
-											(A, B, A∩B), and then samples new 
+											(A, B, A∩B) and then samples new 
 											records from that distribution while maintaining 
-											consistency. Noisy queries and small count redactions 
+											consistency. Noisy queries and small-count redactions 
 											satisfy both k-anonymity and DP. 
 										</p>
 										<h4><b>Library: </b> 
@@ -241,10 +241,10 @@
 								<div class="col-6">
 									<section class="box">
 										<p>R Synthpop library implementation of fully conditional 
-											CART model based synthesis (default syn() function). 
+											CART model-based synthesis (default syn() function). 
 											New records are generated one feature at a time, 
 											using a sequence of decision trees that select plausible new 
-											values for each feature based on the values synthesized for 
+											values for each feature, based on the values synthesized for 
 											previous features. Data is synthetic, but not DP. 
 										</p>
 										<h4><b>Library: </b> 
@@ -276,9 +276,9 @@
 								<div class="col-6">
 									<section class="box">
 										<p>Synthetic Data Vault library implementation of 
-											Conditional Tabular GAN, which is extened to use 
+											Conditional Tabular GAN, which is extended to use 
 											a Gaussian Copula transformation of your choice 
-											to improve results on continuous (ie, numerical) 
+											to improve results on continuous (i.e., numerical) 
 											features. Data is synthetic, but not DP.  
 										</p>
 										<h4><b>Library: </b> 
@@ -310,7 +310,7 @@
 								<div class="col-6">
 									<section class="box">
 										<p>Synthetic Data Vault library's introductory 
-											data generator; it uses machine learning but 
+											data generator: it uses machine learning, but it 
 											has preset parameters optimized for speedy processing. 
 											Data is synthetic, but not DP. 
 										</p>
@@ -342,7 +342,7 @@
 					<br>
 
 					<hr>
-					<h3 id="Research Approaches"><b>Research Approaches</b></h3>
+					<h3 id="Research Approaches"><b>Research Approaches:</b></h3>
 					<br>
 				</div>
 			</section>
@@ -351,7 +351,7 @@
 				<p>This website uses:</p>
 				
 				<p>|  &nbsp<a href="https://html5up.net/alpha">
-					Aplha Template</a> from <a href="https://html5up.net/">HTML5UP</a>  &nbsp|</p>
+					Alpha Template</a> from <a href="https://html5up.net/">HTML5UP</a>  &nbsp|</p>
 				<p>|  &nbsp<a href="attributions.html">Detailed Attributions</a>  &nbsp|</p>
 			</footer>
 		</div>
