@@ -4152,3 +4152,11 @@
 	.ul-space-above li {
 		margin-top: 7px;
 	}
+
+	.blog-img {
+		border: 2px solid black;
+	}
+
+	.blog-img:hover {
+		border: 4px solid var(--banner-g-2)
+	}
