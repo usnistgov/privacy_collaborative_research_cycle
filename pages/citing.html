@@ -11,6 +11,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
+		<script src="../assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../nist_js/leave_notice.js"></script>
+		<link rel="stylesheet" type="text/css" href="../static/css/NISTLeaveNotice.css" />
+	
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Mark external (non-nist.gov) A tags with class "external"
+				//If the adress start with https and ends with nist.gov
+				var re_nist = new RegExp('^https?:\/\/((^\/)*\.)*nist\\.gov(\/|$)'); 
+				//Regex to find address that start with https 
+				var re_absolute_address = new RegExp('^((https?:)?\/\/)');
+				$("a").each(function(){
+					var url=$(this).attr('href'); 
+					if(re_nist.test(url) || !re_absolute_address.test(url)){
+						$(this).addClass('local'); 
+					}else{
+						$(this).addClass('external');
+					} 
+				});
+				// Add leaveNotice to external A elements 
+				$('a.external').leaveNotice({
+					siteName: 'NIST CRC-2023',
+				});
+			});
+			</script>
+
 		<!-- NIST CSS -->
 		<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
 		<link rel="stylesheet" href="../static/css/NISTPages.css">
@@ -70,8 +96,8 @@
 						</li>
 						<li>
 							<h4> If you publish work that utilizes the NIST Diverse 
-								Community Excerpt Data, please cite the resource. Citation recommendation:</h4>
-							<b><blockquote>Task C., Bhagat K., Streat D., and Howarth G.S. (2023), NIST Diverse Community Excerpt Data, National 
+								Communities Data Excerpts, please cite the resource. Citation recommendation:</h4>
+							<b><blockquote>Task C., Bhagat K., Streat D., and Howarth G.S. (2023), NIST Diverse Communities Data Excerpts, National 
 								Institute of Standards and Technology, 
 								<a href="https://doi.org/10.18434/mds2-2895">https://doi.org/10.18434/mds2-2895</a>
 								<br>(NOTE: DOI is not yet active, but should be live by 1 APR 2023).</blockquote></b>
@@ -94,7 +120,6 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.dropotron.min.js"></script>
 			<script src="../assets/js/jquery.scrollex.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>
