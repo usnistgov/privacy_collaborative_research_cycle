@@ -11,6 +11,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
+		<script src="../assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../nist_js/leave_notice.js"></script>
+		<link rel="stylesheet" type="text/css" href="../static/css/NISTLeaveNotice.css" />
+	
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Mark external (non-nist.gov) A tags with class "external"
+				//If the adress start with https and ends with nist.gov
+				var re_nist = new RegExp('^https?:\/\/((^\/)*\.)*nist\\.gov(\/|$)'); 
+				//Regex to find address that start with https 
+				var re_absolute_address = new RegExp('^((https?:)?\/\/)');
+				$("a").each(function(){
+					var url=$(this).attr('href'); 
+					if(re_nist.test(url) || !re_absolute_address.test(url)){
+						$(this).addClass('local'); 
+					}else{
+						$(this).addClass('external');
+					} 
+				});
+				// Add leaveNotice to external A elements 
+				$('a.external').leaveNotice({
+					siteName: 'NIST CRC-2023',
+				});
+			});
+			</script>
+
 		<!-- NIST CSS -->
 		<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
 		<link rel="stylesheet" href="../static/css/NISTPages.css">
@@ -109,7 +135,7 @@
 											(and early observations), as well as an illustrated walk through 
 											of our project resources. 
 										</p>
-										<h4><a href="https://media.githubusercontent.com/media/usnistgov/privacy_collaborative_research_cycle/0cbaa72848861959ed80973ca6f6152bf131f95b/PDFs/CRC_NIST_introduction.pdf">
+										<h4><a target="_tab" href="https://media.githubusercontent.com/media/usnistgov/privacy_collaborative_research_cycle/0cbaa72848861959ed80973ca6f6152bf131f95b/PDFs/CRC_NIST_introduction.pdf">
 											<b>Document Link</b></a></h4>
 										<h4><b>By: </b> 
 												Christine Task and Karan Bhagat</h4>
@@ -119,7 +145,7 @@
 								</div>
 								<div class="col-6 technique-img-div">
 									<section class="box">
-										<a href="https://media.githubusercontent.com/media/usnistgov/privacy_collaborative_research_cycle/0cbaa72848861959ed80973ca6f6152bf131f95b/PDFs/CRC_NIST_introduction.pdf">
+										<a target="_tab" href="https://media.githubusercontent.com/media/usnistgov/privacy_collaborative_research_cycle/0cbaa72848861959ed80973ca6f6152bf131f95b/PDFs/CRC_NIST_introduction.pdf">
 											<img class="blog-img" height="70%" width="80%"
 											src="../results_blog/crc_ppai_kickoff/crc_kickoff_ppai.png">
 										</a>
@@ -149,7 +175,6 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.dropotron.min.js"></script>
 			<script src="../assets/js/jquery.scrollex.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>

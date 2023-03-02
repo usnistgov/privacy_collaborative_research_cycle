@@ -10,8 +10,31 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="nist_js/leave_notice.js"></script>
+		<link rel="stylesheet" type="text/css" href="static/css/NISTLeaveNotice.css" />
+	
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Mark external (non-nist.gov) A tags with class "external"
+				//If the adress start with https and ends with nist.gov
+				var re_nist = new RegExp('^https?:\/\/((^\/)*\.)*nist\\.gov(\/|$)'); 
+				//Regex to find address that start with https 
+				var re_absolute_address = new RegExp('^((https?:)?\/\/)');
+				$("a").each(function(){
+					var url=$(this).attr('href'); 
+					if(re_nist.test(url) || !re_absolute_address.test(url)){
+						$(this).addClass('local'); 
+					}else{
+						$(this).addClass('external');
+					} 
+				});
+				// Add leaveNotice to external A elements 
+				$('a.external').leaveNotice({
+					siteName: 'NIST CRC-2023',
+				});
+			});
+			</script>
 
 		<!-- NIST Javascript -->
 		<!-- <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> -->
@@ -401,7 +424,7 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 
