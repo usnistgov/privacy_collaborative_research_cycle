@@ -3950,6 +3950,9 @@
 			display: block !important;
 		}
 
+		.blog-card-content .col-6 {
+			width: 100% !important;
+		}
 	}
 
 /* Mobile (Portrait) */
@@ -4065,6 +4068,11 @@
 			.mobile-listtable {
 				display: block !important;
 			}
+
+			.blog-card-content .col-6 {
+				width: 100% !important;
+			}
+		
 	}
 
 	.blog-card {
@@ -4159,4 +4167,8 @@
 
 	.blog-img:hover {
 		border: 4px solid var(--banner-g-2)
+	}
+
+	.blog-card-content.col6 {
+		width: 100%;
 	}
