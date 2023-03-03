@@ -4090,7 +4090,14 @@
 				width: 250px !important;
 				height: 200px !important;
 			}
-		
+
+			.blog-card-content .box {
+				padding-bottom: 0px !important;
+			}
+
+			.technique-img-div p {
+				padding-bottom: 15px !important;
+			}
 	}
 
 	.blog-card {
