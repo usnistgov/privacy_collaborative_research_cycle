@@ -66,20 +66,19 @@
 	// Header.
 		if (!browser.mobile
 		&&	$header.hasClass('alt')) {
-			console.log('hello')
 			$window.on('load', function() {
 
 				$banner.scrollex({
 					bottom:		$header.outerHeight() + 300,
 					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { console.log('revealed'); $header.addClass('alt reveal'); },
+					enter:		function() { $header.addClass('alt reveal'); },
 					leave:		function() { $header.removeClass('alt'); }
 				});
 
 				$pageHeader.scrollex({
 					bottom:		$header.outerHeight() + 300,
 					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { console.log('revealed'); $header.addClass('alt reveal'); },
+					enter:		function() { $header.addClass('alt reveal'); },
 					leave:		function() { $header.removeClass('alt'); }
 				});
 
