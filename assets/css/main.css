@@ -44,6 +44,11 @@
 		vertical-align: baseline;
 	}
 
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 47px;
+	}
+
 	p {
 		text-align: justify;
 		color: var(--text-color);
@@ -3969,6 +3974,14 @@
 				font-size: 11pt;
 			}
 
+			body.landing #page-wrapper {
+				padding-top: 2em;
+			}
+
+			#page-wrapper {
+				padding-top: 3em;
+			}
+
 		/* Section/Article */
 
 			header.major {
@@ -4072,6 +4085,11 @@
 			.blog-card-content .col-6 {
 				width: 100% !important;
 			}
+
+			.banner-img {
+				width: 250px !important;
+				height: 200px !important;
+			}
 		
 	}
 
@@ -4171,4 +4189,9 @@
 
 	.blog-card-content.col6 {
 		width: 100%;
+	}
+
+	.banner-img {
+		width: 350px;
+		height: 300px;
 	}
