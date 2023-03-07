@@ -4124,6 +4124,12 @@
 		display: block;
 	}
 
+	.blog-card-content iframe {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
 	.blog-card-content p, ul {
 		margin: 0 0 0.5em 0;
 	}
