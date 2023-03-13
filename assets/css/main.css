@@ -3454,7 +3454,7 @@
 /* CTA */
 
 	#cta {
-		background-image: radial-gradient(farthest-corner at 50% 0%, var(--banner-g-2), var(--banner-g-1));;
+		background-image: radial-gradient(farthest-corner at 50% 0%, var(--banner-g-2), var(--banner-g-1));
 		color: #f9e6df;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
@@ -4207,4 +4207,9 @@
 	.banner-img {
 		width: 350px;
 		height: 300px;
+	}
+
+	.colored-text {
+		color: var(--banner-g-1);  /* Fallback: assume this color ON TOP of image */
+		font-weight: normal;
 	}

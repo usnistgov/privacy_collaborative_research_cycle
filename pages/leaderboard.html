@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Citing - CRC</title>
+		<title>Leaderboard - CRC</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta charset="utf-8" />
+		<!-- <meta name="description" content="Home Page: HLG MOS Synthetic Data Test Drive 2022"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
 		<!--open graph data-->
 		<meta property="og:title" content="NIST Collaborative Research Cycle 2023"/>
 		<meta property="og:description" 
@@ -22,10 +22,12 @@
 		<meta property="og:image:width" content="400" />
 		<meta property="og:image:height" content="300" />
 
+
 		<script src="../assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="../nist_js/leave_notice.js"></script>
 		<link rel="stylesheet" type="text/css" href="../static/css/NISTLeaveNotice.css" />
-	
+
+
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Mark external (non-nist.gov) A tags with class "external"
@@ -83,43 +85,110 @@
 			<!-- Main -->
 			<section id="main" class="container">
 				<header id="page-header">
-					<h2>How To Cite This Program</h2>
-					<p>We hope these resources will be useful in your 
-						own work. If you’d like to cite our tools or 
-						our data, or related publications, find that below. </p>
+					<h2>Leaderboards and Summary Tables</h2>
+					<p>In a competitive challenge the goal is to achieve 
+						the top score; for our cooperative challenge, we're 
+						working together to understand the behavior of 
+						deidentification algorithms. 
+						Below we give proper credit to the teams who have 
+						contributed to our data archive, along with summary 
+						results we've learned about the algorithms so far. 
+						For recent progress analyzing what these results might mean, 
+						check out our <a href="results_blog.html">Results Blog</a>.</p>
 					<ul class="actions special">
 						<li><a href="../index.html" class="button">Home</a></li>
 						<li><a href="participate.html" class="button">Participate</a></li>
 						<li><a href="results_blog.html" class="button">Results Blog</a></li>
 						<li><a href="techniques.html" class="button">Techniques</a></li>
-						<li><a href="leaderboard.html" class="button">Leaderboard</a></li>
-						<li><a href="citing.html" class="button primary">How to Cite</a></li>
+						<li><a href="leaderboard.html" class="button primary">Leaderboard</a></li>
+						<li><a href="citing.html" class="button">How to Cite</a></li>
 					</ul>
 				</header>
-				<div class="box">
+				<div class="box separators">
 					<div class="image featured"></div>
+					<h3>Contents:</h3>
 					<ul>
-						<li>
-							<h4>If you publish work that utilizes the SDNist Deidentified Data Tool, 
-								please cite the software. Citation recommendation:</h4>
-							<b><blockquote>Task C., Bhagat K., and Howarth G.S. (2023), SDNist v2: 
-								Deidentified Data Report Tool, National Institute of Standards and 
-								Technology, <a href="https://doi.org/10.18434/mds2-2943">https://doi.org/10.18434/mds2-2943</a><br>
-								(NOTE: DOI is not yet active, but should be by 1 APR 2023).</blockquote></b>
-						</li>
-						<li>
-							<h4> If you publish work that utilizes the NIST Diverse 
-								Communities Data Excerpts, please cite the resource. Citation recommendation:</h4>
-							<b><blockquote>Task C., Bhagat K., Streat D., and Howarth G.S. (2023), NIST Diverse Communities Data Excerpts, National 
-								Institute of Standards and Technology, 
-								<a href="https://doi.org/10.18434/mds2-2895">https://doi.org/10.18434/mds2-2895</a>
-								<br>(NOTE: DOI is not yet active, but should be live by 1 APR 2023).</blockquote></b>
-						</li>
-						<li>
-							<h4> We plan to package the proceedings of this program NIST Special Publication
-								 and we will provide detailed citation information upon publication.</h4>
-						</li>
+						<li><h4><a href="leaderboard.html#contributors-leaderboard">
+							Archive Contributors Leaderboard
+						</a></h4></li>
+						<li><h4><a href="leaderboard.html#algorithm-summary">
+							Algorithm Summary Table
+						</a></h4></li>
+						<li><h4><a href="leaderboard.html#publicaly-verifiable">
+							Publicly Verifiable Differential Privacy Leaderboard
+						</a></h4></li>
 					</ul>
+					<hr>
+					<h3 id="contributors-leaderboard">Archive Contributors Leaderboard:</h3>
+					<p>Teams are ranked first by total number files submitted, 
+						then number of algorithms contributed to the project. 
+						Because the goal of this project is to collect data to 
+						support a better understanding of deidentification algorithms, 
+						its expected that teams will explore a variety of algorithms 
+						(and parameter configurations) with a range of utility 
+						performance scores. To illustrate this, the score range 
+						is given for each team, but this is not factored in the 
+						archive contributor ranking.</p>
+					<table class="alt">
+						<thead>
+							<tr>
+								<th>Team</th>
+								<th>Total Files Submitted</th>
+								<th>Algorithms</th>
+								<th>Avg. Files/Algorithm</th>
+								<th>K-marginal Score Range (lowest-highest)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="colored-text">CCAIM</td>
+								<td>3</td>
+								<td>3</td>
+								<td>1</td>
+								<td>000 - 000</td>
+							</tr>
+							<tr>
+								<td class="colored-text">MostlyAI</td>
+								<td>3</td>
+								<td>1</td>
+								<td>3</td>
+								<td>000 - 000</td>
+							</tr>
+							<tr>
+								<td class="colored-text">LostInTheNoise</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>000 - 000</td>
+							</tr>
+							<tr>
+								<td class="colored-text">SynCity</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>000 - 000</td>
+							</tr>
+						</tbody>
+					</table>
+					<hr>
+					<h3 id="algorithm-summary">Algorithm Summary Table:</h3>
+					<p>TBA: This table will include utility and privacy results for 
+						each algorithm and feature set, across multiple contributing teams.</p>
+					<hr>
+					<h3 id="publicaly-verifiable">Publicly Verifiable Differential Privacy Leaderboard:</h3>
+					<p>
+						TBA: This leaderboard will operate similarly to the 
+						leaderboards from the NIST Differential Privacy Synthetic 
+						Data Challenges. Contributors attesting publicly 
+						verifiable differential privacy who wish to appear on 
+						this leaderboard are requested to submit two data sets 
+						using the national target data with the 
+						"simpler 21 feature-set" 
+						(all features except INDP, [and weights]). 
+						One data set should satisfy epsilon = 1, 
+						and the other should satisfy epsilon = 10, 
+						both with delta <= 10<sup>-5</sup>-.
+					</p>
 				</div>
 			</section>
 			<footer id="footer">
