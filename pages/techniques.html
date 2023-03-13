@@ -73,11 +73,12 @@
 				</div>
         <nav id="nav">
           <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="participate.html">Participate</a></li>
-            <li><a href="results_blog.html">Results Blog</a></li>
-            <li><a href="techniques.html">Techniques</a></li>
-            <li><a href="citing.html">How to Cite</a></li>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="participate.html">Participate</a></li>
+						<li><a href="results_blog.html">Results Blog</a></li>
+						<li><a href="techniques.html">Techniques</a></li>
+						<li><a href="leaderboard.html">Leaderboard</a></li>
+						<li><a href="citing.html">How to Cite</a></li>
           </ul>
         </nav>
       </header>
@@ -97,6 +98,7 @@
 						<li><a href="participate.html" class="button">Participate</a></li>
 						<li><a href="results_blog.html" class="button">Results Blog</a></li>
 						<li><a href="techniques.html" class="button primary">Techniques</a></li>
+						<li><a href="leaderboard.html" class="button">Leaderboard</a></li>
 						<li><a href="citing.html" class="button">How to Cite</a></li>
 					</ul>
 				</header>
@@ -119,14 +121,28 @@
 							SDV Copula-GAN</a></li>
 						<li><a href="techniques.html#sdv-fast-ml">
 							SDV FAST-ML</a></li>
+						<li><a href="techniques.html#synthcity-dpgan">
+							Synthcity-DPGAN</a></li>
+						<li><a href="techniques.html#synthcity-pategan">
+							Synthcity-PATEGAN</a></li>
+						<li><a href="techniques.html#synthcity-adsgan">
+							Synthcity-adsgan</a></li>
 					</ul>
 
 					<h4><a href="techniques.html#commercial-products">Commercial Products:</a></h4>
 					<ul>
+						<li><a href="techniques.html#mostlyai-sd">
+							MostlyAI-SD</a></li>
 					</ul>
-
+					<h4><a href="techniques.html#publicly-verifiable">Publicly Verifiable Differential Privacy:</a></h4>
+					<ul>
+						<li><a href="techniques.html#geneticsd">
+							GeneticSD</a></li>
+					</ul>
 					<h4><a href="techniques.html#research-approaches">Research Approaches:</a></h4>
 					<ul>
+						<li><a href="techniques.html#mwem-pgm">
+							MWEM+PGM</a></li>
 					</ul>
 					<hr>
 					<h3 id="open-source"><b>Open Source:</b></h3>
@@ -374,14 +390,234 @@
 							</div>
 						</div>
 					</div>
-
+					<br>
+					<div id="synthcity-dpgan" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Synthcity-DPGAN</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>Synthcity's implementation of Differentially Private 
+											General Adverserial Network, based on [Xie 2018]. 
+											It offers a variety of tuning parameters for the network.
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/vanderschaarlab/synthcity">
+												Synthcity</a> (Python)</h4>
+										<h4><b>Privacy: </b>Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://synthcity.readthedocs.io/en/latest/generated/synthcity.plugins.privacy.plugin_dpgan.html">
+												Synthcity-DPGAN Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://arxiv.org/abs/1802.06739">Original paper citation [Xie 2018]
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="50%" width="50%"
+										src="../techniques/synthcity_dpgan/LOGO.drawio - Zhaozhi Qian.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="synthcity-pategan" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Synthcity-PATEGAN</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>Synthcity's implementation of PATEGAN, based on [Jordon 2018]. 
+											The method uses the Private Aggregation of Teacher Ensembles (PATE)
+											 framework and applies it to GANs, allowing it to tightly bound 
+											 the influence of any individual sample on the model, resulting 
+											 in tight differential privacy guarantees.
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/vanderschaarlab/synthcity">
+												Synthcity</a> (Python)</h4>
+										<h4><b>Privacy: </b>Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://synthcity.readthedocs.io/en/latest/generated/synthcity.plugins.privacy.plugin_pategan.html">
+												Synthcity-PATEGAN Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href=" https://openreview.net/forum?id=S1zk9iRqF7">Original paper citation [Jordon 2018]
+												</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="50%" width="50%"
+										src="../techniques/synthcity_dpgan/LOGO.drawio - Zhaozhi Qian.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="synthcity-adsgan" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Synthcity-adsgan</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>Synthcity's implementation of ADSGAN, based on [Yoon, 2020]. 
+											It uses a record-level identifiability metric as part of the 
+											data generation process, to optimize utility while reducing 
+											reidentification risk. The data is synthetic, but not DP. 
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/vanderschaarlab/synthcity">
+												Synthcity</a> (Python)</h4>
+										<h4><b>Privacy: </b>Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://synthcity.readthedocs.io/en/latest/generated/synthcity.plugins.privacy.plugin_adsgan.html">
+												Synthcity-adsgan Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://ieeexplore.ieee.org/document/9034117">Original paper citation [Yoon 2020]
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="50%" width="50%"
+										src="../techniques/synthcity_dpgan/LOGO.drawio - Zhaozhi Qian.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<hr>
 					<h3 id="commercial-products"><b>Commercial Products:</b></h3>
 					<br>
-
+					<div id="mostlyai-sd" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>MostlyAI-SD</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>Synthetic data is generated end-to-end using MOSTLY AI's SD platform. 
+											The platform leverages a generative deep neural network model, 
+											trained on original data, to yield any number of synthetic samples. 
+											The fully automated process takes place in multiple steps: 
+											data analysis to determine the model architecture and size, data encoding to 
+											embed records into a multi-dimensional space, the training phase of the model, 
+											and sampling of new records in the generation phase.
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://synthetic.mostly.ai">
+												MostlyAI </a></h4>
+										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://synthetic.mostly.ai">
+												Website</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://mostly.ai/synthetic-data-generator-docs/mostly-ai-help-support-tutorials-documentation">
+												User Guide</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/mostly_ai_sd/MostlyAI.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<hr>
+					<h3 id="publicly-verifiable"><b>Publicly Verifiable Differential Privacy:</b></h3>
+					<br>
+					<div id="geneticsd" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>GeneticSD</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>The GeneticSD first privately estimates the answers to all 2-way marginals 
+											queries on the original data with the Gaussian mechanism. Then it uses a 
+											genetic algorithm to find a synthetic dataset that best matches the noisy 
+											2-way marginals. A genetic algorithm is a method that explores large parameter 
+											spaces through the principle of survival of the fittest to identify suitable candidate 
+											solutions for a given optimization objective.
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/giusevtr/private_genetic_algorithm">
+												Private Genetic Algorithm </a></h4>
+										<h4><b>Privacy: </b> Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://drive.google.com/open?id=1pKavjz4Mp_F4ThZUyZqxfxeN1jLOk6-A">
+												Privacy Proof </a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://github.com/giusevtr/private_genetic_algorithm/tree/nist/dev/examples/nist">
+												source code</a></li>
+											<li><a href="https://drive.google.com/open?id=1KWzaG8grZafnCXVPxG6DV6ri045bZAzr">
+												execution instructions:</a></li>
+											<li><p>point of contact: Giuseppe Vietri, email: vietr002@umn.edu</p></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/geneticsd/geneticsd.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
 					<hr>
 					<h3 id="Research Approaches"><b>Research Approaches:</b></h3>
+					<br>
+					<div id="mwem-pgm" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>MWEM+PGM</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>A scalable instantiation of the MWEM algorithm for marginal 
+											query workloads using the DP-PGM from [McKenna 2019] 
+										</p>
+										<h4><b>Library: </b>N/A</h4>
+										<h4><b>Privacy: </b> Differential Privacy</h4>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
 					<br>
 				</div>
 			</section>
