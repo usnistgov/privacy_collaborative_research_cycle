@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "team": "MOSTLY AI",
+        "submission timestamp": "3/31/2023 11:27:22",
+        "target dataset": "national2019",
+        "algorithm name": "MostlyAI SD",
+        "feature set": "all-features",
+        "variant label": "national2019",
+        "submission number": 2,
+        "privacy": "Synthetic Data (Non-differentially Private)",
+        "library": "MostlyAI SD"
+    }
+}

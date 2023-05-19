@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "algorithm name": "mst",
+        "library": "smartnoise-synth",
+        "feature set": "demographic-focused",
+        "target dataset": "tx2019",
+        "epsilon": "10",
+        "variant label": "preprocessor-epsilon: 3",
+        "privacy": "Differential Privacy"
+    }
+}

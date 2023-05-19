@@ -1,0 +1,291 @@
+{
+    "data_description": {
+        "target": {
+            "filename": "tx2019",
+            "records": 9276,
+            "features": 24
+        },
+        "deid": {
+            "filename": "pacsynth_e_5_family",
+            "records": 96,
+            "features": 12,
+            "labels": {
+                "algorithm name": "pacsynth",
+                "library": "smartnoise-synth",
+                "feature set": "family-focused",
+                "target dataset": "tx2019",
+                "variant label": "preprocessor-epsilon: 1.5",
+                "epsilon": "5"
+            },
+            "validations": {
+                "values_out_of_bound": {}
+            }
+        },
+        "features": [
+            {
+                "Feature Name": "PUMA",
+                "Feature Description": "Public use microdata area code",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "AGEP",
+                "Feature Description": "Person's age",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "SEX",
+                "Feature Description": "Person's gender",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "MSP",
+                "Feature Description": "Marital Status",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "HISP",
+                "Feature Description": "Hispanic origin",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "RAC1P",
+                "Feature Description": "Person's Race",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "NOC",
+                "Feature Description": "Number of own children in household (unweighted)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "NPF",
+                "Feature Description": "Number of persons in family (unweighted)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "OWN_RENT",
+                "Feature Description": "Housing unit rented or owned",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "PINCP_DECILE",
+                "Feature Description": "Person's total income rank (with respect to their state) discretized into 10% bins.",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "POVPIP",
+                "Feature Description": "Income-to-poverty ratio (ex: 250 = 2.5 x poverty line)",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "DEYE",
+                "Feature Description": "Vision difficulty",
+                "Feature Type": "int32",
+                "Feature Has 'N' (N/A) values?": false
+            }
+        ]
+    },
+    "Univariate": {
+        "divergence": "univariate/divergence.csv",
+        "counts": {
+            "AGEP": {
+                "counts": "univariate/AGEP_counts.csv",
+                "plot": "univariate/AGEP.jpg"
+            },
+            "PINCP_DECILE": {
+                "counts": "univariate/PINCP_DECILE_counts.csv",
+                "plot": "univariate/PINCP_DECILE.jpg"
+            },
+            "NPF": {
+                "counts": "univariate/NPF_counts.csv",
+                "plot": "univariate/NPF.jpg"
+            },
+            "POVPIP": {
+                "counts": "univariate/POVPIP_counts.csv",
+                "plot": "univariate/POVPIP.jpg"
+            },
+            "PUMA": {
+                "counts": "univariate/PUMA_counts.csv",
+                "plot": "univariate/PUMA.jpg"
+            },
+            "MSP": {
+                "counts": "univariate/MSP_counts.csv",
+                "plot": "univariate/MSP.jpg"
+            },
+            "NOC": {
+                "counts": "univariate/NOC_counts.csv",
+                "plot": "univariate/NOC.jpg"
+            },
+            "OWN_RENT": {
+                "counts": "univariate/OWN_RENT_counts.csv",
+                "plot": "univariate/OWN_RENT.jpg"
+            },
+            "HISP": {
+                "counts": "univariate/HISP_counts.csv",
+                "plot": "univariate/HISP.jpg"
+            },
+            "RAC1P": {
+                "counts": "univariate/RAC1P_counts.csv",
+                "plot": "univariate/RAC1P.jpg"
+            },
+            "SEX": {
+                "counts": "univariate/SEX_counts.csv",
+                "plot": "univariate/SEX.jpg"
+            },
+            "DEYE": {
+                "counts": "univariate/DEYE_counts.csv",
+                "plot": "univariate/DEYE.jpg"
+            }
+        }
+    },
+    "Correlations": {
+        "kendall correlation difference": {
+            "correlation_difference": "correlation_difference/correlation_difference.csv",
+            "plot": "correlation_difference/corr_diff.jpg"
+        },
+        "pearson correlation difference": {
+            "correlation_difference": "pearson_correlation/correlation_difference.csv",
+            "plot": "pearson_correlation/pearson_corr_diff.jpg"
+        }
+    },
+    "k_marginal": {
+        "k_marginal_synopsys": {
+            "subsample_error_comparison": "k_marginal_synopsys/subsample_error_comparison.csv",
+            "k_marginal_score": 269,
+            "score_in_each_puma": "k_marginal_synopsys/score_in_each_puma.csv"
+        },
+        "k_marginal_breakdown": {
+            "worst_2_puma_univariate": {
+                "divergence": "k_marginal_breakdown/univariate/divergence.csv",
+                "counts": {
+                    "AGEP": {
+                        "counts": "k_marginal_breakdown/univariate/AGEP_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/AGEP.jpg"
+                    },
+                    "PINCP_DECILE": {
+                        "counts": "k_marginal_breakdown/univariate/PINCP_DECILE_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/PINCP_DECILE.jpg"
+                    },
+                    "NPF": {
+                        "counts": "k_marginal_breakdown/univariate/NPF_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/NPF.jpg"
+                    },
+                    "POVPIP": {
+                        "counts": "k_marginal_breakdown/univariate/POVPIP_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/POVPIP.jpg"
+                    },
+                    "MSP": {
+                        "counts": "k_marginal_breakdown/univariate/MSP_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/MSP.jpg"
+                    },
+                    "NOC": {
+                        "counts": "k_marginal_breakdown/univariate/NOC_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/NOC.jpg"
+                    },
+                    "SEX": {
+                        "counts": "k_marginal_breakdown/univariate/SEX_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/SEX.jpg"
+                    },
+                    "PUMA": {
+                        "counts": "k_marginal_breakdown/univariate/PUMA_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/PUMA.jpg"
+                    },
+                    "HISP": {
+                        "counts": "k_marginal_breakdown/univariate/HISP_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/HISP.jpg"
+                    },
+                    "OWN_RENT": {
+                        "counts": "k_marginal_breakdown/univariate/OWN_RENT_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/OWN_RENT.jpg"
+                    },
+                    "RAC1P": {
+                        "counts": "k_marginal_breakdown/univariate/RAC1P_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/RAC1P.jpg"
+                    },
+                    "DEYE": {
+                        "counts": "k_marginal_breakdown/univariate/DEYE_counts.csv",
+                        "plot": "k_marginal_breakdown/univariate/DEYE.jpg"
+                    }
+                }
+            },
+            "worst_2_puma_k_marginal_scores": "k_marginal_breakdown/worst_2_puma_k_marginal_scores.csv",
+            "correlation_difference": {
+                "pearson_correlation_difference": {
+                    "correlation_difference": "k_marginal_breakdown/pearson_correlation/correlation_difference.csv",
+                    "plot": "k_marginal_breakdown/pearson_correlation/pearson_corr_diff.jpg"
+                }
+            }
+        }
+    },
+    "propensity mean square error": {
+        "pmse_score": 0.003928471922057774,
+        "propensity_distribution": "propensity/propensity_distribution.csv"
+    },
+    "pca": {
+        "components_eigenvector": "pca/components_eigenvector.csv",
+        "target_all_components_plot": "pca/target.png",
+        "deidentified_all_components_plot": "pca/deidentified.png",
+        "highlighted_plots": {
+            "MSP-MSP_N-Children (AGEP < 15)": [
+                "pca/target_highlighted_MSP/MSP_N.png",
+                "pca/deidentified_highlighted_MSP/MSP_N.png"
+            ]
+        }
+    },
+    "inconsistencies": {
+        "age": {
+            "title": "Age-Based Inconsistencies",
+            "description": "These inconsistencies deal with the AGE feature; records with age-based inconsistencies might have children who are married, or infants with high school diplomas",
+            "inconsistencies": []
+        },
+        "work": {
+            "title": "Work-Based Inconsistencies",
+            "description": "These inconsistencies deal with the work and finance features; records with work-based inconsistencies might have high incomes while being in poverty, or have conflicts between their industry code and industry category.",
+            "inconsistencies": []
+        },
+        "housing": {
+            "title": "Housing-Based Inconsistencies",
+            "description": "These inconsistencies deal with housing and family features; records with household-based inconsistencies might have more children in the house than the total household size, or be residents of group quarters (such as prison inmates) who are listed as owning their residences.",
+            "inconsistencies": []
+        },
+        "summary": [
+            {
+                "Inconsistency Group": "Age",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Work",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Housing",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            }
+        ]
+    },
+    "unique_exact_matches": {
+        "records matched in target data": 1,
+        "percent records matched in target data": 0.01,
+        "unique target records": 8615,
+        "percent unique target records": 92.87
+    },
+    "apparent_match_distribution": {
+        "unique_matched_percents": "apparent_match_distribution/unique_matched_percents.csv",
+        "plot": "apparent_match_distribution/apparent_match_distribution.jpg"
+    },
+    "created_on": "May 19, 2023 21:06:35"
+}

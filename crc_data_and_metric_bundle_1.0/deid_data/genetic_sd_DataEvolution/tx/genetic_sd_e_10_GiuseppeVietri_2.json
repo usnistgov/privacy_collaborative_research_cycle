@@ -1,0 +1,15 @@
+{
+    "labels": {
+        "team": "DataEvolution",
+        "submission timestamp": "4/16/2023 20:31:04",
+        "target dataset": "tx2019",
+        "algorithm name": "Genetic SD",
+        "feature set": "all-features",
+        "variant label": "sync_tx2019_10",
+        "epsilon": "10",
+        "delta": "10^(-5)",
+        "submission number": 2,
+        "privacy": "Differential Privacy",
+        "library": "Genetic SD"
+    }
+}

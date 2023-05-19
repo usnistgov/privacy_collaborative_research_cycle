@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "team": "DPSyn-synthpop",
+        "submission timestamp": "5/8/2023 6:58:34",
+        "algorithm name": "catall_NonDP",
+        "library": "rsynthpop",
+        "feature set": "demographic-focused",
+        "target dataset": "national2019",
+        "variant label": "this one not DP",
+        "submission number": 1,
+        "privacy": "Synthetic Data (Non-differentially Private)"
+    }
+}

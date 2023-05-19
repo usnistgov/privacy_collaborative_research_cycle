@@ -1,0 +1,15 @@
+{
+    "labels": {
+        "team": "DataEvolution",
+        "submission timestamp": "3/10/2023 18:01:31",
+        "target dataset": "national2019",
+        "algorithm name": "Genetic SD",
+        "feature set": "all-features",
+        "variant label": "genetic_sd_national",
+        "epsilon": "10",
+        "delta": "1/n^2, where n is the data size",
+        "submission number": 1,
+        "privacy": "Differential Privacy",
+        "library": "Genetic SD"
+    }
+}

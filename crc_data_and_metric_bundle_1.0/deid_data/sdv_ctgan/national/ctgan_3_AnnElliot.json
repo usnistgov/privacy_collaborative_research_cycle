@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "algorithm name": "ctgan",
+        "library": "sdv",
+        "feature set": "all-features",
+        "target dataset": "national2019",
+        "variant label": "3",
+        "privacy": "Synthetic Data (Non-differentially Private)"
+    }
+}

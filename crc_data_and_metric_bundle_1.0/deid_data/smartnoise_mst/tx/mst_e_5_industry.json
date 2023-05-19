@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "algorithm name": "mst",
+        "library": "smartnoise-synth",
+        "feature set": "industry-focused",
+        "target dataset": "tx2019",
+        "variant label": "preprocessor-epsilon: 1.5",
+        "epsilon": "5"
+    }
+}

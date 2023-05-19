@@ -1,0 +1,15 @@
+{
+    "labels": {
+        "team": "DPSyn-synthpop",
+        "submission timestamp": "5/8/2023 6:58:34",
+        "algorithm name": "catall",
+        "library": "rsynthpop",
+        "feature set": "demographic-focused",
+        "target dataset": "national2019",
+        "variant label": "e=1 d=0 rand=True",
+        "epsilon": "1",
+        "delta": "0",
+        "submission number": 1,
+        "privacy": "Differential Privacy"
+    }
+}

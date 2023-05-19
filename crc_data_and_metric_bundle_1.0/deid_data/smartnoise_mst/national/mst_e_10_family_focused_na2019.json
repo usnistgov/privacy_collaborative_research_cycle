@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "algorithm name": "mst",
+        "library": "smartnoise-synth",
+        "feature set": "family-focused",
+        "target dataset": "national2019",
+        "epsilon": "10",
+        "variant label": "preprocessor-epsilon: 3",
+        "privacy": "Differential Privacy"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "labels": {
+        "algorithm name": "DPHist",
+        "library": "tumult",
+        "feature set": "demographic-focused-except-DEYE",
+        "target dataset": "national2019",
+        "epsilon": "10",
+        "variant label": "",
+        "privacy": "Differential Privacy"
+    },
+    "metadata": {
+        "custom features": "AGEP,SEX,MSP,RAC1P,HOUSING_TYPE,OWN_RENT,EDU,PINCP_DECILE,DVET"
+    }
+}

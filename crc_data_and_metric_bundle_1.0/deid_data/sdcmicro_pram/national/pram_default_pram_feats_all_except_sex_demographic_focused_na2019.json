@@ -1,0 +1,14 @@
+{
+    "labels": {
+        "algorithm name": "pram",
+        "library": "sdcmicro",
+        "feature set": "demographic-focused",
+        "target dataset": "national2019",
+        "default values": "pd: 0.8, alpha: 0.5",
+        "pram features": "MSP, RAC1P, OWN_RENT, PINCP_DECILE, EDU, HOUSING_TYPE, DVET, DEYE",
+        "pram features exception": "SEX selected as required categorical key variable",
+        "variant label": "all categorical except SEX",
+        "variant label detail": "default, pram features: all cat. except SEX",
+        "privacy": "Statistical Disclosure Control"
+    }
+}

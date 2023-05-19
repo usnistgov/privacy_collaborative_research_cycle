@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "algorithm name": "fastml",
+        "library": "sdv",
+        "feature set": "custom-features-23",
+        "target dataset": "ma2019",
+        "variant label": "",
+        "privacy": "Synthetic Data (Non-differentially Private)"
+    },
+    "metadata": {
+        "custom features": "AGEP,SEX,MSP,HISP,RAC1P,NOC,NPF,HOUSING_TYPE,OWN_RENT,INDP,INDP_CAT,EDU,PINCP,PINCP_DECILE,POVPIP,DVET,DREM,DPHY,DEYE,DEAR,PWGTP,WGTP,PUMA"
+    }
+}

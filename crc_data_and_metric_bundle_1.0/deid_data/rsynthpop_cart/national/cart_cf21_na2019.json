@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "algorithm name": "cart",
+        "library": "rsynthpop",
+        "feature set": "custom-features-21",
+        "target dataset": "national2019",
+        "variant label": "maxfaclevels: 300",
+        "privacy": "Synthetic Data (Non-differentially Private)"
+    },
+    "metadata": {
+        "custom features": "PUMA,AGEP,SEX,MSP,HISP,RAC1P,NOC,NPF,HOUSING_TYPE,OWN_RENT,INDP,INDP_CAT,EDU,PINCP,PINCP_DECILE,POVPIP,DVET,DREM,DPHY,DEYE,DEAR"
+    }
+}

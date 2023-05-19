@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "team": "Blizzard Wizard",
+        "submission timestamp": "5/18/2023 21:45:37",
+        "target dataset": "national2019",
+        "algorithm name": "gaussian-copula",
+        "library": "sdv",
+        "feature set": "family-focused",
+        "variant label": "tuned",
+        "submission number": 2,
+        "privacy": "Synthetic Data (Non-differentially Private)"
+    }
+}

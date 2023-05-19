@@ -1,0 +1,15 @@
+{
+    "labels": {
+        "team": "CCAIM",
+        "submission timestamp": "3/9/2023 3:29:17",
+        "target dataset": "national2019",
+        "algorithm name": "pategan",
+        "library": "synthcity",
+        "feature set": "all-features",
+        "variant label": "syntheticy-pategan-default",
+        "epsilon": "1",
+        "delta": "10^(-5)",
+        "submission number": 1,
+        "privacy": "Differential Privacy"
+    }
+}

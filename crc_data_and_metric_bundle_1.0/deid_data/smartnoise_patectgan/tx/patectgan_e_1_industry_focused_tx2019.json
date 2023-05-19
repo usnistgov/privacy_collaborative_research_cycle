@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "algorithm name": "patectgan",
+        "library": "smartnoise-synth",
+        "feature set": "industry-focused",
+        "target dataset": "tx2019",
+        "epsilon": "1",
+        "variant label": "preprocessor-epsilon: 0.3",
+        "privacy": "Differential Privacy"
+    }
+}

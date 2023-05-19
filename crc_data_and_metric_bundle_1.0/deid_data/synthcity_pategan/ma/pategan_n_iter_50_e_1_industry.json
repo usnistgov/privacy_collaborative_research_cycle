@@ -1,0 +1,12 @@
+{
+    "labels": {
+        "algorithm name": "pategan",
+        "library": "synthcity",
+        "feature set": "industry-focused",
+        "target dataset": "ma2019",
+        "variant label": "n_iter=50, target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index",
+        "epsilon": "1",
+        "privacy": "Differential Privacy"
+    }
+}

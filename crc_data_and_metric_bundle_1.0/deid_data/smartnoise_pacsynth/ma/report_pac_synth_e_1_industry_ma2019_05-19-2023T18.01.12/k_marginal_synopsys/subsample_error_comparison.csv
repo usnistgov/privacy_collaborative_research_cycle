@@ -1,0 +1,11 @@
+,Sub-Sample Size,Sub-Sample K-Marginal Score,Deidentified Data K-marginal score,Absolute Diff. From Deidentified Data K-marginal Score
+0,10%,864,492,372
+1,20%,904,492,412
+2,30%,927,492,435
+3,40%,934,492,442
+4,50%,950,492,458
+5,60%,961,492,469
+6,70%,968,492,476
+7,80%,977,492,485
+8,90%,984,492,492
+9,100%,1000,492,508

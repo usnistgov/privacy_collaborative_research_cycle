@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "team": "CommunityData",
+        "submission timestamp": "4/16/2023 20:31:04",
+        "target dataset": "ma2019",
+        "algorithm name": "gaussian-copula",
+        "library": "sdv",
+        "feature set": "demographic-focused",
+        "variant label": "Includes the pandas dataframe index and an additional index_col that was need to get the synthesizer to run",
+        "submission number": 1,
+        "privacy": "Synthetic Data (Non-differentially Private)"
+    }
+}

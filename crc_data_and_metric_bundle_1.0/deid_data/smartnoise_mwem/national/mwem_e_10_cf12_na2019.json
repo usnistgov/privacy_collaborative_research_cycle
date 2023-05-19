@@ -1,0 +1,14 @@
+{
+    "labels": {
+        "algorithm name": "mwem",
+        "library": "smartnoise-synth",
+        "feature set": "custom-features-12",
+        "target dataset": "national2019",
+        "epsilon": "10",
+        "variant label": "split-factor: 3, preprocessor-epsilon: 3",
+        "privacy": "Differential Privacy"
+    },
+    "metadata": {
+        "custom features": "PUMA,AGEP,RAC1P,MSP,SEX,HOUSING_TYPE,OWN_RENT,DVET,PINCP_DECILE,EDU,NOC,HISP"
+    }
+}

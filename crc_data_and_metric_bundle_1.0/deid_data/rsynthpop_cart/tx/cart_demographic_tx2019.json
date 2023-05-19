@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "algorithm name": "cart",
+        "library": "rsynthpop",
+        "feature set": "demographic-focused",
+        "target dataset": "tx2019",
+        "variant label": "maxfaclevels: 300",
+        "privacy": "Synthetic Data (Non-differentially Private)"
+    }
+}

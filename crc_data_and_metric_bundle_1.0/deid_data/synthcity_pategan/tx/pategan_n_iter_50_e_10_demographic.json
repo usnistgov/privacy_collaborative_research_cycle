@@ -1,0 +1,12 @@
+{
+    "labels": {
+        "algorithm name": "pategan",
+        "library": "synthcity",
+        "feature set": "demographic-focused",
+        "target dataset": "tx2019",
+        "variant label": "n_iter=50, target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index",
+        "epsilon": "10",
+        "privacy": "Differential Privacy"
+    }
+}

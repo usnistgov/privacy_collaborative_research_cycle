@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "algorithm name": "bayesian_network",
+        "library": "synthcity",
+        "feature set": "industry-focused",
+        "target dataset": "tx2019",
+        "variant label": "target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index"
+    }
+}

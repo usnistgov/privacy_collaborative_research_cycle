@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "algorithm name": "patectgan",
+        "library": "smartnoise-synth",
+        "feature set": "family-focused",
+        "target dataset": "ma2019",
+        "epsilon": "10",
+        "variant label": "preprocessor-epsilon: 3",
+        "privacy": "Differential Privacy"
+    }
+}
