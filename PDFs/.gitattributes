@@ -1,2 +1,0 @@
-CRC_NIST_introduction.pdf filter=lfs diff=lfs merge=lfs -text
-syncity/*.pdf filter=lfs diff=lfs merge=lfs -text
