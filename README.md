@@ -13,15 +13,15 @@ In short, the CRC seeks to equip the research community with resources to explor
 
 There are three ground truth partitions, corresponding to three geographic regions (Boston-area (ma), Dallas-Fort Worth Area (tx), and a national sample (national). Submissions may include any or all of these partitions.
 
-The original data contains 24 features. We also have a list of recommended reduced-size feature sets which can be found in the Excerpts ReadMe. Deidentified data may include any combination of feature set, though we have encouraged participants to use one of the recommended combinations to facilitate comparison of techniques.
+The original data contains 24 features. We also have a list of recommended reduced-size feature sets which can be found in the Excerpts Readme. Deidentified data may include any combination of feature set, though we have encouraged participants to use one of the recommended combinations to facilitate comparison of techniques.
 
 ## What do we have here? 
 
-This repository contains the results of the first round of submissions. Additional submissions will be added with the next drop expected in July 2023. In the Releases section of this repository, you can access the data. The resources are partitioned into two zip files.  
+This repository contains the results of the first round of submissions. Additional submissions will be added with the next drop expected in July 2023. The repository contains the navigable structure for the entire bundle. You can find all of the compressed data in [Releases](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/tag/v1.0) or you can use the links at the top of this readme.
 
-The crc-data-and-metrics-bundle.zip file contains all of the deidentified data samples and evaluation metric results in the first release of our archive.  It also includes meta-data json files that describe the technique used to produce each sample.  And finally, it contains the ground truth target data (‘diverse community excerpts’) which the deidentification approaches were deidentifying. This bundle enables users to explore the archive programmatically; it supports researchers who’d like to write their own scripts to analyze the data or metric results.   
+The crc-data-and-metrics-bundle.zip file contains all of the deidentified data samples and evaluation metric results in the first release of our archive.  It also includes metadata json files that describe the technique used to produce each sample.  And finally, it contains the ground truth target data (‘diverse community excerpts’) which the deidentification approaches were deidentifying. This bundle enables users to explore the archive programmatically; it supports researchers who’d like to write their own scripts to analyze the data or metric results.   
 
-The crc-metareports-bundle.zip enables users to explore the archive visually.   It contains evaluation meta-reports that compare results from each deidentification library in the archive, along with additional documentation and guidance on interpretation of results.  The meta-reports are available in both html and pdf format, and the package also includes detailed evaluation reports on each individual deidentified data sample.  
+The crc-metareports-bundle.zip enables users to explore the archive visually.   It contains evaluation metareports that compare results from each deidentification library in the archive, along with additional documentation and guidance on interpretation of results.  The metareports are available in both html and pdf format, and the package also includes detailed evaluation reports on each individual deidentified data sample.  
 
 To learn more about the techniques used to deidentify the data, see the [CRC Techniques page.](https://pages.nist.gov/privacy_collaborative_research_cycle/pages/techniques.html).
 
@@ -37,7 +37,7 @@ The deidentified data have the following hierarchy:
 				technique variant report 1
 				tehcnique variant report 2
 ```
-Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all meta-data about the generation of the data.  And the report folder contains metric results from the sdnist evaluation of the data.  
+Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all metadata about the generation of the data.  And the report folder contains metric results from the sdnist evaluation of the data.  
 
 Within the report folder you will find subfolders containing .csv results for each metric, and a .json file with complete metric results for the full report.  The .html file displays the metric results as a user friendly visual report, including metric documentation, definitions and citations. 
 
