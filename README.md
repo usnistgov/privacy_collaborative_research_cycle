@@ -1,5 +1,8 @@
 # The NIST Collaborative Research Cycle (CRC) Research Acceleration Bundle v1
 
+- [Direct download link for deidentified data and reports](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/download/v1.0/crc_data_and_metric_bundle_1.0.zip)
+- [Direct download link for the metareports](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/download/v1.0/crc_metareport_bundle_1.0.zip)
+
 ## Introduction
 
 Welcome!
