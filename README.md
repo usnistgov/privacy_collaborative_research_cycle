@@ -29,16 +29,16 @@ To learn more about the techniques used to deidentify the data, see the [CRC Tec
 
 The deidentified data have the following hierarchy: 
 ```
-	root
-		library_technique_team-name   			# team name is only appended if multiple teams submit on the same technique)
-			index.csv             			# provides is a data navigation tool) 
-			partition             			# e.g., 'ma', 'tx', 'national')
-				technique_variant_data_1	# technique variants are stored together (e.g., DP algorithm with different values of epsilon)
-				technique_variant_data_2
-				technique_variant_report_1
-					report_resources_1
-				tehcnique-variant_report 2
-					report_resources_2
+crc_data_and_metric_bundle_1.0
+	library_technique_team-name   			# team name is only appended if multiple teams submit on the same technique)
+		index.csv             			# provides is a data navigation tool) 
+		partition             			# e.g., 'ma', 'tx', 'national')
+			technique_variant_data_1	# technique variants are stored together (e.g., DP algorithm with different values of epsilon)
+			technique_variant_data_2
+			technique_variant_report_1
+				report_resources_1
+			tehcnique-variant_report 2
+				report_resources_2
 ```
 Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all metadata about the generation of the data.  And the report folder contains metric results from the sdnist evaluation of the data.  
 
