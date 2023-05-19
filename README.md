@@ -31,10 +31,11 @@ The deidentified data have the following hierarchy:
 ```
 	root
 		library- technique - team_name
-			technique variant data 1
-			technique variant data 2
-			technique variant report 1
-			tehcnique variant report 2
+			partition (e.g., 'ma', 'tx', 'national')
+				technique variant data 1
+				technique variant data 2
+				technique variant report 1
+				tehcnique variant report 2
 ```
 Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all meta-data about the generation of the data.  And the report folder contains metric results from the sdnist evaluation of the data.  
 
