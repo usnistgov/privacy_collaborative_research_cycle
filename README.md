@@ -30,9 +30,9 @@ To learn more about the techniques used to deidentify the data, see the [CRC Tec
 The deidentified data have the following hierarchy: 
 ```
 crc_data_and_metric_bundle_1.0
-	index.csv	             			# provides is a data navigation tool) 
+	index.csv	             			# a data navigation tool
 	library_technique_team-name   			# team name is only appended if multiple teams submit on the same technique)
-		partition             			# e.g., 'ma', 'tx', 'national')
+		partition             			# e.g., 'ma', 'tx', 'national'
 			technique_variant_data_1	# technique variants are stored together (e.g., DP algorithm with different values of epsilon)
 			technique_variant_data_2
 			technique_variant_report_1
