@@ -73,12 +73,12 @@
 				</div>
         <nav id="nav">
           <ul>
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="participate.html">Participate</a></li>
-						<li><a href="results_blog.html">Results Blog</a></li>
-						<li><a href="techniques.html">Techniques</a></li>
-						<li><a href="leaderboard.html">Leaderboard</a></li>
-						<li><a href="citing.html">How to Cite</a></li>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="participate.html">Participate</a></li>
+			<li><a href="results_blog.html">Results Blog</a></li>
+			<li><a href="techniques.html">Techniques</a></li>
+			<li><a href="archive.html">Archive & Tools</a></li>
+			<li><a href="citing.html">How to Cite</a></li>
           </ul>
         </nav>
       </header>
@@ -93,21 +93,34 @@
 						here’s where to look. Below you’ll find our own research talks, 
 						presentations from invited subject matter experts, and summaries of 
 						what we’ve learned from all of our participants during office hours.</p>
-					<ul class="actions special">
-						<li><a href="../index.html" class="button">Home</a></li>
-						<li><a href="participate.html" class="button">Participate</a></li>
-						<li><a href="results_blog.html" class="button primary">Results Blog</a></li>
-						<li><a href="techniques.html" class="button">Techniques</a></li>
-						<li><a href="leaderboard.html" class="button">Leaderboard</a></li>
-						<li><a href="citing.html" class="button">How to Cite</a></li>
-					</ul>
+						<ul class="actions special">
+							<li><a href="../index.html" class="button">Home</a></li>
+							<li><a href="participate.html" class="button">Participate</a></li>
+							<li><a href="results_blog.html" class="button primary">Results Blog</a></li>
+							<li><a href="techniques.html" class="button">Techniques</a></li>
+							<li><a href="archive.html" class="button">Archive & Tools</a></li>
+							<li><a href="citing.html" class="button">How to Cite</a></li>
+						</ul>
 				</header>
 				<div class="box separators">
 					<div class="image featured"></div>
 					<h3>Contents:</h3>
+					<h4><a href="results_blog.html#leaderboard">
+						Leaderboard</a></h4>
+					<ul>
+						<li><a href="results_blog.html#algorithm-summary">
+							Algorithm Summary Table
+						</a></li>
+						<li><a href="results_blog.html#publicaly-verifiable">
+							Publicly Verifiable Differential Privacy Leaderboard
+						</a></li>
+					</ul>
 					<h4><a href="results_blog.html#research-talks">
 						Research Talks and Recent Evaluation Results</a></h4>
 					<ul>
+						<li><a href="results_blog.html#1-officehour-june13-2023">
+							A sampling from the Data and Metrics Archive
+						</a></li>
 						<li><a href="results_blog.html#1-introductory-slides">
 							CRC Kick-off talk at Privacy-Preserving Artificial Intelligence workshop (PPAI-23)
 						</a></li>
@@ -141,7 +154,6 @@
 						<li>
 							TBA</li>
 					</ul>
-					<hr>
 <!-- 
 					<div id="1-introductory-slides" class="blog-card">
 						<h4><b>CRC Kick-off talk at Privacy-Preserving Artificial Intelligence workshop (PPAI-23)</b></h4>
@@ -149,12 +161,505 @@
 								<b>By:</b> CRC
 						</p>
 					</div> -->
+					<hr>
+					<h3 id="leaderboard"><b>
+						Leaderboard</b></h3>
+					<h3 id="algorithm-summary">Algorithm Summary Table:</h3>
+					<p>Summary of selected deidentification algorithms. 
+						Unique Exact Match (UEM) is a simple privacy metric 
+						that counts the percentage of singleton records 
+						in the target that are also present in the deidentified 
+						data; these uniquely identifiable individuals leaked 
+						through the deidentification process. 
+						The Subsample Equivalent (SsE) utility metric uses an analogy 
+						between deidentification error and sampling error 
+						to communicate utility; a score of 5% indicates the 
+						edit distance between the target and deidentified 
+						data distributions is similar to the 
+						sampling error induced by randomly discarding 
+						95% of the data. Edit distance is based on the 
+						<a href="https://data.nist.gov/od/id/mds2-2515">k-marginal metric</a>  
+						for sparse distributions.</p>
+						<table class="alt">
+							<thead>
+							<tr>
+								<th>Library</th>
+								<th>Algorithm</th>
+								<th>Team</th>
+								<th># Deid Submissions</th>
+								<th># Feature sets</th>
+								<th>Epsilon Values</th>
+								<th>Utility: SsE</th>
+								<th>Privacy Leak: UEM</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td class="colored-text">rsynthpop</td>
+								<td class="colored-text">ipf_NonDP</td>
+								<td>Rsynthpop-cat</td>
+								<td>1</td>
+								<td>1</td>
+								<td></td>
+								<td>50.0</td>
+								<td>15.82</td>
+							</tr>
+							<tr>
+								<td class="colored-text">rsynthpop</td>
+								<td class="colored-text">catall_NonDP</td>
+								<td>Rsynthpop-cat</td>
+								<td>1</td>
+								<td>1</td>
+								<td></td>
+								<td>50.0</td>
+								<td>63.37</td>
+							</tr>
+							<tr>
+								<td class="colored-text">rsynthpop</td>
+								<td class="colored-text">cart</td>
+								<td>CRC</td>
+								<td>12</td>
+								<td>4</td>
+								<td></td>
+								<td>40.0</td>
+								<td>16.14</td>
+							</tr>
+							<tr>
+								<td class="colored-text">subsample_40pcnt</td>
+								<td class="colored-text">subsample_40pcnt</td>
+								<td>CRC</td>
+								<td>15</td>
+								<td>5</td>
+								<td></td>
+								<td>40.0</td>
+								<td>39.93</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdcmicro</td>
+								<td class="colored-text">pram</td>
+								<td>CRC</td>
+								<td>12</td>
+								<td>3</td>
+								<td></td>
+								<td>38.33</td>
+								<td>56.27</td>
+							</tr>
+							<tr>
+								<td class="colored-text">MostlyAI SD</td>
+								<td class="colored-text">MostlyAI SD</td>
+								<td>MOSTLY AI</td>
+								<td>6</td>
+								<td>1</td>
+								<td></td>
+								<td>30.0</td>
+								<td>0.01</td>
+							</tr>
+							<tr>
+								<td class="colored-text">rsynthpop</td>
+								<td class="colored-text">catall</td>
+								<td>Rsynthpop-cat</td>
+								<td>6</td>
+								<td>1</td>
+								<td>1, 10, 100</td>
+								<td>22.33</td>
+								<td>47.24</td>
+							</tr>
+							<tr>
+								<td class="colored-text">rsynthpop</td>
+								<td class="colored-text">cart</td>
+								<td>CBS-NL</td>
+								<td>3</td>
+								<td>1</td>
+								<td></td>
+								<td>21.67</td>
+								<td>28.6</td>
+							</tr>
+							<tr>
+								<td class="colored-text">tumult</td>
+								<td class="colored-text">DPHist</td>
+								<td>CRC</td>
+								<td>5</td>
+								<td>2</td>
+								<td>1, 2, 4, 10</td>
+								<td>18.8</td>
+								<td>92.14</td>
+							</tr>
+							<tr>
+								<td class="colored-text">smartnoise-synth</td>
+								<td class="colored-text">mst</td>
+								<td>CRC</td>
+								<td>36</td>
+								<td>5</td>
+								<td>1, 5, 10</td>
+								<td>13.89</td>
+								<td>6.8</td>
+							</tr>
+							<tr>
+								<td class="colored-text">Genetic SD</td>
+								<td class="colored-text">Genetic SD</td>
+								<td>DataEvolution</td>
+								<td>19</td>
+								<td>2</td>
+								<td>1, 10</td>
+								<td>11.32</td>
+								<td>0.11</td>
+							</tr>
+							<tr>
+								<td class="colored-text">LostInTheNoise</td>
+								<td class="colored-text">MWEM+PGM</td>
+								<td>LostInTheNoise</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>10.0</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td class="colored-text">synthcity</td>
+								<td class="colored-text">bayesian_network</td>
+								<td>CRC</td>
+								<td>12</td>
+								<td>4</td>
+								<td></td>
+								<td>7.17</td>
+								<td>17.86</td>
+							</tr>
+							<tr>
+								<td class="colored-text">subsample_5pcnt</td>
+								<td class="colored-text">subsample_5pcnt</td>
+								<td>CRC</td>
+								<td>4</td>
+								<td>4</td>
+								<td></td>
+								<td>5.0</td>
+								<td>4.97</td>
+							</tr>
+							<tr>
+								<td class="colored-text">Sarus SDG</td>
+								<td class="colored-text">Sarus SDG</td>
+								<td>Sarus</td>
+								<td>1</td>
+								<td>1</td>
+								<td>10</td>
+								<td>5.0</td>
+								<td>13.99</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdv</td>
+								<td class="colored-text">ctgan</td>
+								<td>CBS-NL</td>
+								<td>6</td>
+								<td>1</td>
+								<td></td>
+								<td>4.33</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td class="colored-text">synthcity</td>
+								<td class="colored-text">privbayes</td>
+								<td>CRC</td>
+								<td>18</td>
+								<td>3</td>
+								<td>1, 10</td>
+								<td>4.33</td>
+								<td>4.75</td>
+							</tr>
+							<tr>
+								<td class="colored-text">smartnoise-synth</td>
+								<td class="colored-text">mwem</td>
+								<td>CRC</td>
+								<td>5</td>
+								<td>5</td>
+								<td>10</td>
+								<td>4.2</td>
+								<td>3.52</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdv</td>
+								<td class="colored-text">tvae</td>
+								<td>CRC</td>
+								<td>13</td>
+								<td>4</td>
+								<td></td>
+								<td>3.54</td>
+								<td>5.76</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdv</td>
+								<td class="colored-text">fastml</td>
+								<td>CRC</td>
+								<td>4</td>
+								<td>2</td>
+								<td></td>
+								<td>3.0</td>
+								<td>1.15</td>
+							</tr>
+							<tr>
+								<td class="colored-text">synthcity</td>
+								<td class="colored-text">tvae</td>
+								<td>CRC</td>
+								<td>12</td>
+								<td>4</td>
+								<td></td>
+								<td>3.0</td>
+								<td>4.69</td>
+							</tr>
+							<tr>
+								<td class="colored-text">rsynthpop</td>
+								<td class="colored-text">ipf</td>
+								<td>Rsynthpop-cat</td>
+								<td>2</td>
+								<td>1</td>
+								<td>1, 2</td>
+								<td>3.0</td>
+								<td>7.1</td>
+							</tr>
+							<tr>
+								<td class="colored-text">smartnoise-synth</td>
+								<td class="colored-text">pacsynth</td>
+								<td>CRC</td>
+								<td>22</td>
+								<td>3</td>
+								<td>1, 5, 10</td>
+								<td>2.77</td>
+								<td>6.21</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdcmicro</td>
+								<td class="colored-text">kanonymity</td>
+								<td>CRC</td>
+								<td>21</td>
+								<td>3</td>
+								<td></td>
+								<td>2.67</td>
+								<td>23.41</td>
+							</tr>
+							<tr>
+								<td class="colored-text">smartnoise-synth</td>
+								<td class="colored-text">patectgan</td>
+								<td>CRC</td>
+								<td>33</td>
+								<td>5</td>
+								<td>1, 5, 10</td>
+								<td>2.09</td>
+								<td>3.63</td>
+							</tr>
+							<tr>
+								<td class="colored-text">synthcity</td>
+								<td class="colored-text">pategan</td>
+								<td>CRC</td>
+								<td>24</td>
+								<td>4</td>
+								<td>1, 10</td>
+								<td>1.5</td>
+								<td>2.29</td>
+							</tr>
+							<tr>
+								<td class="colored-text">synthcity</td>
+								<td class="colored-text">adsgan</td>
+								<td>CCAIM</td>
+								<td>1</td>
+								<td>1</td>
+								<td></td>
+								<td>1.0</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdv</td>
+								<td class="colored-text">copula-gan</td>
+								<td>CRC</td>
+								<td>1</td>
+								<td>1</td>
+								<td></td>
+								<td>1.0</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdv</td>
+								<td class="colored-text">ctgan</td>
+								<td>CRC</td>
+								<td>7</td>
+								<td>1</td>
+								<td></td>
+								<td>1.0</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td class="colored-text">synthcity</td>
+								<td class="colored-text">dpgan</td>
+								<td>CCAIM</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1.0</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdv</td>
+								<td class="colored-text">gaussian-copula</td>
+								<td>Blizzard Wizard</td>
+								<td>2</td>
+								<td>1</td>
+								<td></td>
+								<td>1.0</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td class="colored-text">synthcity</td>
+								<td class="colored-text">pategan</td>
+								<td>CCAIM</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1.0</td>
+								<td>0.0</td>
+							</tr>
+							<tr>
+								<td class="colored-text">sdv</td>
+								<td class="colored-text">gaussian-copula</td>
+								<td>CommunityData</td>
+								<td>1</td>
+								<td>1</td>
+								<td></td>
+								<td>1.0</td>
+								<td>0.52</td>
+							</tr>
+							<tr>
+								<td class="colored-text">subsample_1pcnt</td>
+								<td class="colored-text">subsample_1pcnt</td>
+								<td>CRC</td>
+								<td>4</td>
+								<td>4</td>
+								<td></td>
+								<td>1.0</td>
+								<td>0.98</td>
+							</tr>
+							<tr>
+								<td class="colored-text">synthcity</td>
+								<td class="colored-text">adsgan</td>
+								<td>CRC</td>
+								<td>12</td>
+								<td>4</td>
+								<td></td>
+								<td>1.0</td>
+								<td>1.54</td>
+							</tr>
+							</tbody>
+						<table>
+					<hr>
+					<h3 id="publicaly-verifiable">Publicly Verifiable Differential Privacy Leaderboard:</h3>
+					<p>
+						This leaderboard will operate similarly to the 
+						leaderboards from the NIST Differential Privacy Synthetic 
+						Data Challenges. Contributors attesting publicly 
+						verifiable differential privacy who wish to appear on 
+						this leaderboard are requested to submit two data sets 
+						using the national target data with the 
+						"simpler 21 feature-set" 
+						(all features except INDP, [and weights]). 
+						One data set should satisfy epsilon = 1, 
+						and the other should satisfy epsilon = 10, 
+						both with delta <= 10<sup>-5</sup>-.
+					</p>
+					<table class="alt">
+						<thead>
+							<tr>
+								<th>Alogrithm Name</th>
+								<th>Team/Library Name</th>
+								<th>Library Link</th>
+								<th>Documentation</th>
+								<th>Avg. Feature Space</th>
+								<th>Eps 1</th>
+								<th>Eps 10</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="colored-text">GeneticSD</td>
+								<td>Data Evolution</td>
+								<td><a href="https://github.com/giusevtr/private_genetic_algorithm">
+									Private Genetic Algorithm </a></td>
+								<td><a href="https://media.githubusercontent.com/media/usnistgov/privacy_collaborative_research_cycle/develop/PDFs/syncity/GeneticSD-privacy-proof-Giuseppe%20Vietri.pdf">
+									Privacy Proof </a></td>
+								<td>1.962e+20</td>
+								<td>851</td>
+								<td>927</td>
+							</tr>
+							<tr>
+								<td class="colored-text">MST</td>
+								<td>smartnoise-synth</td>
+								<td><a href="https://github.com/opendp/smartnoise-sdk/tree/main/synth">
+									smartnoise-synth </a></td>
+								<td><a href="https://arxiv.org/abs/2108.04978">
+									MST Paper </a></td>
+								<td>1.962e+20</td>
+								<td>774</td>
+								<td>796</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<hr>
 					<h3 id="research-talks"><b>
 						Research Talks and Recent Evaluation Results</b></h3>
-					<br id="1-introductory-slides">
-					<div class="blog-card">
-						<div 
-							class="blog-card-content">
+					<br>
+					<div id="1-officehour-june13-2023" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>A sampling from the Data and Metrics Archive</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>Below we provide a selection of deidentified data 
+											reports from version 1 of the Data and Metrics 
+											Bundle (which can be downloaded in its entirety 
+											<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/">here</a>). 
+											The full archive contains 300 deidentified data samples 
+											from a variety of libraries, algorithms, parameter 
+											settings and feature sets.  
+										</p>
+										<h4>
+											<b>Reports:</b></h4>
+										<ul>
+											<li><a href="https://github.com/usnistgov/SDNist/tree/main/sdnist/report/sample-reports">
+												DP Histogram (epsilon 10)
+											</a></li>
+											<li><a href="https://github.com/usnistgov/SDNist/tree/main/sdnist/report/sample-reports">
+												SmartNoise PACSynth (epsilon 10)
+											</a></li>
+											<li><a href="https://github.com/usnistgov/SDNist/tree/main/sdnist/report/sample-reports">
+												SmartNoise MST (epsilon 10)
+											</a></li>
+											<li><a href="https://github.com/usnistgov/SDNist/tree/main/sdnist/report/sample-reports">
+												R Synthpop CART
+											</a></li>
+											<li><a href="https://github.com/usnistgov/SDNist/tree/main/sdnist/report/sample-reports">
+												MostlyAI Synthetic Data Platform
+											</a></li>
+											<li><a href="https://github.com/usnistgov/SDNist/tree/main/sdnist/report/sample-reports">
+												Synthetic Data Vault CTGAN
+											</a></li>
+											<li><a href="https://github.com/usnistgov/SDNist/tree/main/sdnist/report/sample-reports">
+												SynthCity ADSGAN
+											</a></li>
+										</ul>
+										<h4><b>Posted on: </b> 
+											June 19, 2023</h4>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<a target="_tab" href="https://github.com/usnistgov/privacy_collaborative_research_cycle/">
+											<img class="blog-img" height="70%" width="80%"
+											src="../results_blog/data_metric_archive.png">
+										</a>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="1-introductory-slides" class="blog-card">
+						<div class="blog-card-content">
 							<h3><b>CRC Kick-off talk at Privacy-Preserving Artificial Intelligence workshop (PPAI-23)</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
