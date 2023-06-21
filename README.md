@@ -37,7 +37,7 @@ To learn more about the techniques used to deidentify the data, see the [CRC Tec
 
 The deidentified data have the following hierarchy: 
 ```
-crc_data_and_metric_bundle_1.0
+crc_data_and_metric_bundle_1.1
 	index.csv	             			        # directory of metadata
 	deid_data
 		library_technique_team-name   			# team name is only appended if multiple teams submit on the same technique)
