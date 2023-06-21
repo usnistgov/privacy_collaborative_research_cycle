@@ -1,4 +1,4 @@
-# The NIST Collaborative Research Cycle (CRC) Research Acceleration Bundle v1.1
+    # The NIST Collaborative Research Cycle (CRC) Research Acceleration Bundle v1.1
 
 - [Direct download link for deidentified data and reports (537 MB)](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/download/v1.1/crc_data_and_metric_bundle_1.1.zip)
 - [Direct download link for the metareports (484 MB)](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/download/v1.1/crc_metareport_bundle_1.1.zip)
@@ -41,15 +41,15 @@ crc_data_and_metric_bundle_1.0
 	index.csv	             			        # directory of metadata
 	deid_data
 		library_technique_team-name   			# team name is only appended if multiple teams submit on the same technique)
-			partition             			    # e.g., 'ma', 'tx', 'national'
-				technique_variant_data_1	    # technique variants are stored together (e.g., DP algorithm with different values of epsilon)
+			partition             			# e.g., 'ma', 'tx', 'national'
+				technique_variant_data_1	# technique variants are stored together (e.g., DP algorithm with different values of epsilon)
 				technique_variant_data_2
 				technique_variant_report_1
 					report_resources_1
 				tehcnique-variant_report 2
 					report_resources_2
-	notebooks					                # tutorial ipython notebooks to demonstrate navigating the archive.
-	diverse_communities_data_excerpts           # ground truth target data
+	notebooks					        # tutorial ipython notebooks to demonstrate navigating the archive.
+	diverse_communities_data_excerpts                       # ground truth target data
 ```
 Each deidentified data sample is labeled with its variant information and comes with three files.  The .csv file contains the data itself.  The .json file contains all metadata about the generation of the data.  And the report folder contains metric results from the sdnist evaluation of the data.  
 
