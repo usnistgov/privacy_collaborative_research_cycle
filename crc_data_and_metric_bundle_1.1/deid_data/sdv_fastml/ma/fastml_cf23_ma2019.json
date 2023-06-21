@@ -1,0 +1,17 @@
+{
+    "labels": {
+        "algorithm name": "fastml",
+        "target dataset": "ma2019",
+        "variant label": "",
+        "algorithm type": "neural net",
+        "library name": "sdv",
+        "feature set name": "custom-features-23",
+        "privacy category": "non_dp",
+        "deid data id": "163bea0fd67ab205097b95ce3f0e1f556740a917",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "\nThe Fast ML Preset synthesizer is optimized for modeling speed. This is a great choice for first time SDV users. Use it to quickly get started with synthetic data. It generates non-differentially private synthetic data. ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.48550/arXiv.1812.01226"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "labels": {
+        "algorithm name": "pategan",
+        "target dataset": "tx2019",
+        "variant label": "n_iter=50, target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index",
+        "epsilon": "10",
+        "algorithm type": "neural net",
+        "library name": "synthcity",
+        "feature set name": "demographic-focused",
+        "privacy category": "dp",
+        "deid data id": "6200e0cabfd525b6013c6a446129735684cb95ac",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "The method uses the Private Aggregation of Teacher Ensembles (PATE) framework and applies it to GANs, allowing to tightly bound the influence of any individual sample on the model, resulting in tight differential privacy guarantees and thus an improved performance over models with the same guarantees.",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://openreview.net/forum?id=S1zk9iRqF7"
+    }
+}

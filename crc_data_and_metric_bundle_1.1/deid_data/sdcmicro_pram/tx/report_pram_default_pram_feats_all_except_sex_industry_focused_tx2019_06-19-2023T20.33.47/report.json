@@ -1,0 +1,910 @@
+{
+    "data_description": {
+        "target": {
+            "filename": "tx2019",
+            "records": 9276,
+            "features": 24
+        },
+        "deid": {
+            "filename": "pram_default_pram_feats_all_except_sex_industry_focused",
+            "records": 9276,
+            "features": 9,
+            "labels": {
+                "algorithm name": "pram",
+                "target dataset": "tx2019",
+                "variant label": "all categorical except SEX",
+                "variant label detail": "pd: 0.8, alpha: 0.5, pram features: all cat. except SEX",
+                "algorithm type": "sdc",
+                "library name": "sdcmicro",
+                "feature set name": "industry-focused",
+                "privacy category": "sdc",
+                "features list": "PUMA, SEX, MSP, HISP, RAC1P, OWN_RENT, INDP_CAT, EDU, PINCP_DECILE",
+                "privacy label detail": "The algorithm randomly changes the values of variables in selected records (usually the risky ones) according to an invariant probability transition matrix or a custom-defined transition matrix.",
+                "deid data id": "d84740b9958b08c3f8fa8fe442924629e13918d3",
+                "quasi identifiers subset": "MSP, RAC1P, OWN_RENT, PINCP_DECILE, EDU, HISP, PUMA, INDP_CAT",
+                "submission timestamp": "6/16/2023 00:00:00",
+                "team": "CRC",
+                "research papers": "https://doi.org/10.3390/a12090191"
+            },
+            "validations": {
+                "values_out_of_bound": {}
+            }
+        },
+        "features": [
+            {
+                "Feature Name": "PUMA",
+                "Feature Description": "Public use microdata area code",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "SEX",
+                "Feature Description": "Person's gender",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "MSP",
+                "Feature Description": "Marital Status",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "HISP",
+                "Feature Description": "Hispanic origin",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "RAC1P",
+                "Feature Description": "Person's Race",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "OWN_RENT",
+                "Feature Description": "Housing unit rented or owned",
+                "Feature Type": "int64",
+                "Feature Has 'N' (N/A) values?": false
+            },
+            {
+                "Feature Name": "INDP_CAT",
+                "Feature Description": "Industry categories",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "EDU",
+                "Feature Description": "Educational attainment",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            },
+            {
+                "Feature Name": "PINCP_DECILE",
+                "Feature Description": "Person's total income rank (with respect to their state) discretized into 10% bins.",
+                "Feature Type": "object of type string",
+                "Feature Has 'N' (N/A) values?": true
+            }
+        ]
+    },
+    "Univariate": {
+        "divergence": "univariate/divergence.csv",
+        "counts": {
+            "PINCP_DECILE": {
+                "counts": "univariate/PINCP_DECILE_counts.csv",
+                "plot": "univariate/PINCP_DECILE.jpg"
+            },
+            "EDU": {
+                "counts": "univariate/EDU_counts.csv",
+                "plot": "univariate/EDU.jpg"
+            },
+            "INDP_CAT": {
+                "counts": "univariate/INDP_CAT_counts.csv",
+                "plot": "univariate/INDP_CAT.jpg"
+            },
+            "MSP": {
+                "counts": "univariate/MSP_counts.csv",
+                "plot": "univariate/MSP.jpg"
+            },
+            "PUMA": {
+                "counts": "univariate/PUMA_counts.csv",
+                "plot": "univariate/PUMA.jpg"
+            },
+            "RAC1P": {
+                "counts": "univariate/RAC1P_counts.csv",
+                "plot": "univariate/RAC1P.jpg"
+            },
+            "OWN_RENT": {
+                "counts": "univariate/OWN_RENT_counts.csv",
+                "plot": "univariate/OWN_RENT.jpg"
+            },
+            "HISP": {
+                "counts": "univariate/HISP_counts.csv",
+                "plot": "univariate/HISP.jpg"
+            },
+            "SEX": {
+                "counts": "univariate/SEX_counts.csv",
+                "plot": "univariate/SEX.jpg"
+            }
+        }
+    },
+    "Correlations": {
+        "kendall correlation difference": {
+            "correlation_difference": "correlation_difference/correlation_difference.csv",
+            "plot": "correlation_difference/corr_diff.jpg"
+        },
+        "pearson correlation difference": {
+            "correlation_difference": "pearson_correlation/correlation_difference.csv",
+            "plot": "pearson_correlation/pearson_corr_diff.jpg"
+        }
+    },
+    "k_marginal": {
+        "k_marginal_synopsys": {
+            "subsample_error_comparison": "k_marginal_synopsys/subsample_error_comparison.csv",
+            "sub_sampling_equivalent": 50,
+            "k_marginal_score": 951,
+            "score_in_each_puma": "k_marginal_synopsys/score_in_each_puma.csv"
+        }
+    },
+    "worst_PUMA_breakdown": {
+        "worst_2_puma_univariate": {
+            "divergence": "k_marginal_breakdown/univariate/divergence.csv",
+            "counts": {
+                "PINCP_DECILE": {
+                    "counts": "k_marginal_breakdown/univariate/PINCP_DECILE_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/PINCP_DECILE.jpg"
+                },
+                "EDU": {
+                    "counts": "k_marginal_breakdown/univariate/EDU_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/EDU.jpg"
+                },
+                "INDP_CAT": {
+                    "counts": "k_marginal_breakdown/univariate/INDP_CAT_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/INDP_CAT.jpg"
+                },
+                "MSP": {
+                    "counts": "k_marginal_breakdown/univariate/MSP_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/MSP.jpg"
+                },
+                "HISP": {
+                    "counts": "k_marginal_breakdown/univariate/HISP_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/HISP.jpg"
+                },
+                "RAC1P": {
+                    "counts": "k_marginal_breakdown/univariate/RAC1P_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/RAC1P.jpg"
+                },
+                "OWN_RENT": {
+                    "counts": "k_marginal_breakdown/univariate/OWN_RENT_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/OWN_RENT.jpg"
+                },
+                "SEX": {
+                    "counts": "k_marginal_breakdown/univariate/SEX_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/SEX.jpg"
+                },
+                "PUMA": {
+                    "counts": "k_marginal_breakdown/univariate/PUMA_counts.csv",
+                    "plot": "k_marginal_breakdown/univariate/PUMA.jpg"
+                }
+            }
+        },
+        "worst_2_puma_k_marginal_scores": "k_marginal_breakdown/worst_2_puma_k_marginal_scores.csv",
+        "correlation_difference": {
+            "pearson_correlation_difference": {
+                "correlation_difference": "k_marginal_breakdown/pearson_correlation/correlation_difference.csv",
+                "plot": "k_marginal_breakdown/pearson_correlation/pearson_corr_diff.jpg"
+            }
+        }
+    },
+    "propensity mean square error": {
+        "pmse_score": 0.009320588786164164,
+        "propensity_distribution": "propensity/propensity_distribution.csv",
+        "plot": "propensity/propensity_distribution.jpg"
+    },
+    "linear_regression": {
+        "total_population": {
+            "target_counts": "linear_regression/total_population/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/total_population/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/total_population/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.58,
+                0.79
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.42,
+                1.95
+            ]
+        },
+        "white_men": {
+            "target_counts": "linear_regression/white_men/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/white_men/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/white_men/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.62,
+                1.48
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.47,
+                2.43
+            ]
+        },
+        "white_women": {
+            "target_counts": "linear_regression/white_women/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/white_women/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/white_women/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.57,
+                0.19
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.4,
+                1.48
+            ]
+        },
+        "black_men": {
+            "target_counts": "linear_regression/black_men/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/black_men/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/black_men/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.79,
+                -0.96
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.45,
+                1.55
+            ]
+        },
+        "black_women": {
+            "target_counts": "linear_regression/black_women/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/black_women/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/black_women/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.68,
+                -0.6
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.38,
+                1.72
+            ]
+        },
+        "asian_men": {
+            "target_counts": "linear_regression/asian_men/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/asian_men/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/asian_men/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.63,
+                0.06
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.49,
+                2.09
+            ]
+        },
+        "asian_women": {
+            "target_counts": "linear_regression/asian_women/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/asian_women/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/asian_women/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.33,
+                1.51
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.28,
+                2.21
+            ]
+        },
+        "aiannh_men": {
+            "target_counts": "linear_regression/aiannh_men/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/aiannh_men/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/aiannh_men/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.64,
+                0.42
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.69,
+                -0.02
+            ]
+        },
+        "aiannh_women": {
+            "target_counts": "linear_regression/aiannh_women/target_counts.csv",
+            "target_deidentified_counts_difference": "linear_regression/aiannh_women/target_deidentified_counts_difference.csv",
+            "target_deidentified_difference_plot": "linear_regression/aiannh_women/density_plot.svg",
+            "target_regression_slope_and_intercept": [
+                0.61,
+                -0.46
+            ],
+            "deidentified_regression_slope_and_intercept": [
+                0.32,
+                2.36
+            ]
+        }
+    },
+    "pca": {
+        "components_eigenvector": "pca/components_eigenvector.csv",
+        "target_all_components_plot": "pca/target.png",
+        "deidentified_all_components_plot": "pca/deidentified.png",
+        "highlighted_plots": {
+            "MSP-MSP_N-Children (AGEP < 15)": [
+                "pca/target_highlighted_MSP/MSP_N.png",
+                "pca/deidentified_highlighted_MSP/MSP_N.png"
+            ]
+        }
+    },
+    "inconsistencies": {
+        "age": {
+            "title": "Age-Based Inconsistencies",
+            "description": "These inconsistencies deal with the AGE feature; records with age-based inconsistencies might have children who are married, or infants with high school diplomas",
+            "inconsistencies": [
+                {
+                    "inconsistency_name": "adult_child",
+                    "inconsistency_description": "Even when the AGEP feature is not explicitly used, features which use N to indicate children ( < 15) must agree",
+                    "inconsistency_features": [
+                        "MSP",
+                        "PINCP",
+                        "PINCP_DECILE"
+                    ],
+                    "inconsistency_violations": 517,
+                    "inconsistent_data_indexes": [
+                        15,
+                        51,
+                        76,
+                        109,
+                        124,
+                        135,
+                        140,
+                        152,
+                        180,
+                        182,
+                        183,
+                        192,
+                        195,
+                        204,
+                        229,
+                        328,
+                        351,
+                        365,
+                        377,
+                        379,
+                        426,
+                        522,
+                        531,
+                        618,
+                        678,
+                        679,
+                        693,
+                        704,
+                        743,
+                        757,
+                        835,
+                        871,
+                        921,
+                        976,
+                        1009,
+                        1045,
+                        1053,
+                        1063,
+                        1089,
+                        1093,
+                        1136,
+                        1195,
+                        1207,
+                        1229,
+                        1238,
+                        1244,
+                        1269,
+                        1302,
+                        1340,
+                        1341,
+                        1359,
+                        1368,
+                        1374,
+                        1453,
+                        1516,
+                        1543,
+                        1553,
+                        1560,
+                        1604,
+                        1618,
+                        1623,
+                        1646,
+                        1664,
+                        1711,
+                        1716,
+                        1815,
+                        1823,
+                        1896,
+                        1903,
+                        1916,
+                        1925,
+                        1982,
+                        2040,
+                        2092,
+                        2103,
+                        2106,
+                        2118,
+                        2134,
+                        2137,
+                        2146,
+                        2168,
+                        2238,
+                        2257,
+                        2263,
+                        2316,
+                        2337,
+                        2349,
+                        2380,
+                        2381,
+                        2400,
+                        2413,
+                        2418,
+                        2422,
+                        2437,
+                        2462,
+                        2477,
+                        2501,
+                        2543,
+                        2546,
+                        2554,
+                        2563,
+                        2565,
+                        2582,
+                        2602,
+                        2615,
+                        2632,
+                        2655,
+                        2668,
+                        2671,
+                        2684,
+                        2718,
+                        2867,
+                        2899,
+                        2900,
+                        2922,
+                        2992,
+                        3000,
+                        3003,
+                        3018,
+                        3030,
+                        3071,
+                        3083,
+                        3112,
+                        3184,
+                        3219,
+                        3351,
+                        3368,
+                        3369,
+                        3486,
+                        3545,
+                        3562,
+                        3603,
+                        3622,
+                        3628,
+                        3665,
+                        3689,
+                        3722,
+                        3754,
+                        3757,
+                        3797,
+                        3807,
+                        3811,
+                        3823,
+                        3837,
+                        3898,
+                        3927,
+                        3938,
+                        3962,
+                        3993,
+                        4023,
+                        4024,
+                        4061,
+                        4084,
+                        4098,
+                        4103,
+                        4107,
+                        4116,
+                        4146,
+                        4169,
+                        4172,
+                        4188,
+                        4190,
+                        4279,
+                        4301,
+                        4330,
+                        4340,
+                        4354,
+                        4377,
+                        4385,
+                        4391,
+                        4401,
+                        4519,
+                        4551,
+                        4564,
+                        4577,
+                        4599,
+                        4609,
+                        4677,
+                        4747,
+                        4768,
+                        4769,
+                        4833,
+                        4871,
+                        4905,
+                        4910,
+                        4992,
+                        4993,
+                        5027,
+                        5046,
+                        5071,
+                        5107,
+                        5154,
+                        5256,
+                        5295,
+                        5303,
+                        5304,
+                        5308,
+                        5347,
+                        5437,
+                        5466,
+                        5521,
+                        5536,
+                        5572,
+                        5631,
+                        5689,
+                        5744,
+                        5750,
+                        5775,
+                        5814,
+                        5817,
+                        5830,
+                        5869,
+                        5870,
+                        5880,
+                        5889,
+                        5902,
+                        5928,
+                        5954,
+                        5971,
+                        5994,
+                        6014,
+                        6024,
+                        6040,
+                        6083,
+                        6094,
+                        6189,
+                        6207,
+                        6212,
+                        6235,
+                        6262,
+                        6295,
+                        6331,
+                        6344,
+                        6346,
+                        6357,
+                        6429,
+                        6472,
+                        6512,
+                        6515,
+                        6552,
+                        6565,
+                        6577,
+                        6664,
+                        6686,
+                        6746,
+                        6773,
+                        6818,
+                        6841,
+                        6847,
+                        6859,
+                        6869,
+                        6871,
+                        6881,
+                        6915,
+                        7002,
+                        7008,
+                        7015,
+                        7018,
+                        7047,
+                        7076,
+                        7202,
+                        7217,
+                        7250,
+                        7288,
+                        7297,
+                        7303,
+                        7305,
+                        7308,
+                        7396,
+                        7413,
+                        7429,
+                        7436,
+                        7480,
+                        7482,
+                        7504,
+                        7508,
+                        7527,
+                        7561,
+                        7579,
+                        7587,
+                        7593,
+                        7602,
+                        7608,
+                        7609,
+                        7614,
+                        7616,
+                        7620,
+                        7628,
+                        7634,
+                        7638,
+                        7641,
+                        7646,
+                        7649,
+                        7650,
+                        7662,
+                        7674,
+                        7676,
+                        7680,
+                        7684,
+                        7685,
+                        7691,
+                        7704,
+                        7707,
+                        7725,
+                        7728,
+                        7735,
+                        7736,
+                        7745,
+                        7746,
+                        7749,
+                        7751,
+                        7762,
+                        7770,
+                        7772,
+                        7774,
+                        7780,
+                        7781,
+                        7791,
+                        7793,
+                        7798,
+                        7801,
+                        7810,
+                        7814,
+                        7816,
+                        7818,
+                        7823,
+                        7824,
+                        7826,
+                        7837,
+                        7842,
+                        7895,
+                        7915,
+                        7916,
+                        7919,
+                        7921,
+                        7935,
+                        7941,
+                        7948,
+                        7950,
+                        7954,
+                        7955,
+                        7968,
+                        7993,
+                        7995,
+                        8005,
+                        8021,
+                        8033,
+                        8041,
+                        8047,
+                        8050,
+                        8053,
+                        8067,
+                        8071,
+                        8072,
+                        8076,
+                        8082,
+                        8085,
+                        8090,
+                        8091,
+                        8102,
+                        8137,
+                        8158,
+                        8168,
+                        8171,
+                        8177,
+                        8178,
+                        8183,
+                        8188,
+                        8192,
+                        8198,
+                        8201,
+                        8202,
+                        8204,
+                        8210,
+                        8220,
+                        8226,
+                        8234,
+                        8236,
+                        8239,
+                        8241,
+                        8251,
+                        8258,
+                        8262,
+                        8264,
+                        8267,
+                        8284,
+                        8306,
+                        8320,
+                        8327,
+                        8330,
+                        8340,
+                        8342,
+                        8343,
+                        8344,
+                        8349,
+                        8354,
+                        8355,
+                        8357,
+                        8359,
+                        8362,
+                        8363,
+                        8365,
+                        8370,
+                        8382,
+                        8414,
+                        8415,
+                        8417,
+                        8428,
+                        8435,
+                        8436,
+                        8462,
+                        8471,
+                        8479,
+                        8489,
+                        8493,
+                        8496,
+                        8501,
+                        8502,
+                        8521,
+                        8522,
+                        8524,
+                        8530,
+                        8533,
+                        8553,
+                        8558,
+                        8560,
+                        8572,
+                        8574,
+                        8585,
+                        8594,
+                        8595,
+                        8597,
+                        8611,
+                        8613,
+                        8619,
+                        8624,
+                        8641,
+                        8658,
+                        8669,
+                        8674,
+                        8680,
+                        8682,
+                        8686,
+                        8687,
+                        8692,
+                        8701,
+                        8703,
+                        8706,
+                        8722,
+                        8740,
+                        8746,
+                        8752,
+                        8759,
+                        8767,
+                        8772,
+                        8782,
+                        8788,
+                        8791,
+                        8792,
+                        8794,
+                        8801,
+                        8803,
+                        8840,
+                        8848,
+                        8864,
+                        8866,
+                        8868,
+                        8872,
+                        8878,
+                        8880,
+                        8882,
+                        8883,
+                        8897,
+                        8908,
+                        8910,
+                        8913,
+                        8921,
+                        8930,
+                        8938,
+                        8955,
+                        8958,
+                        8961,
+                        8970,
+                        8976,
+                        8982,
+                        8990,
+                        8995,
+                        8998,
+                        9003,
+                        9014,
+                        9015,
+                        9019,
+                        9043,
+                        9049,
+                        9050,
+                        9062,
+                        9063,
+                        9083,
+                        9088,
+                        9093,
+                        9095,
+                        9109,
+                        9121,
+                        9142,
+                        9145,
+                        9152,
+                        9172,
+                        9174,
+                        9207,
+                        9213,
+                        9226,
+                        9229,
+                        9230,
+                        9240,
+                        9247,
+                        9254,
+                        9271
+                    ],
+                    "inconsistent_record_example": "inconsistencies/age/adult_child_example.csv"
+                }
+            ]
+        },
+        "work": {
+            "title": "Work-Based Inconsistencies",
+            "description": "These inconsistencies deal with the work and finance features; records with work-based inconsistencies might have high incomes while being in poverty, or have conflicts between their industry code and industry category.",
+            "inconsistencies": []
+        },
+        "housing": {
+            "title": "Housing-Based Inconsistencies",
+            "description": "These inconsistencies deal with housing and family features; records with household-based inconsistencies might have more children in the house than the total household size, or be residents of group quarters (such as prison inmates) who are listed as owning their residences.",
+            "inconsistencies": []
+        },
+        "summary": [
+            {
+                "Inconsistency Group": "Age",
+                "Number of Records Inconsistent": 517,
+                "Percent Records Inconsistent": 5.6
+            },
+            {
+                "Inconsistency Group": "Work",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            },
+            {
+                "Inconsistency Group": "Housing",
+                "Number of Records Inconsistent": 0,
+                "Percent Records Inconsistent": 0.0
+            }
+        ]
+    },
+    "unique_exact_matches": {
+        "records matched in target data": 2957,
+        "percent records matched in target data": 53.72,
+        "unique target records": 5504,
+        "percent unique target records": 59.34
+    },
+    "apparent_match_distribution": {
+        "unique_matched_percents": "apparent_match_distribution/unique_matched_percents.csv",
+        "plot": "apparent_match_distribution/apparent_match_distribution.jpg"
+    },
+    "created_on": "June 19, 2023 20:34:31"
+}

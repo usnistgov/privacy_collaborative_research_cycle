@@ -1,9 +1,0 @@
-{
-    "labels": {
-        "algorithm name": "subsample_40pcnt",
-        "library": "subsample_40pcnt",
-        "feature set": "simple-features",
-        "target dataset": "ma2019",
-        "variant label": ""
-    }
-}

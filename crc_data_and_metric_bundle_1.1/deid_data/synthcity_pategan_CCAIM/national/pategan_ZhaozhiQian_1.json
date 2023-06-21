@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "team": "CCAIM",
+        "submission timestamp": "3/9/2023 3:29:17",
+        "target dataset": "national2019",
+        "algorithm name": "pategan",
+        "variant label": "syntheticy-pategan-default",
+        "epsilon": "1",
+        "delta": "10^(-5)",
+        "submission number": 1,
+        "algorithm type": "neural net",
+        "library name": "synthcity",
+        "feature set name": "all-features",
+        "privacy category": "dp",
+        "deid data id": "1b9e2be9919bb11d6c8f3ae566b7f35a2b109ea9",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "Differential Privacy",
+        "research papers": "https://openreview.net/forum?id=S1zk9iRqF7"
+    }
+}

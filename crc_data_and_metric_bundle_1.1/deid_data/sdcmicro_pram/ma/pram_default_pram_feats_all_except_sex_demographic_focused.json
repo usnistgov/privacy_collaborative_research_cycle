@@ -1,0 +1,19 @@
+{
+    "labels": {
+        "algorithm name": "pram",
+        "target dataset": "ma2019",
+        "variant label": "all categorical except SEX",
+        "variant label detail": "pd: 0.8, alpha: 0.5, pram features: all cat. except SEX",
+        "algorithm type": "sdc",
+        "library name": "sdcmicro",
+        "feature set name": "demographic-focused",
+        "privacy category": "sdc",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "The algorithm randomly changes the values of variables in selected records (usually the risky ones) according to an invariant probability transition matrix or a custom-defined transition matrix.",
+        "deid data id": "9671a739ce11603aa3cfadc4b3e3b383c0b7ba28",
+        "quasi identifiers subset": "MSP, RAC1P, OWN_RENT, PINCP_DECILE, EDU, HOUSING_TYPE, DVET, DEYE",
+        "submission timestamp": "6/16/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.3390/a12090191"
+    }
+}

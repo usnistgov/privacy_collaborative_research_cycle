@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "algorithm name": "pacsynth",
+        "target dataset": "tx2019",
+        "variant label": "preprocessor-epsilon: 1.5",
+        "epsilon": "5",
+        "algorithm type": "query matching",
+        "library name": "smartnoise-synth",
+        "feature set name": "family-focused",
+        "privacy category": "dp",
+        "deid data id": "8a52ec3da67016c5c2393f85d5d051d9c41f9a9c",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP, DEYE",
+        "privacy label detail": "The pac-synth synthesizer will suppress marginal combinations that could uniquely fingerprint individuals (similar to k-anonymity). pac-synth is a differentially-private synthesizer that computes differentially private marginals to build synthetic data.   ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://github.com/microsoft/synthetic-data-showcase/tree/main/docs/dp"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "labels": {
+        "algorithm name": "tvae",
+        "target dataset": "national2019",
+        "variant label": "",
+        "algorithm type": "neural net",
+        "library name": "sdv",
+        "feature set name": "demographic-focused",
+        "privacy category": "non_dp",
+        "deid data id": "fd585f8ab9febcbc4094eafb513406a5c70eb5e1",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "The TVAE Synthesizer uses a variational autoencoder (VAE)-based, neural network techniques to train a model and generate synthetic data.",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.48550/arXiv.1907.00503"
+    }
+}

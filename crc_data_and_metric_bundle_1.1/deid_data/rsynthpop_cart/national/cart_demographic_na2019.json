@@ -1,0 +1,17 @@
+{
+    "labels": {
+        "algorithm name": "cart",
+        "target dataset": "national2019",
+        "variant label": "maxfaclevels: 300",
+        "algorithm type": "stat model",
+        "library name": "rsynthpop",
+        "feature set name": "demographic-focused",
+        "privacy category": "non_dp",
+        "deid data id": "f615aa3f1774e046028ed010e0d46eb0cc4cd2aa",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "Non-differentially private synthetic data.  Produced using a fully conditional multilple imputation algorithm comprised of a sequence of decision trees trained on the target data.  Each  feature value in a given record is synthesized one at a time: the values of the preceding synthesized features are fed into the decision tree trained to predict the current feature.  ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.18637/jss.v074.i11"
+    }
+}

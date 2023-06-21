@@ -1,9 +1,0 @@
-{
-    "labels": {
-        "algorithm name": "tvae",
-        "library": "sdv",
-        "feature set": "industry-focused",
-        "target dataset": "ma2019",
-        "variant label": ""
-    }
-}

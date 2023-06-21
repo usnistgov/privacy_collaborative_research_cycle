@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "team": "Rsynthpop-categorical",
+        "submission timestamp": "5/8/2023 11:31:23",
+        "algorithm name": "ipf",
+        "target dataset": "national2019",
+        "variant label": "e=1",
+        "epsilon": "1",
+        "delta": "0",
+        "submission number": 2,
+        "algorithm type": "query matching",
+        "library name": "rsynthpop",
+        "feature set name": "demographic-focused",
+        "privacy category": "dp",
+        "deid data id": "659b0ca059cff98d4107c5843744344520da0960",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "differential privacy ",
+        "research papers": "https://doi.org/10.48550/arXiv.2206.01362"
+    }
+}

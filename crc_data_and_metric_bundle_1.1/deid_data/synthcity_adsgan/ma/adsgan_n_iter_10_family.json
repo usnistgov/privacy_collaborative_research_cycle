@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "algorithm name": "adsgan",
+        "target dataset": "ma2019",
+        "variant label": "n_iter=10, target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index",
+        "algorithm type": "neural net",
+        "library name": "synthcity",
+        "feature set name": "family-focused",
+        "privacy category": "non_dp",
+        "deid data id": "457b11e1720be48cb0282f9e6acfe70d4800fe66",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP",
+        "privacy label detail": "A conditional GAN framework that generates synthetic data while minimize patient identifiability that is defined based on the probability of re-identification given the combination of all data on any individual patient.  ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.1109/jbhi.2020.2980262"
+    }
+}

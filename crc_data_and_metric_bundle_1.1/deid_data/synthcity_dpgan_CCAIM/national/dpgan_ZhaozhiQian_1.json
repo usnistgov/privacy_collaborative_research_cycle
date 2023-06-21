@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "team": "CCAIM",
+        "submission timestamp": "3/9/2023 3:17:40",
+        "target dataset": "national2019",
+        "algorithm name": "dpgan",
+        "variant label": "synthcity-dpgan-default",
+        "epsilon": "1",
+        "delta": "10^(-5)",
+        "submission number": 1,
+        "algorithm type": "neural net",
+        "library name": "synthcity",
+        "feature set name": "all-features",
+        "privacy category": "dp",
+        "deid data id": "6927e157eaf39a2670acfed99c4d39132e0da91d",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "Differential Privacy (epsilon-delta)",
+        "research papers": "https://doi.org/10.48550/arXiv.1802.06739"
+    }
+}

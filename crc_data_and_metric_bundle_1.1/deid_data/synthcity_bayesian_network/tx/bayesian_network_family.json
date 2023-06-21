@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "algorithm name": "bayesian_network",
+        "target dataset": "tx2019",
+        "variant label": "target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index",
+        "algorithm type": "stat model",
+        "library name": "synthcity",
+        "feature set name": "family-focused",
+        "privacy category": "non_dp",
+        "deid data id": "8b0ce2c5d6f238aa8b6373dc3f83caf5508e4669",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP",
+        "privacy label detail": "The method represents a set of random variables and their conditional dependencies via a directed acyclic graph (DAG), and uses it to sample new data points",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.1016/j.trc.2015.10.010"
+    }
+}

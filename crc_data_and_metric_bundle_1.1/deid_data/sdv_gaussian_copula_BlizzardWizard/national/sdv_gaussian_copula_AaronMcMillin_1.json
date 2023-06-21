@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "team": "Blizzard Wizard",
+        "submission timestamp": "4/11/2023 21:45:37",
+        "target dataset": "national2019",
+        "algorithm name": "gaussian-copula",
+        "variant label": "defaults",
+        "submission number": 1,
+        "algorithm type": "stat model",
+        "library name": "sdv",
+        "feature set name": "family-focused",
+        "privacy category": "non_dp",
+        "deid data id": "58f21ee87103bdd36ae3148e4ff19b06109fa79c",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP",
+        "privacy label detail": "documentation here: https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer",
+        "research papers": "https://doi.org/10.48550/arXiv.1812.01226"
+    }
+}

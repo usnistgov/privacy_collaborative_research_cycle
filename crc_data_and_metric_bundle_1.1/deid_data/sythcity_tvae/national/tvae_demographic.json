@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "algorithm name": "tvae",
+        "target dataset": "national2019",
+        "variant label": "n_iter=100, target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index",
+        "algorithm type": "neural net",
+        "library name": "synthcity",
+        "feature set name": "demographic-focused",
+        "privacy category": "non_dp",
+        "deid data id": "cac2420688a29cbbb6160125ede954d8ad479e7a",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "A conditional VAE network which can handle tabular data.  A neural network which uses Variational Auto Encoding to map the target data into a new, richer feature space and then sample new synthetic data from the same space.   Produces non-differentially private synthetic data. ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.48550/arXiv.1907.00503"
+    }
+}

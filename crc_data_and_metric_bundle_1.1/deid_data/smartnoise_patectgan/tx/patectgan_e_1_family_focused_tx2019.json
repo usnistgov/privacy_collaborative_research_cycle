@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "algorithm name": "patectgan",
+        "target dataset": "tx2019",
+        "epsilon": "1",
+        "variant label": "preprocessor-epsilon: 0.3",
+        "algorithm type": "neural net",
+        "library name": "smartnoise-synth",
+        "feature set name": "family-focused",
+        "privacy category": "dp",
+        "deid data id": "bcd14617fabccf9a18e4389ded5266cbc45a67b7",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP",
+        "privacy label detail": "Conditional tabular GAN using Private Aggregation of Teacher Ensembles. From \u201cPATE-GAN: Generating Synthetic Data with Differential Privacy Guarantees\u201d and \u201cModeling Tabular data using Conditional GAN\u201d.",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://openreview.net/forum?id=S1zk9iRqF7"
+    }
+}

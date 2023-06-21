@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "team": "Rsynthpop-categorical",
+        "submission timestamp": "5/8/2023 6:58:34",
+        "algorithm name": "catall",
+        "target dataset": "national2019",
+        "variant label": "e=10 d=0 rand=False",
+        "epsilon": "10",
+        "delta": "0",
+        "submission number": 1,
+        "algorithm type": "histogram",
+        "library name": "rsynthpop",
+        "feature set name": "demographic-focused",
+        "privacy category": "dp",
+        "deid data id": "1018c356395ac4f84f0c6522328a53f2096ed9ee",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "The DP versions are differentially private conditional on 1) the known sample size 2) knowledge of the data structure and the cells presumed to be structural zeros in the table.",
+        "research papers": "https://doi.org/10.48550/arXiv.2206.01362"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "labels": {
+        "algorithm name": "kanonymity",
+        "target dataset": "national2019",
+        "quasi identifiers subset": "SEX, MSP, RAC1P, OWN_RENT, EDU",
+        "variant label": "k: 6, key-feats: subset",
+        "variant label detail": "k: 6, quasi identifiers as key features",
+        "algorithm type": "sdc",
+        "library name": "sdcmicro",
+        "feature set name": "demographic-focused",
+        "privacy category": "sdc",
+        "deid data id": "607642eec1ae64dc6b6ebed0870cb44263a29012",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "The sdcMicro package includes two functions for local suppression. The function localSuppression() is most commonly used and allows the use of suppression on specified quasi-identifiers to achieve a certain level of k-anonymity for these quasi-identifiers.  For SDNist evaluations, records containing suppressed values were dropped from evaluation metrics (which can only run on non-suppressed values). ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.18637/jss.v067.i04"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "labels": {
+        "algorithm name": "privbayes",
+        "target dataset": "national2019",
+        "variant label": "target column",
+        "variant label detail": "added a column target to the original dataset and target column is set to dataset index",
+        "epsilon": "10",
+        "algorithm type": "stat model",
+        "library name": "synthcity",
+        "feature set name": "family-focused",
+        "privacy category": "dp",
+        "deid data id": "0714745c3325585d1015f68d02f63b73534459bc",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, OWN_RENT, PINCP_DECILE, POVPIP",
+        "privacy label detail": "A differentially private method for releasing high-dimensional data.  It uses noisy marginal counts from the target data to instantiate a bayesian network of conditional probabilities between features, and uses these to generate synthetic data. ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.1145/3134428"
+    }
+}

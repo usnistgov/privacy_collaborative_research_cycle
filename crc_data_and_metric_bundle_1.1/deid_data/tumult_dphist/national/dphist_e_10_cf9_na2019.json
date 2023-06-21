@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "algorithm name": "DPHist",
+        "target dataset": "national2019",
+        "epsilon": "10",
+        "variant label": "",
+        "algorithm type": "histogram",
+        "library name": "tumult",
+        "feature set name": "demographic-focused-except-DEYE",
+        "privacy category": "dp",
+        "deid data id": "e397751b993e3b943f58e147740db575b0ac1c7f",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET",
+        "privacy label detail": "Differentially private, histogram-based synthetic data.  The DP geometric mechanism is used to produce a noisy integer occurrence count for each possible record value. ",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://web.cs.ucdavis.edu/~franklin/ecs289/2010/dwork_2008.pdf"
+    }
+}

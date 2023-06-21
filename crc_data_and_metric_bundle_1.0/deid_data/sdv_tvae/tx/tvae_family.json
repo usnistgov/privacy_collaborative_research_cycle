@@ -1,9 +1,0 @@
-{
-    "labels": {
-        "algorithm name": "tvae",
-        "library": "sdv",
-        "feature set": "family-focused",
-        "target dataset": "tx2019",
-        "variant label": ""
-    }
-}

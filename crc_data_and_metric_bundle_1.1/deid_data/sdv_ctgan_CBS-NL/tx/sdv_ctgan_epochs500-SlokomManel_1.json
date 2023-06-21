@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "team": "CBS-NL",
+        "submission timestamp": "4/16/2023 12:03:58",
+        "target dataset": "tx2019",
+        "algorithm name": "ctgan",
+        "variant label": "epochs=500",
+        "submission number": 1,
+        "algorithm type": "neural net",
+        "library name": "sdv",
+        "feature set name": "all-features",
+        "privacy category": "non_dp",
+        "deid data id": "fd5d45534d36658c52d2e91d337a1893f9864bcd",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "No privacy guarantee used",
+        "research papers": "https://doi.org/10.48550/arXiv.1907.00503"
+    }
+}

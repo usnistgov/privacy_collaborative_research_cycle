@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "team": "DataEvolution",
+        "submission timestamp": "3/10/2023 18:01:31",
+        "target dataset": "national2019",
+        "algorithm name": "Genetic SD",
+        "variant label": "genetic_sd_national",
+        "epsilon": "10",
+        "delta": "1/n^2, where n is the data size",
+        "submission number": 1,
+        "algorithm type": "query matching",
+        "feature set name": "all-features",
+        "privacy category": "dp",
+        "library name": "Genetic SD",
+        "deid data id": "07fd46b537902a3c01a20e775639a8113257e80f",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "Our submission satisfies approximate differential privacy. To archive privacy the mechanism utilizes the gaussian mechanism to access statistical properties of the data.",
+        "research papers": "https://doi.org/10.48550/arXiv.2306.03257"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "algorithm name": "mst",
+        "target dataset": "national2019",
+        "epsilon": "10",
+        "variant label": "preprocessor-epsilon: 3",
+        "algorithm type": "stat model",
+        "library name": "smartnoise-synth",
+        "feature set name": "industry-focused",
+        "privacy category": "dp",
+        "deid data id": "5c58e58b9649aa91a1b1081c2f9e424d0e333288",
+        "features list": "PUMA, SEX, MSP, HISP, RAC1P, OWN_RENT, INDP_CAT, EDU, PINCP_DECILE",
+        "privacy label detail": "Differentially private synthetic data.  From McKenna et al. \u201cWinning the NIST Contest: A scalable and general approach to differentially private synthetic data\u201d",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.48550/arXiv.2108.04978"
+    }
+}

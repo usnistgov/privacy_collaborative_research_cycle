@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "team": "CBS-NL",
+        "submission timestamp": "4/28/2023 12:09:32",
+        "target dataset": "ma2019",
+        "algorithm name": "cart",
+        "variant label": "minnumlevels=11",
+        "submission number": 2,
+        "algorithm type": "stat model",
+        "library name": "rsynthpop",
+        "feature set name": "demographic-focused",
+        "privacy category": "non_dp",
+        "deid data id": "5dfc74e2b5eb80f20e8fbc7cc9bdc6a2b612f0dc",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "Non-differentially private synthetic data. ",
+        "research papers": "https://doi.org/10.18637/jss.v074.i11"
+    }
+}

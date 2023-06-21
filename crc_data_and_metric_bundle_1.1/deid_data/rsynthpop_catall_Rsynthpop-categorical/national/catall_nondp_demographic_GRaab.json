@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "team": "Rsynthpop-categorical",
+        "submission timestamp": "5/8/2023 6:58:34",
+        "algorithm name": "catall_NonDP",
+        "target dataset": "national2019",
+        "variant label": "this one not DP",
+        "submission number": 1,
+        "algorithm type": "histogram",
+        "library name": "rsynthpop",
+        "feature set name": "demographic-focused",
+        "privacy category": "non_dp",
+        "deid data id": "581dc5c92dd2b20970080b02307af2f6a37881db",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": "See catall for algorithm definition; this variant has epsilon = infininity and produces non-differentially private synthetic data. ",
+        "research papers": "https://doi.org/10.48550/arXiv.2206.01362"
+    }
+}

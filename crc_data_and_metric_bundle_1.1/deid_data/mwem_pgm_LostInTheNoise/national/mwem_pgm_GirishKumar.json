@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "team": "LostInTheNoise",
+        "submission timestamp": "3/9/2023 17:40:45",
+        "target dataset": "national2019",
+        "algorithm name": "MWEM+PGM",
+        "variant label": "LostInTheNoise_National_MWEM_PGM_Eps_1_All_Features",
+        "epsilon": "1",
+        "delta": "3.6e^(-6)",
+        "submission number": 1,
+        "algorithm type": "query matching",
+        "feature set name": "all-features",
+        "privacy category": "dp",
+        "library name": "LostInTheNoise",
+        "deid data id": "ee9d4d9ca45a8ab80fce6d854def382689adc003",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "Differential Privacy: Epsilon value = 1",
+        "research papers": "https://doi.org/10.48550/arXiv.1901.09136"
+    }
+}

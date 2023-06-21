@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "team": "CommunityData",
+        "submission timestamp": "4/16/2023 20:31:04",
+        "target dataset": "ma2019",
+        "algorithm name": "gaussian-copula",
+        "variant label": "Includes the pandas dataframe index and an additional index_col that was need to get the synthesizer to run",
+        "submission number": 1,
+        "algorithm type": "stat model",
+        "library name": "sdv",
+        "feature set name": "demographic-focused",
+        "privacy category": "non_dp",
+        "deid data id": "23df62e9da595c65816da580c767cb62449eae00",
+        "features list": "AGEP, SEX, MSP, RAC1P, HOUSING_TYPE, OWN_RENT, EDU, PINCP_DECILE, DVET, DEYE",
+        "privacy label detail": " documentation here: https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer",
+        "research papers": "https://doi.org/10.48550/arXiv.1812.01226"
+    }
+}

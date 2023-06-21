@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "algorithm name": "mwem",
+        "target dataset": "national2019",
+        "epsilon": "10",
+        "variant label": "split-factor: 3, preprocessor-epsilon: 3",
+        "algorithm type": "query matching",
+        "library name": "smartnoise-synth",
+        "feature set name": "detailed-industry-focused",
+        "privacy category": "dp",
+        "deid data id": "7356236b049baebf88d6ea081242a33b972964ba",
+        "features list": "PUMA, SEX, MSP, HISP, RAC1P, OWN_RENT, INDP, EDU, PINCP_DECILE",
+        "privacy label detail": "Multiplicative Weights Exponential Mechanism. From \u201cA Simple and Practical Algorithm for Differentially Private Data Release\u201d.",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://doi.org/10.48550/arXiv.1012.4763"
+    }
+}

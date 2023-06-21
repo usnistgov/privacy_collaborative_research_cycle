@@ -1,0 +1,17 @@
+{
+    "labels": {
+        "algorithm name": "subsample_40pcnt",
+        "target dataset": "tx2019",
+        "variant label": "",
+        "algorithm type": "sdc",
+        "library name": "subsample_40pcnt",
+        "feature set name": "all-features",
+        "privacy category": "sdc",
+        "deid data id": "1f0933fa2d6778126b2a986199e866afb5f9a035",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "A simple uniform random 40% subsample of the target data.  It provides limited privacy by redacting records at random, allowing survey takers to deny that their information was included in the public release.",
+        "submission timestamp": "5/20/2023 00:00:00",
+        "team": "CRC",
+        "research papers": "https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_pums_handbook_2021_ch01.pdf"
+    }
+}

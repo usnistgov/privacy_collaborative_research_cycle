@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "team": "MOSTLY AI",
+        "submission timestamp": "3/31/2023 11:27:22",
+        "target dataset": "national2019",
+        "algorithm name": "MostlyAI SD",
+        "variant label": "national2019",
+        "submission number": 2,
+        "algorithm type": "neural net",
+        "feature set name": "all-features",
+        "privacy category": "non_dp",
+        "library name": "MostlyAI SD",
+        "deid data id": "583b01386728a111f87fd1ef4d8df8c485eb5789",
+        "features list": "PUMA, AGEP, SEX, MSP, HISP, RAC1P, NOC, NPF, HOUSING_TYPE, OWN_RENT, DENSITY, INDP, INDP_CAT, EDU, PINCP, PINCP_DECILE, POVPIP, DVET, DREM, DPHY, DEYE, DEAR, WGTP, PWGTP",
+        "privacy label detail": "The MOSTLY AI Synthetic Data Platform generates synthetic data based original input data. The usage of synthetic data minimizes privacy risks - such as membership inference, re-identification, and attribute inference - while maintaining the majority of statistical properties of the original data. The privacy of the original data is protected by, first, applying basic outlier protection mechanisms and, second, strong regularization of the generative networks creating the synthetic data.",
+        "research papers": "https://doi.org/10.48550/arXiv.2104.03007"
+    }
+}
