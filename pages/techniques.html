@@ -73,12 +73,12 @@
 				</div>
         <nav id="nav">
           <ul>
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="participate.html">Participate</a></li>
-						<li><a href="results_blog.html">Results Blog</a></li>
-						<li><a href="techniques.html">Techniques</a></li>
-						<li><a href="leaderboard.html">Leaderboard</a></li>
-						<li><a href="citing.html">How to Cite</a></li>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="participate.html">Participate</a></li>
+				<li><a href="results_blog.html">Results Blog</a></li>
+				<li><a href="techniques.html">Techniques</a></li>
+				<li><a href="archive.html">Archive & Tools</a></li>
+				<li><a href="citing.html">How to Cite</a></li>
           </ul>
         </nav>
       </header>
@@ -98,7 +98,7 @@
 						<li><a href="participate.html" class="button">Participate</a></li>
 						<li><a href="results_blog.html" class="button">Results Blog</a></li>
 						<li><a href="techniques.html" class="button primary">Techniques</a></li>
-						<li><a href="leaderboard.html" class="button">Leaderboard</a></li>
+						<li><a href="archive.html" class="button">Archive & Tools</a></li>
 						<li><a href="citing.html" class="button">How to Cite</a></li>
 					</ul>
 				</header>
@@ -117,18 +117,32 @@
 							SmartNoise PATE-CTGAN</a></li>
 						<li><a href="techniques.html#rsynthpop-cart">
 							RSynthpop-CART</a></li>
+						<li><a href="techniques.html#rsynthpop-catall">
+							RSynthpop Catall</a></li>
+						<li><a href="techniques.html#rsynthpop-ipf">
+							RSynthpop IPF</a></li>
 						<li><a href="techniques.html#sdv-copula">
 							SDV Copula-GAN</a></li>
+						<li><a href="techniques.html#sdv-ctgan">
+							SDV CTGAN</a></li>
+						<li><a href="techniques.html#sdv-tvae">
+							SDV TVAE</a></li>
 						<li><a href="techniques.html#sdv-gaussian-copula">
-							SDV Gaussian Copula Synthezier</a></li>
+							SDV Gaussian Copula</a></li>
 						<li><a href="techniques.html#sdv-fast-ml">
 							SDV FAST-ML</a></li>
 						<li><a href="techniques.html#synthcity-dpgan">
-							Synthcity-DPGAN</a></li>
+							Synthcity DPGAN</a></li>
 						<li><a href="techniques.html#synthcity-pategan">
-							Synthcity-PATEGAN</a></li>
+							Synthcity PATEGAN</a></li>
 						<li><a href="techniques.html#synthcity-adsgan">
-							Synthcity-adsgan</a></li>
+							Synthcity adsgan</a></li>
+						<li><a href="techniques.html#synthcity-bayesian_network">
+							Synthcity bayesian_network</a></li>
+						<li><a href="techniques.html#synthcity-privbayes">
+							Synthcity privbayes</a></li>
+						<li><a href="techniques.html#synthcity-tvae">
+							Synthcity TVAE</a></li>
 						<li><a href="techniques.html#sdcmicro-pram">
 							Sdcmicro PRAM</a></li>
 						<li><a href="techniques.html#sdcmicro-k-nonymity">
@@ -149,6 +163,8 @@
 					</ul>
 					<h4><a href="techniques.html#research-approaches">Research Approaches:</a></h4>
 					<ul>
+						<li><a href="techniques.html#subsample">
+							Subsample</a></li>
 						<li><a href="techniques.html#mwem-pgm">
 							MWEM+PGM</a></li>
 					</ul>
@@ -278,7 +294,7 @@
 										<h4><b>Library: </b> 
 											<a href="https://github.com/opendp/smartnoise-sdk/tree/main/synth">
 												smartnoise-synth</a> (Python)</h4>
-										<h4><b>Privacy: </b> Differential Privacy, K-Anonymity</h4>
+										<h4><b>Privacy: </b> Differential Privacy</h4>
 										<h4><b>References:</b></h4>
 										<ul>
 											<li><a href="https://docs.smartnoise.org/synth/synthesizers/patectgan.html">
@@ -332,6 +348,96 @@
 						</div>
 					</div>
 					<br>
+					<div id="rsynthpop-catall" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>RSynthpop Catall</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p> 
+											Catall fits a saturated model by selecting a 
+											sample from a multinomial distribution with 
+											probabilities calculated from the complete 
+											cross-tabulation of all the 
+											variables in the data set. This is similar to 
+											DPHistogram, but rather than using the noisy 
+											bin counts to directly generate the data, new 
+											records are sampled according to the 
+											probability distribution defined by the counts. 
+										</p>
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://cran.r-project.org/web/packages/synthpop/index.html">
+												synthpop</a> (R)</h4>
+										<h4><b>Privacy: </b>Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://rdrr.io/cran/synthpop/man/syn.catall.html">
+												R Synthpop Catall Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://doi.org/10.48550/arXiv.2206.01362">
+												Utility and Disclosure Risk for Differentially Private Synthetic Categorical Data
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/rsynthpop/cat_graab_img.jpg">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="rsynthpop-ipf" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>RSynthpop IPF</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p> 
+											IPF fits log-linear models to a set of margins 
+											defined by the user using the method of iterative 
+											proportional fitting (IPF) implemented in the 
+											package mipfp in R. This is an example of a DP 
+											marginal technique, similar to GeneticSD, MST, 
+											or PACSynth, but it uses the statistical method IPF 
+											for generating the synthetic data from the noisy marginals. 
+										</p>
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://cran.r-project.org/web/packages/synthpop/index.html">
+												synthpop</a> (R)</h4>
+										<h4><b>Privacy: </b>Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://rdrr.io/cran/synthpop/man/syn.ipf.html">
+												R Synthpop IPF Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://doi.org/10.48550/arXiv.2206.01362">
+												Utility and Disclosure Risk for Differentially Private Synthetic Categorical Data
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/rsynthpop/ipf_graab_img.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
 					<div id="sdv-copula" class="blog-card">
 						<div class="blog-card-content">
 							<h3><b>SDV Copula-GAN</b></h3>
@@ -365,18 +471,21 @@
 							</div>
 						</div>
 					</div>
-					<!-- <br>
+					<br>
 					<div id="sdv-gaussian-copula" class="blog-card">
 						<div class="blog-card-content">
 							<h3><b>SDV Gaussian Copula</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
-										<p>Synthetic Data Vault library implementation of 
-											Conditional Tabular GAN, which is extended to use 
-											a Gaussian Copula transformation of your choice 
-											to improve results on continuous (i.e., numerical) 
-											features. Data is synthetic, but not DP.  
+										<p>
+											Gaussian Copula is a purely statistical 
+											modeling approach. It first fits Gaussian 
+											Copula functions (think multi-dimensional, 
+											skewed bell curves) to the target distribution,
+											 this gives it an approximation of the shape of the 
+											 target distribution. It uses these to sample new 
+											 data that fits that shape.
 										</p>
 										<h4><b>Library: </b> 
 											<a href="https://github.com/sdv-dev/SDV">
@@ -384,21 +493,110 @@
 										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
 										<h4><b>References:</b></h4>
 										<ul>
-											<li><a href="https://sdv.dev/SDV/api_reference/tabular/api/sdv.tabular.copulagan.CopulaGAN.html">
-												SDV Copula-GAN Documentation</a></li>
+											<li><a href="https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/gaussiancopulasynthesizer">
+												SDV Gaussain Copula Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://doi.org/10.48550/arXiv.1812.01226">
+												Learning Vine Copula Models For Synthetic Data Generation
+											</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-6 technique-img-div">
 									<section class="box">
 										<img height="100%" width="100%"
-										src="../techniques/sdv_copula/SDV_Copula.png">
+										src="../techniques/SDV_GaussianCopula.png">
 										<p></p>
 									</section>
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div>
+					<br>
+					<div id="sdv-ctgan" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>SDV CTGAN</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>
+											The Conditional Tabular GAN (CTGAN) Synthesizer uses deep 
+											learning methods to train a neural network model and 
+											generate synthetic data. It introduces new techniques 
+											to improve GAN performance for tabular data: augmenting 
+											the training procedure with mode-specific normalization, 
+											architectural changes, and addressing data imbalance by 
+											employing a conditional generator and training-by-sampling,  
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/sdv-dev/SDV">
+												SDV</a> (Python)</h4>
+										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/ctgansynthesizer">
+												SDV CTGAN Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://doi.org/10.48550/arXiv.1907.00503">
+												Modeling Tabular data using Conditional GAN
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/SDV_CTGAN.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="sdv-tvae" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>SDV TVAE</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>
+											The TVAE Synthesizer uses a variational autoencoder 
+											(VAE)-based, neural network techniques to train a 
+											model and generate synthetic data. This same algorithm 
+											is also implemented in the synthcity library. 
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/sdv-dev/SDV">
+												SDV</a> (Python)</h4>
+										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://docs.sdv.dev/sdv/single-table-data/modeling/synthesizers/tvaesynthesizer">
+												SDV TVAE Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://doi.org/10.48550/arXiv.1907.00503">
+												Modeling Tabular data using Conditional GAN
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/SDV_tvae.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
 					<br>
 					<div id="sdv-fast-ml" class="blog-card">
 						<div class="blog-card-content">
@@ -435,7 +633,7 @@
 					<br>
 					<div id="synthcity-dpgan" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Synthcity-DPGAN</b></h3>
+							<h3><b>Synthcity DPGAN</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
@@ -511,7 +709,7 @@
 					<br>
 					<div id="synthcity-adsgan" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Synthcity-adsgan</b></h3>
+							<h3><b>Synthcity adsgan</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
@@ -547,16 +745,22 @@
 						</div>
 					</div>
 					<br>
-					<!-- <div id="sdcmicro-pram" class="blog-card">
+					<div id="synthcity-bayesian_network" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Sdcmciro PRAM</b></h3>
+							<h3><b>Synthcity bayesian_network</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
-										<p>Synthcity's implementation of ADSGAN, based on [Yoon, 2020]. 
-											It uses a record-level identifiability metric as part of the 
-											data generation process, to optimize utility while reducing 
-											reidentification risk. The data is synthetic, but not DP. 
+										<p>
+											The basic Baysian Network method is a non-DP synthetic 
+											data approach that uses a directed acyclic graph (DAG) 
+											to model the data distribution-- the schema features 
+											form the nodes of the graph, and conditional probabilities 
+											between dependent features are the edge weights. 
+											Graph traversal algortihms are used to generate 
+											new records that maintain pairwise feature correlations. 
+											MST and privBayes are differentially private variants of 
+											this approach.
 										</p>
 										<h4><b>Library: </b> 
 											<a href="https://github.com/vanderschaarlab/synthcity">
@@ -564,20 +768,147 @@
 										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
 										<h4><b>References:</b></h4>
 										<ul>
-											<li><a href="https://synthcity.readthedocs.io/en/latest/generated/synthcity.plugins.privacy.plugin_adsgan.html">
-												Synthcity-adsgan Documentation</a></li>
+											<li><a href="https://synthcity.readthedocs.io/en/latest/generators.html">
+												Synthcity bayesian_networks Documentation</a></li>
 										</ul>
 										<h4><b>Additional Reference:</b></h4>
 										<ul>
-											<li><a href="https://ieeexplore.ieee.org/document/9034117">Original paper citation [Yoon 2020]
+											<li><a href="https://doi.org/10.1016/j.trc.2015.10.010">
+												A Bayesian network approach for population synthesis
 											</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-6 technique-img-div">
 									<section class="box">
-										<img height="50%" width="50%"
-										src="../techniques/synthcity_dpgan/LOGO.drawio - Zhaozhi Qian.png">
+										<img height="100%" width="100%"
+										src="../techniques/synthcity_bayesian_network/synthcity_Bayesian_Network.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="synthcity-privbayes" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Synthcity privbayes</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>
+											A differentially private variant of the 
+											basic Bayesian Network synthetic data generator. 
+											It uses noisy marginal counts from the target 
+											data to instantiate the bayesian network of 
+											conditional probabilities between features, 
+											and uses these to generate synthetic data.  
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/vanderschaarlab/synthcity">
+												Synthcity</a> (Python)</h4>
+										<h4><b>Privacy: </b>Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://synthcity.readthedocs.io/en/latest/generators.html">
+												Synthcity privbayes Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://doi.org/10.1145/3134428">
+												PrivBayes: Private Data Release via Bayesian Networks
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/synthcity_privbayes/synthcity_privBayes.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="synthcity-tvae" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Synthcity TVAE</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>
+											A conditional VAE network which can handle tabular data. 
+											A neural network which uses Variational Auto Encoding 
+											to map the target data into a new, richer feature space 
+											and then sample new synthetic data from the same space. 
+											Produces non-differentially private synthetic data. 
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/vanderschaarlab/synthcity">
+												Synthcity</a> (Python)</h4>
+										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://synthcity.readthedocs.io/en/latest/generators.html">
+												Synthcity tvae Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://doi.org/10.48550/arXiv.1907.00503">
+												Modeling Tabular data using Conditional GAN
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/synthcity_tvae/synthcity_TVAE.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="sdcmicro-pram" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Sdcmciro PRAM</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>
+											The Post Randomization (PRAM) algorithm is a Statistical 
+											Disclosure Control (SDC) method which directly alters 
+											the target data to combat reidentification of records. 
+											It randomly changes the values of quasi-identifying features 
+											according to an probabilistic transition matrix. 
+											For example, records might have a 3% change of having 
+											their race swapped for a different race value. 
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://cran.r-project.org/web/packages/sdcMicro/index.html">
+												sdcmicro</a> (R)</h4>
+										<h4><b>Privacy: </b>Statistical Disclosure Control (SDC)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://doi.org/10.3390/a12090191">
+												Feedback-Based Integration of the Whole Process of Data Anonymization in a Graphical Interface</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/post-randomisation-for-statistical-disclosure-control-theory-and-implementation.pdf">
+												Post Randomisation for Statistical Disclosure Control: Theory and Implementation
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/sdcmicro_PRAM.png">
 										<p></p>
 									</section>
 								</div>
@@ -591,37 +922,45 @@
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
-										<p>Synthcity's implementation of ADSGAN, based on [Yoon, 2020]. 
-											It uses a record-level identifiability metric as part of the 
-											data generation process, to optimize utility while reducing 
-											reidentification risk. The data is synthetic, but not DP. 
+										<p>
+											The sdcMicro localSuppression() operates on specified 
+											quasi-identifier features in the target data to achieve 
+											k-anonymity. If race, age, and marital status were 
+											selected, then every combination of those values
+											 ("Alaskan Native, 32, widowed") in the deidentified 
+											 data must have more than k records. 
+											 Suppression is used to merge counts (joining 
+											 "Alaskan Native, 32, widowed" and "Native Hawaiin, 
+											 32, widowed" to " * , 32, widowed") into groups with 
+											 more than k records.  
 										</p>
 										<h4><b>Library: </b> 
-											<a href="https://github.com/vanderschaarlab/synthcity">
-												Synthcity</a> (Python)</h4>
-										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
+											<a href="https://cran.r-project.org/web/packages/sdcMicro/index.html">
+												sdcmicro</a> (R)</h4>
+										<h4><b>Privacy: </b>Statistical Disclosure Control (SDC)</h4>
 										<h4><b>References:</b></h4>
 										<ul>
-											<li><a href="https://synthcity.readthedocs.io/en/latest/generated/synthcity.plugins.privacy.plugin_adsgan.html">
-												Synthcity-adsgan Documentation</a></li>
+											<li><a href="https://doi.org/10.18637/jss.v067.i04">
+												Statistical Disclosure Control for Micro-Data Using the R Package sdcMicro </a></li>
 										</ul>
 										<h4><b>Additional Reference:</b></h4>
 										<ul>
-											<li><a href="https://ieeexplore.ieee.org/document/9034117">Original paper citation [Yoon 2020]
+											<li><a href="http://dx.doi.org/10.1142/s0218488502001648">
+												k-ANONYMITY: A MODEL FOR PROTECTING PRIVACY
 											</a></li>
 										</ul>
 									</section>
 								</div>
 								<div class="col-6 technique-img-div">
 									<section class="box">
-										<img height="50%" width="50%"
-										src="../techniques/synthcity_dpgan/LOGO.drawio - Zhaozhi Qian.png">
+										<img height="100%" width="100%"
+										src="../techniques/sdcmicro_kanonimity.png">
 										<p></p>
 									</section>
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div>
 
 					<hr>
 					<h3 id="commercial-products"><b>Commercial Products:</b></h3>
@@ -759,6 +1098,44 @@
 					<br>
 					<hr>
 					<h3 id="Research Approaches"><b>Research Approaches:</b></h3>
+					<br>
+					<div id="subsample" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Subsample</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>
+											Arguably the simplest method used for Statistical 
+											Disclosure Control deidentification is just 
+											subsampling--a percentage of the data is 
+											randomly withheld from the release. This 
+											protects privacy by potentially enabling 
+											individuals who were known to have taken the 
+											survey to claim that their records were not 
+											included in the released data.   
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://pandas.pydata.org/">
+												Pandas</a> (Python)</h4>
+										<h4><b>Privacy: </b>Statistical Disclosure Control (SDC)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://www.census.gov/content/dam/Census/library/publications/2021/acs/acs_pums_handbook_2021_ch01.pdf">
+												Documentation</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/subsampling.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
 					<br>
 					<div id="mwem-pgm" class="blog-card">
 						<div class="blog-card-content">
