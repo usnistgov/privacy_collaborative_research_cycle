@@ -1,4 +1,4 @@
-var sortDirection = 'asc';
+var sortDirection = 'desc';
 
 // Function to toggle the sort direction between ascending and descending
 function toggleSortDirection() {
@@ -38,8 +38,8 @@ function sortTable() {
 
                 if (document.getElementById("sortDropdown").value == 6) { // If ε column
                     // Counting the number of elements in the list
-                    xVal = x.innerHTML.length ? x.innerHTML.split(',').length : 0;
-                    yVal = y.innerHTML.length ? y.innerHTML.split(',').length : 0;
+                    xVal = x.innerHTML.length ? parseFloat(x.innerHTML) : Infinity;
+                    yVal = y.innerHTML.length ? parseFloat(y.innerHTML) : Infinity;
         
                 } else {
                     // For other numeric columns
