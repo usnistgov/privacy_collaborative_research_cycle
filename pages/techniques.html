@@ -115,6 +115,8 @@
 							SmartNoise PACSynth</a></li>
 						<li><a href="techniques.html#smartnoise-patectgan">
 							SmartNoise PATE-CTGAN</a></li>
+						<li><a href="techniques.html#smartnoise-aim">
+							SmartNoise AIM</a></li>
 						<li><a href="techniques.html#rsynthpop-cart">
 							RSynthpop-CART</a></li>
 						<li><a href="techniques.html#rsynthpop-catall">
@@ -136,25 +138,33 @@
 						<li><a href="techniques.html#synthcity-pategan">
 							Synthcity PATEGAN</a></li>
 						<li><a href="techniques.html#synthcity-adsgan">
-							Synthcity adsgan</a></li>
+							Synthcity ADSGAN</a></li>
 						<li><a href="techniques.html#synthcity-bayesian_network">
-							Synthcity bayesian_network</a></li>
+							Synthcity Bayesian Network</a></li>
 						<li><a href="techniques.html#synthcity-privbayes">
-							Synthcity privbayes</a></li>
+							Synthcity PrivBayes</a></li>
 						<li><a href="techniques.html#synthcity-tvae">
 							Synthcity TVAE</a></li>
 						<li><a href="techniques.html#sdcmicro-pram">
-							Sdcmicro PRAM</a></li>
+							SdcMicro PRAM</a></li>
 						<li><a href="techniques.html#sdcmicro-k-nonymity">
-							Sdcmicro K-anonymity</a></li>
+							SdcMicro K-anonymity</a></li>
+						<li><a href="techniques.html#ydata-synthetic-ctgan">
+							ydata-synthetic CTGAN</a></li>
 					</ul>
 
 					<h4><a href="techniques.html#commercial-products">Commercial Products:</a></h4>
 					<ul>
 						<li><a href="techniques.html#mostlyai-sd">
-							MostlyAI-SD</a></li>
+							MostlyAI SD</a></li>
 						<li><a href="techniques.html#sarus-sdg">
-							Sarus-SDG</a></li>
+							Sarus SDG</a></li>
+						<li><a href="techniques.html#anonos-dataembassysdk">
+							Anonos DataEmbassySDK</a></li>
+						<li><a href="techniques.html#ydata-sdk-fabric">
+							ydata-sdk Fabric</a></li>
+						<li><a href="techniques.html#aindo-synth">
+							Aindo Synth</a></li>
 					</ul>
 					<h4><a href="techniques.html#publicly-verifiable">Publicly Verifiable Differential Privacy:</a></h4>
 					<ul>
@@ -167,6 +177,8 @@
 							Subsample</a></li>
 						<li><a href="techniques.html#mwem-pgm">
 							MWEM+PGM</a></li>
+						<li><a href="techniques.html#utdallas-aifainess-smote">
+							UTDallas-AIFairness SMOTE</a></li>
 					</ul>
 					<hr>
 					<h3 id="open-source"><b>Publicly Available:</b></h3>
@@ -307,6 +319,53 @@
 										<img height="100%" width="100%"
 										src="../techniques/smartnoise_patectgan/SmartNoise_CTPATE.png">
 										<p>[Jinsung Yoon and James Jordon and Mihaela van der Schaar, 2018]</p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="smartnoise-aim" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>SmartNoise AIM</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>AIM is a workload-adaptive algorithm that 
+											first selects a set of queries, then 
+											measures those queries with added noise 
+											to satisfy differential privacy, and 
+											finally generates synthetic data from 
+											the noisy measurements. It uses a set 
+											of innovative features to iteratively 
+											select the most useful measurements, 
+											reflecting both their relevance to the 
+											workload and their value in approximating 
+											the input data. Includes analytic 
+											expressions to bound per-query error with 
+											high probability. 
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/opendp/smartnoise-sdk/tree/main/synth">
+												smartnoise-synth</a> (Python)</h4>
+										<h4><b>Privacy: </b> Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://docs.smartnoise.org/synth/synthesizers/aim.html">
+												SmartNoise AIM Documentation</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://arxiv.org/abs/2201.12677">
+												AIM: An Adaptive and Iterative Mechanism for Differentially Private Synthetic Data
+											</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/SmartNoise_AIM.png">
 									</section>
 								</div>
 							</div>
@@ -670,7 +729,7 @@
 					<br>
 					<div id="synthcity-pategan" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Synthcity-PATEGAN</b></h3>
+							<h3><b>Synthcity PATEGAN</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
@@ -709,7 +768,7 @@
 					<br>
 					<div id="synthcity-adsgan" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Synthcity adsgan</b></h3>
+							<h3><b>Synthcity ADSGAN</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
@@ -725,7 +784,7 @@
 										<h4><b>References:</b></h4>
 										<ul>
 											<li><a href="https://synthcity.readthedocs.io/en/latest/generated/synthcity.plugins.privacy.plugin_adsgan.html">
-												Synthcity-adsgan Documentation</a></li>
+												Synthcity ADSGAN Documentation</a></li>
 										</ul>
 										<h4><b>Additional Reference:</b></h4>
 										<ul>
@@ -747,19 +806,19 @@
 					<br>
 					<div id="synthcity-bayesian_network" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Synthcity bayesian_network</b></h3>
+							<h3><b>Synthcity Bayesian Network</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
 										<p>
-											The basic Baysian Network method is a non-DP synthetic 
+											The basic Bayesian Network method is a non-DP synthetic 
 											data approach that uses a directed acyclic graph (DAG) 
 											to model the data distribution-- the schema features 
 											form the nodes of the graph, and conditional probabilities 
 											between dependent features are the edge weights. 
 											Graph traversal algortihms are used to generate 
 											new records that maintain pairwise feature correlations. 
-											MST and privBayes are differentially private variants of 
+											MST and PrivBayes are differentially private variants of 
 											this approach.
 										</p>
 										<h4><b>Library: </b> 
@@ -769,7 +828,7 @@
 										<h4><b>References:</b></h4>
 										<ul>
 											<li><a href="https://synthcity.readthedocs.io/en/latest/generators.html">
-												Synthcity bayesian_networks Documentation</a></li>
+												Synthcity Bayesian Network Documentation</a></li>
 										</ul>
 										<h4><b>Additional Reference:</b></h4>
 										<ul>
@@ -792,7 +851,7 @@
 					<br>
 					<div id="synthcity-privbayes" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Synthcity privbayes</b></h3>
+							<h3><b>Synthcity PrivBayes</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
@@ -811,7 +870,7 @@
 										<h4><b>References:</b></h4>
 										<ul>
 											<li><a href="https://synthcity.readthedocs.io/en/latest/generators.html">
-												Synthcity privbayes Documentation</a></li>
+												Synthcity PrivBayes Documentation</a></li>
 										</ul>
 										<h4><b>Additional Reference:</b></h4>
 										<ul>
@@ -875,7 +934,7 @@
 					<br>
 					<div id="sdcmicro-pram" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Sdcmciro PRAM</b></h3>
+							<h3><b>SdcMicro PRAM</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
@@ -890,7 +949,7 @@
 										</p>
 										<h4><b>Library: </b> 
 											<a href="https://cran.r-project.org/web/packages/sdcMicro/index.html">
-												sdcmicro</a> (R)</h4>
+												sdcMicro</a> (R)</h4>
 										<h4><b>Privacy: </b>Statistical Disclosure Control (SDC)</h4>
 										<h4><b>References:</b></h4>
 										<ul>
@@ -916,14 +975,14 @@
 						</div>
 					</div>
 					<br>
-					<div id="sdcmicro-k-anonymity" class="blog-card">
+					<div id="sdcmicro-k-nonymity" class="blog-card">
 						<div class="blog-card-content">
-							<h3><b>Sdcmciro K-anonymity</b></h3>
+							<h3><b>SdcMicro K-anonymity</b></h3>
 							<div class="row row-12-mobilep">
 								<div class="col-6">
 									<section class="box">
 										<p>
-											The sdcMicro localSuppression() operates on specified 
+											The sdcMicro localSuppression operates on specified 
 											quasi-identifier features in the target data to achieve 
 											k-anonymity. If race, age, and marital status were 
 											selected, then every combination of those values
@@ -936,7 +995,7 @@
 										</p>
 										<h4><b>Library: </b> 
 											<a href="https://cran.r-project.org/web/packages/sdcMicro/index.html">
-												sdcmicro</a> (R)</h4>
+												sdcMicro</a> (R)</h4>
 										<h4><b>Privacy: </b>Statistical Disclosure Control (SDC)</h4>
 										<h4><b>References:</b></h4>
 										<ul>
@@ -955,6 +1014,46 @@
 									<section class="box">
 										<img height="100%" width="100%"
 										src="../techniques/sdcmicro_kanonimity.png">
+										<p></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="ydata-synthetic-ctgan" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>ydata-synthetic CTGAN</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>
+											The Conditional Tabular GAN (CTGAN) synthesizer 
+											leverages a generative adversarial network 
+											specifically designed for generating synthetic 
+											tabular data. The model addresses tabular 
+											data with mixed feature types by 
+											introducing mode-specific normalization to 
+											handle continuous features and a conditional 
+											generator with training-by-sampling to 
+											capture the behavior of categorical features, 
+											especially those comprising imbalanced categories.
+										</p>
+										<h4><b>Library: </b> 
+											<a href="https://github.com/ydataai/ydata-synthetic">
+												ydata-synthetic</a></h4>
+										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://ydata.ai/data-centric-ai-community/community-revamp">
+												ydata-synthetic discord community </a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/ydata-synthetic_CTGAN.png">
 										<p></p>
 									</section>
 								</div>
@@ -1044,6 +1143,111 @@
 										<img height="100%" width="100%"
 										src="../techniques/sarus_sdg/Sarus_SDG.jpg">
 										<p><a href="https://arxiv.org/pdf/2202.02145.pdf">citation</a></p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="anonos-dataembassysdk" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Anonos DataEmbassySDK</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>Generating synthetic data comes down to 
+											learning the joint probability distribution 
+											in an original, real dataset to generate a 
+											new dataset with the same distribution. 
+											Deep learning models such as generative 
+											adversarial networks (GAN) and variational 
+											autoencoders (VAE) are well suited for this. 
+											The Statice software follows a hybrid 
+											approach to synthetic data generation, 
+											breaking data into groups and handling 
+											each one with the model best suited to 
+											its characteristics.</p>
+										<h4><b>Library: </b> 
+											<a href="https://www.statice.ai/synthetic-data">
+												Anonos </a></h4>
+										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://www.statice.ai/">
+												Statice Website</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/Anonos_DataEmbassySDK.png">
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="ydata-sdk-fabric" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>ydata-sdk Fabric</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>Proprietary ensemble of Deep NN and 
+											Machine Learning generators. 
+											The process is automated with 
+											semantic analysis for the 
+											identification of data types, 
+											encoding selection, and data processing.</p>
+										<h4><b>Library: </b> 
+											<a href="https://pypi.org/project/ydata-sdk/">
+												ydata-sdk </a></h4>
+										<h4><b>Privacy: </b>Differential Privacy</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://ydata.ai/">
+												YData Website</a></li>
+										</ul>
+										<h4><b>Additional Reference:</b></h4>
+										<ul>
+											<li><a href="https://docs.sdk.ydata.ai/">
+												ydata-sdk documentation</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/ydata-sdk_Fabric.png">
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="aindo-synth" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>Aindo Synth</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>The Aindo model learns the distribution 
+											of the original data and performs 
+											validation during training, to 
+											guarantee generalization and avoid 
+											overfitting. Synthetic data is generated 
+											from scratch using the learned generative model.</p>
+										<h4><b>Library: </b> 
+											<a href="https://www.aindo.com/platform/">
+												AindoSDK </a></h4>
+										<h4><b>Privacy: </b>Synthetic Data (Non-differentially Private)</h4>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/Aindo_synth.png">
 									</section>
 								</div>
 							</div>
@@ -1152,6 +1356,47 @@
 								</div>
 								<div class="col-6 technique-img-div">
 									<section class="box">
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div id="utdallas-aifainess-smote" class="blog-card">
+						<div class="blog-card-content">
+							<h3><b>UTDallas-AIFairness SMOTE</b></h3>
+							<div class="row row-12-mobilep">
+								<div class="col-6">
+									<section class="box">
+										<p>
+											The Synthetic Minority Oversampling Technique 
+											(SMOTE) considers each record as a point in 
+											the feature space (i.e., in a schema with F 
+											features, this is an F-dimensional 
+											cartesian space with one axis per feature). 
+											It then uses a geometric technique such as 
+											linear interpolation or k-means clustering 
+											to select new points which lie between existing 
+											target points. 
+											The new points comprise non-differentially 
+											private synthetic data which is unlikely to 
+											contain individuals from the target data. 
+										</p>
+										<h4><b>Library:	</b>
+											<a href="https://github.com/ut-dallas-dspl-lab/AI-Fairness">
+												UTDallas-AIFairness </a></h4>
+										<h4><b>Privacy: </b> Synthetic Data (Non-differentially Private)</h4>
+										<h4><b>References:</b></h4>
+										<ul>
+											<li><a href="https://epubs.siam.org/doi/epdf/10.1137/1.9781611977653.ch98">
+												On Improving Fairness of AI Models with Synthetic MinorityOversampling Techniques</a></li>
+										</ul>
+									</section>
+								</div>
+								<div class="col-6 technique-img-div">
+									<section class="box">
+										<img height="100%" width="100%"
+										src="../techniques/UTDallas-AIFairness_SMOTE.png">
 									</section>
 								</div>
 							</div>
