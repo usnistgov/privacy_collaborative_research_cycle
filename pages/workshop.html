@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Workshop - CRC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!--open graph data-->
+		<meta property="og:title" content="NIST Collaborative Research Cycle 2023"/>
+		<meta property="og:description" 
+			content="The NIST Privacy Engineering Program has launched the Collaborative Research Cycle (CRC) to spur research, innovation, and understanding of data deidentification techniques." />
+
+		<meta property="og:site_name" content="pages.nist.gov/privacy_collaborative_research_cycle/"/>
+		<meta property="og:image" content="https://pages.nist.gov/privacy_collaborative_research_cycle/images/image4.png"/>
+		<meta property="og:image:alt" content="CRC 2023: Research, Engineering and Engagement Cycle." />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../nist_js/leave_notice.js"></script>
+		<script type="text/javascript" src="../scripts/sortResults.js"></script>
+		<link rel="stylesheet" type="text/css" href="../static/css/NISTLeaveNotice.css" />
+	
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Mark external (non-nist.gov) A tags with class "external"
+				//If the adress start with https and ends with nist.gov
+				var re_nist = new RegExp('^https?:\/\/((^\/)*\.)*nist\\.gov(\/|$)'); 
+				var re_nist_github_mp4 = new RegExp('^(https?:)?\/\/(github.com/usnistgov).*(\.mp4)')
+				//Regex to find address that start with https 
+				var re_absolute_address = new RegExp('^((https?:)?\/\/)');
+				$("a").each(function(){
+					var url=$(this).attr('href'); 
+					if(re_nist.test(url) || re_nist_github_mp4.test(url) || !re_absolute_address.test(url)){
+						$(this).addClass('local'); 
+					}
+					else{
+						$(this).addClass('external');
+					} 
+				});
+				// Add leaveNotice to external A elements 
+				$('a.external').leaveNotice({
+					siteName: 'NIST CRC-2023',
+				});
+			});
+			</script>
+
+		<!-- NIST CSS -->
+		<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+		<link rel="stylesheet" href="../static/css/NISTPages.css">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+
+		<style>
+			/* Adding styles for text wrapping and responsive table */
+			td, th {
+				word-wrap: break-word;
+				max-width: 150px;  /* Adjust based on your needs */
+			}
+	
+			.table-container {
+				overflow-x: auto;
+			}
+			/* Styling the sort icon to look like a button and aligning the dropdown and button inline */
+			#sortIcon {
+				cursor: pointer;
+				background-color: #ddd;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				margin-left: 10px;
+			}
+	
+			#controls {
+				display: flex;
+				align-items: center;
+				text-align: center;
+			}
+
+			#sortDirection {
+				margin-left: 10px;
+			}
+			
+		</style>
+
+		<!-- NIST Javascript -->
+		<!-- <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> -->
+		<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+      <header id="header" class="alt">
+				<div>
+					<a style="border-bottom: 0px" href="../index.html">
+						<img style="margin-left: 5px; margin-top: 0.45%" 
+						width="180px" height="50px" src="../images/image3.png"/>
+					</a>
+				</div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="participate.html">Participate</a></li>
+                        <li><a href="techniques.html">Techniques</a></li>
+                        <li><a href="archive.html">Data & Tools</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="workshop.html">Workshop</a></li>
+                    </ul>
+                </nav>
+      </header>
+			<!-- Main -->
+			<section id="main" class="container">
+				<header id="page-header">
+					<h2>Workshop</h2>
+					<p>The NIST Collaborative Research Cycle (CRC) Explanatory Workshop is a venue to discuss and present topics related to the NIST Diverse Community Excerpts data and the CRC Data and Metrics Archive.</p>
+                        <ul class="actions special">
+                            <li><a href="../index.html" class="button">Home</a></li>
+                            <li><a href="participate.html" class="button">Participate</a></li>
+                            <li><a href="techniques.html" class="button">Techniques</a></li>
+                            <li><a href="archive.html" class="button">Data & Tools</a></li>
+                            <li><a href="research.html" class="button">Research</a></li>
+                            <li><a href="workshop.html" class="button primary">Workshop</a></li>
+                        </ul>
+				</header>
+				<div class="box participate separators">
+					<!-- <div class="image featured"></div> -->
+					<h3>Contents:</h3>
+					<h4><a href="workshop.html#overview">
+						Explanatory Workshop Overview
+                    </a></h4>
+                    <h4><a href="workshop.html#proceedings">
+						2023 Proceedings
+                    </a></h4>
+					<ul>
+						<li><a href="workshop.html#orientation">
+							A CRC Project Orientation
+						</a></li>
+                        <li><a href="workshop.html#joe-near">
+                            Differential Privacy: Definition, Techniques and Applications
+						</a></li>
+                        <li><a href="workshop.html#matt-williams">
+                            (Pseudo-Bayesian) Inference for Complex Survey Data
+						</a></li>
+                        <li><a href="workshop.html#matteo">
+                            Anonymeter Application to CRC Diverse Communities Excerpts: A Privacy Perspective
+						</a></li>
+                        <li><a href="workshop.html#dhruv">
+                            An Exploratory Meta-Analysis to Identify Outlying Behavior in the NIST Collaborative Research Cycle Archive
+						</a></li>
+						<li><a href="workshop.html#saswat">
+                            Examining Deidentified Data Quality using NIST Datasets and Tools
+						</a></li>
+					</ul>
+					<hr>
+                    <section>
+                        <div>
+                            <h3 id="overview">Explanatory Workshop Overview</h3>
+                                <p>
+                                    The Explanatory Workshop invites the 
+                                    research community to submit 'tiny' papers 
+                                    (≤ 4 pages + appendices). 
+                                    Our workshop's tiny papers are 
+                                    inspired by the ICLR tiny paper 
+                                    initiative and TPDP. Submissions 
+                                    will undergo a light, single-blind 
+                                    peer review process.
+                                </p>
+                                <p>
+                                    Featured submissions will present 
+                                    their papers on the workshop date in 
+                                    December. Accepted submissions 
+                                    will be prepared into a non-archival 
+                                    set of proceedings made available on 
+                                    the CRC website. Participation in the 
+                                    CRC Workshop is not intended to 
+                                    preclude authors from publishing 
+                                    their research elsewhere.
+                                </p>
+                                <p>
+                                    The 2023 Call for Papers can be found 
+                                    <a href="https://pages.nist.gov/privacy_collaborative_research_cycle/pages/CRC_2023_Call_for_Papers_v1.1.pdf">
+                                        here.
+                                    </a>
+                                </p>
+                        </div>
+                    </section>
+                    <hr>
+                    <section>
+                        <div>
+                            <h3 id="proceedings">2023 Proceedings</h3>
+                            <section>
+                                <div id="orientation" class="blog-card">
+                                    <div class="blog-card-content">
+                                        <h4 style="font-size:larger;"><b>A CRC Project Orientation</b></h4>
+                                        <p><i>
+                                            Christine Task (Knexus Research Corporation)<br>
+                                            Karan Bhagat (Knexus Research Corporation)
+                                        </i>
+                                        </p>
+                                        <div class="row row-12-mobilep">
+                                            <div class="col-6">
+                                                <section class="box">
+                                                    <p>We launched the CRC program with comparative evaluation results 
+                                                        on over a dozen techniques from libraries like OpenDP/SmartNoise, 
+                                                        Synthetic Data Vault, R Synthpop, and Tumult Analytics. 
+                                                        This deck includes an introduction to the “Research, Engineering, 
+                                                        Engagement” cycle, our first round of demonstration evaluations 
+                                                        (and early observations), as well as an illustrated walk through 
+                                                        of our project resources. 
+                                                    </p>
+                                                    <h4><a target="_tab" href="https://media.githubusercontent.com/media/usnistgov/privacy_collaborative_research_cycle/0cbaa72848861959ed80973ca6f6152bf131f95b/PDFs/CRC_NIST_introduction.pdf">
+                                                        <b>Document Link</b></a></h4>
+                                                    <h4><b>Posted on: </b> 
+                                                        February 13, 2023</h4>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 technique-img-div">
+                                                <section class="box">
+                                                    <a target="_tab" href="https://media.githubusercontent.com/media/usnistgov/privacy_collaborative_research_cycle/0cbaa72848861959ed80973ca6f6152bf131f95b/PDFs/CRC_NIST_introduction.pdf">
+                                                        <img class="blog-img" height="70%" width="80%"
+                                                        src="../results_blog/crc_ppai_kickoff/crc_kickoff_ppai.png">
+                                                    </a>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br>
+                            <section>
+                                <div id="joe-near" class="blog-card">
+                                    <div class="blog-card-content">
+                                        <h4 style="font-size:larger;"><b>Differential Privacy: Definition, Techniques and Applications</b></h4>
+                                        <p><i>Joe Near (University of Vermont)</i></p>
+                                        <div class="row row-12-mobilep">
+                                            <div class="col-6">
+                                                <section class="box">
+                                                    <p> 
+                                                        Assistant Professor at the Programming Languages, 
+                                                        Information Security and Data Privacy (PLAID) 
+                                                        research lab at the University of Vermont. 
+                                                        Dr. Near has research interests in formal 
+                                                        privacy, security, and fairness, and he 
+                                                        has published two books covering practical 
+                                                        implementations of differential privacy.
+                                                    </p>
+                                                    <h4><a target="_tab" href="link">
+                                                        <b>Video Link</b></a></h4>
+                                                        <h4><a target="_tab" href="link">
+                                                            <b>Code Link</b></a></h4>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 technique-img-div">
+                                                <section class="box">
+                                                    <a target="_tab" href="link">
+                                                        <img class="blog-img" height="70%" width="80%"
+                                                        src="../images/workshop/JoeNear.png">
+                                                    </a>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br>
+                            <section>
+                                <div id="matt-williams" class="blog-card">
+                                    <div class="blog-card-content">
+                                        <h4 style="font-size:larger;">
+                                            <b>
+                                                (Pseudo-Bayesian) Inference for Complex Survey Data
+                                            </b>
+                                        </h4>
+                                        <p><i>Matt Williams (RTI International)</i></p>
+                                        <div class="row row-12-mobilep">
+                                            <div class="col-6">
+                                                <section class="box">
+                                                    <p> 
+                                                        Senior Research Statistician at RTI. 
+                                                        Dr. Williams has served in several 
+                                                        federal statistical agencies and has 
+                                                        expertise in developing and applying 
+                                                        Bayesian analysis to complex survey data.
+                                                    </p>
+                                                    <h4><a target="_tab" href="link">
+                                                        <b>Video Link</b></a></h4>
+                                                        <h4><a target="_tab" href="link">
+                                                            <b>Code Link</b></a></h4>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 technique-img-div">
+                                                <section class="box">
+                                                    <a target="_tab" href="link">
+                                                        <img class="blog-img" height="70%" width="80%"
+                                                        src="../images/workshop/MattWilliams.png">
+                                                    </a>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br>
+                            <section>
+                                <div id="matteo" class="blog-card">
+                                    <div class="blog-card-content">
+                                        <h4 style="font-size:larger;">
+                                            <b>
+                                                Anonymeter Application to CRC 
+                                                Diverse Communities Excerpts: A Privacy Perspective
+                                            </b>
+                                        </h4>
+                                        <p><i>Matteo Giomi (Anonos, Inc.)</i>
+                                            <i><br>
+                                            Nicola Vitacolonna (Anonos, Inc.)</i><br>
+                                            <i>
+                                            Omar Ali Fdal (Anonos, Inc.)</i><br>
+                                        </p>
+                                        <div class="row row-12-mobilep">
+                                            <div class="col-6">
+                                                <section class="box">
+                                                    <p> 
+                                                        Anonymeter is a framework specifically designed to assess and quantify privacy risks in synthetic data, in line with key GDPR indicators. In this study, we use Anonymeter to evaluate hundreds of datasets from the CRC Diverse Communities Excerpts. Our work uncovers various degrees of residual privacy risks across different synthetic datasets and synthetization algorithms. We also demonstrate correlations between Anonymeter’s empirical risks and other measures of privacy and utility. Our results highlight the diversity of de-identified datasets submitted to the CRC program, and demonstrate Anonymeter’s usefulness in carrying out large-scale privacy analysis.                                               </p>
+                                                    <h4><a target="_tab" href="link">
+                                                        <b>Video Link</b></a></h4>
+                                                    <h4><a target="_tab" href="link">
+                                                        <b>Paper Link</b></a></h4>
+                                                    <h4><a target="_tab" href="link">
+                                                        <b>Code Link</b></a></h4>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 technique-img-div">
+                                                <section class="box">
+                                                    <a target="_tab" href="link">
+                                                        <img class="blog-img" height="70%" width="80%"
+                                                        src="../images/workshop/MatteoGiomi.png">
+                                                    </a>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br>
+                            <section>
+                                <div id="dhruv" class="blog-card">
+                                    <div class="blog-card-content">
+                                        <h4 style="font-size:larger;">
+                                            <b>
+                                                An Exploratory Meta-Analysis to Identify 
+                                                Outlying Behavior in the NIST Collaborative 
+                                                Research Cycle Archive
+                                            </b>
+                                        </h4>
+                                        <p>
+                                            <i>
+                                                Jeremy Seeman (Michigan Institute for Data Science and Institute for Social Research) <br>
+                                                Dhruv Kapur (College of Engineering)
+                                            </i>
+                                        </p>
+                                        <div class="row row-12-mobilep">
+                                            <div class="col-6">
+                                                <section class="box">
+                                                    <p> 
+                                                        The NIST Collaborative Research Cycle 
+                                                        (CRC) archive provides a collection of 
+                                                        deidentification techniques applied to 
+                                                        three Diverse Community Excerpts (DCE) 
+                                                        datasets. In this exploratory meta-analysis, 
+                                                        we propose a metric for evaluating errors 
+                                                        in pairwise features from the DCE datasets 
+                                                        to assess the quality of categorical pairwise
+                                                         associations relative to their prevalence 
+                                                         in the dataset. Using this metric, 
+                                                         we identify outlying pairs in where 
+                                                         deidentification algorithms overperform 
+                                                         or underperform relative to the pairwise 
+                                                         association’s prevalence. We conclude by 
+                                                         proposing follow-up work to leverage these 
+                                                         metrics as more generalizable evaluation 
+                                                         tools.
+                                                    </p>
+                                                    <h4><a target="_tab" href="link">
+                                                        <b>Video Link</b></a></h4>
+                                                        <h4><a target="_tab" href="link">
+                                                            <b>Paper Link</b></a></h4>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 technique-img-div">
+                                                <section class="box">
+                                                    <a target="_tab" href="link">
+                                                        <img class="blog-img" height="70%" width="80%"
+                                                        src="../images/workshop/DhruvKapur.png">
+                                                    </a>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br>
+                            <section>
+                                <div id="saswat" class="blog-card">
+                                    <div class="blog-card-content">
+                                        <h4 style="font-size:larger;">
+                                            <b>
+                                                Examining Deidentified Data 
+                                                Quality using NIST Datasets and Tools
+                                            </b>
+                                        </h4>
+                                        <p>
+                                            <i>
+                                                Saswat Das (Computer Science, UVA)<br>
+                                                Razane Tajeddine (Department of Computer Science, University of Helsinki, Finland)<br>
+                                                Ferdinando Fioretto (Assistant Professor of Computer Science, UVA)<br>
+                                            </i>
+                                        </p>
+                                        <div class="row row-12-mobilep">
+                                            <div class="col-6">
+                                                <section class="box">
+                                                    <p> 
+\The authors have utilized the breadth of NIST CRC tools and datasets, in particular the SDNIST data report tool and the Diverse Communities Data Excerpts, as a central element of their research on comparing traditional statistical disclosure control (SDC) methods to differential privacy (DP) primitives and against DP data generation algorithms like SmartNoise AIM. These results provided a holistic look at the nature of the deidentified data releases, and thus allowed the authors to assess the quality of, privacy of (in certain respects), disparities in, and similarity to the target data of the deidentified data releases, among other things.
+                                                    </p>
+                                                    <h4><a target="_tab" href="link">
+                                                        <b>Video Link</b></a></h4>
+                                                        <h4><a target="_tab" href="link">
+                                                            <b>Paper Link</b></a></h4>
+                                                </section>
+                                            </div>
+                                            <div class="col-6 technique-img-div">
+                                                <section class="box">
+                                                    <a target="_tab" href="link">
+                                                        <img class="blog-img" height="70%" width="80%"
+                                                        src="../images/workshop/SaswatDas.png">
+                                                    </a>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <br>
+                        </div>
+                    </section>
+				</div>
+			</section>
+			<footer id="footer">
+
+				<p>This website uses:</p>
+				
+				<p>|  &nbsp<a href="https://html5up.net/alpha">
+					Alpha Template</a> from <a href="https://html5up.net/">HTML5UP</a>  &nbsp|</p>
+				<p>|  &nbsp<a href="attributions.html">Detailed Attributions</a>  &nbsp|</p>
+			</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
