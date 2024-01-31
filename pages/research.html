@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Research - CRC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!--open graph data-->
+		<meta property="og:title" content="NIST Collaborative Research Cycle 2023"/>
+		<meta property="og:description" 
+			content="The NIST Privacy Engineering Program has launched the Collaborative Research Cycle (CRC) to spur research, innovation, and understanding of data deidentification techniques." />
+
+		<meta property="og:site_name" content="pages.nist.gov/privacy_collaborative_research_cycle/"/>
+		<meta property="og:image" content="https://pages.nist.gov/privacy_collaborative_research_cycle/images/image4.png"/>
+		<meta property="og:image:alt" content="CRC 2023: Research, Engineering and Engagement Cycle." />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../nist_js/leave_notice.js"></script>
+		<script type="text/javascript" src="../scripts/sortResults.js"></script>
+		<link rel="stylesheet" type="text/css" href="../static/css/NISTLeaveNotice.css" />
+	
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Mark external (non-nist.gov) A tags with class "external"
+				//If the adress start with https and ends with nist.gov
+				var re_nist = new RegExp('^https?:\/\/((^\/)*\.)*nist\\.gov(\/|$)'); 
+				var re_nist_github_mp4 = new RegExp('^(https?:)?\/\/(github.com/usnistgov).*(\.mp4)')
+				//Regex to find address that start with https 
+				var re_absolute_address = new RegExp('^((https?:)?\/\/)');
+				$("a").each(function(){
+					var url=$(this).attr('href'); 
+					if(re_nist.test(url) || re_nist_github_mp4.test(url) || !re_absolute_address.test(url)){
+						$(this).addClass('local'); 
+					}
+					else{
+						$(this).addClass('external');
+					} 
+				});
+				// Add leaveNotice to external A elements 
+				$('a.external').leaveNotice({
+					siteName: 'NIST CRC-2023',
+				});
+			});
+			</script>
+
+		<!-- NIST CSS -->
+		<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+		<link rel="stylesheet" href="../static/css/NISTPages.css">
+		<link rel="stylesheet" href="../assets/css/main.css" />
+
+		<style>
+			/* Adding styles for text wrapping and responsive table */
+			td, th {
+				word-wrap: break-word;
+				max-width: 150px;  /* Adjust based on your needs */
+			}
+	
+			.table-container {
+				overflow-x: auto;
+			}
+			/* Styling the sort icon to look like a button and aligning the dropdown and button inline */
+			#sortIcon {
+				cursor: pointer;
+				background-color: #ddd;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				margin-left: 10px;
+			}
+	
+			#controls {
+				display: flex;
+				align-items: center;
+				text-align: center;
+			}
+
+			#sortDirection {
+				margin-left: 10px;
+			}
+			
+		</style>
+
+		<!-- NIST Javascript -->
+		<!-- <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> -->
+		<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+      <header id="header" class="alt">
+				<div>
+					<a style="border-bottom: 0px" href="../index.html">
+						<img style="margin-left: 5px; margin-top: 0.45%" 
+						width="180px" height="50px" src="../images/image3.png"/>
+					</a>
+				</div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="participate.html">Participate</a></li>
+                        <li><a href="techniques.html">Techniques</a></li>
+                        <li><a href="archive.html">Data & Tools</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="workshop.html">Workshop</a></li>
+                    </ul>
+                </nav>
+      </header>
+			<!-- Main -->
+			<section id="main" class="container">
+				<header id="page-header">
+					<h2>CRC Related Research Directory</h2>
+					<p>
+                        The Related Research Directory exists to help 
+                        researchers find each other and make use 
+                        of each other's insights. Because everyone 
+                        in the directory has work referencing the 
+                        same set of benchmark data, it's often 
+                        easier to build on other's observations 
+                        and make substantial progress together.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="../index.html" class="button">Home</a></li>
+                        <li><a href="participate.html" class="button">Participate</a></li>
+                        <li><a href="techniques.html" class="button">Techniques</a></li>
+                        <li><a href="archive.html" class="button">Data & Tools</a></li>
+                        <li><a href="research.html" class="button primary">Research</a></li>
+                        <li><a href="workshop.html" class="button">Workshop</a></li>
+                    </ul>
+				</header>
+				<div class="box separators">
+					<!-- <div class="image featured"></div> -->
+					<h3><b>Contents:</b></h3>
+					<h4><a href="research.html#research">
+						CRC Team Research and Presentations
+                    </a></h4>
+					<h4><a href="research.html#related-research">
+                        Directory of Related Research 
+                    </a></h4>
+					<ul>
+                        <li><a href="research.html#jeremy">
+							UMich Synthetic Data Evaluation
+						</a></li>
+						<li><a href="research.html#nando">
+							Responsible AI for Science and Engineering (RAISE group)
+						</a></li>
+					</ul>
+					<hr>
+                    <section>
+                        <div>
+                            <h3 id="research">
+                                <b>
+                                CRC Team Research and Presentations
+                                </b>
+                            </h3>
+                            <section>
+                                <p>
+                                    The Collaboration Research Cycle 
+                                    team strives to disseminate the 
+                                    project's resources and lessons 
+                                    learned to all relevant stakeholder 
+                                    communities. Below is a list of our 
+                                    presentations and publications to date. 
+                                    If there's a conference or workshop you 
+                                    think would be interested in learning more 
+                                    about the CRC, please
+                                    <a href="participate.html#connect">
+                                        let us know!
+                                    </a>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <b>
+                                        2023 PPAI: 
+                                        </b>
+                                        Privacy-Preserving Artificial 
+                                        Intelligence workshop at the AAAI 
+                                        Conference on Artificial Intelligence. 
+                                        Invited Talk: 
+                                        <a href="https://media.githubusercontent.com/media/usnistgov/privacy_collaborative_research_cycle/0cbaa72848861959ed80973ca6f6152bf131f95b/PDFs/CRC_NIST_introduction.pdf">
+                                            "The Collaborative Research Cycle"
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <b>
+                                        2023 JSM: 
+                                        </b>
+                                        Joint Statistical Meeting. 
+                                        Topic-contributed paper session 
+                                        (Paving paths forward for governmental 
+                                        data privacy protection, some recent 
+                                        advancements of methods and practice 
+                                        in synthetic data): 
+                                        <a href="https://ww2.aievolution.com/JSMAnnual/index.cfm?do=ev.pubSearchOptions&style=0">
+                                        "Understanding and 
+                                        Addressing Challenges for Deidentified 
+                                        Data in Government Applications" 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <b>
+                                        2023 TPDP: 
+                                        </b>
+                                        Theory and Practice of Differential 
+                                        Privacy Workshop. Poster: 
+                                        <a href="https://tpdp.journalprivacyconfidentiality.org/2023/">
+                                        "Epsilon 10 and the CRC Deidentified 
+                                        Data Archive"
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <b>
+                                            2023 FCSM: 
+                                        </b>
+                                        Federal Committee on Statistical 
+                                        Methods Research and Policy Conference. 
+                                        Research presentation: 
+                                        <a href="https://static1.squarespace.com/static/5d0bbb7c645c4200015e02de/t/65326c55acfe264c1ff4538a/1697803352879/FCSM+2023+Program_FINAL-1.pdf">
+                                            "Data Deidentification Research and Resources from the NIST Collaborative Research
+                                            Cycle"
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <b>
+                                            2023 NeurIPS:
+                                        </b>
+                                         Conference on Neural Information 
+                                         Processing Systems, Data & Benchmarks 
+                                         Track. Poster: 
+                                         <a href="https://neurips.cc/virtual/2023/poster/73719">
+                                            "Diverse Community Data 
+                                            for Benchmarking Data Privacy Algorithms" 
+                                         </a>
+                                         <a href="https://arxiv.org/abs/2306.13216">
+                                            ArXiv paper
+                                         </a>
+                                    </li>
+                                    <!--
+                                        * Join our slack channel (hosted by our friends at OpenDP) to engage with the community:
+                                    -->
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
+                    <hr>
+                    <section>
+                        <div>
+                            <h3 id="related-research">
+                                <b>
+                                Directory of Related Research
+                            </b>
+                            </h3>
+                            <p>
+                                Below is a directory of individuals and 
+                                groups doing related research using CRC 
+                                resources. If you'd like your group to 
+                                be added, follow the instructions 
+                                <a href="participate.html#research-walkthrough">
+                                    here
+                                </a>
+                            </p>
+                            <div id="jeremy" class="blog-card">
+                                <div class="blog-card-content">
+                                    <h3><b>UMich Synthetic Data Evaluation</b></h3>
+                                    <h4>
+                                    <i>
+                                        Jeremy Seeman (Michigan Institute for 
+                                        Data Science and Institute for Social 
+                                        Research) 
+                                    </i>
+                                    </h4>
+                                    <h4>
+                                        <i>
+                                            Dhruv Kapur (College of Engineering) 
+                                        </i>
+                                    </h4>
+                                    <div class="row row-12-mobilep">
+                                        <div class="col-6">
+                                            <section class="box">
+                                                <p>We are researchers at the University of Michigan 
+                                                    applying and extending NIST’s framework for 
+                                                    evaluating synthetic data and its equity 
+                                                    implications for ACS. 
+                                                </p>
+                                                <p><b>Keywords: </b> 
+                                                    Evaluation metrics, equity, meta-analysis of privacy algorithms
+                                                </p>
+                                                <p><b>References:</b></p>
+                                                <ul>
+                                                    <li><a href="https://midas.umich.edu/faculty-member/jeremy-seeman/">
+                                                        Michigan Institute for Data Science and Institute for Social Research
+                                                    </a></li>
+                                                </ul>
+                                                <p><b>CRC Related Products: </b> 
+                                                    <a href="workshop.html#dhruv">
+                                                        An Exploratory Meta-Analysis to Identify Outlying Behavior in the NIST Collaborative Research Cycle Archive
+                                                    </a>
+                                                </p>
+                                                <p><b>Point of contact: </b> 
+                                                    Jeremy Seeman 
+                                                    <a href="mailto:jhseeman@umich.edu">
+                                                        (jhseeman@umich.edu)
+                                                    </a>
+                                                </p>
+                                            </section>
+                                        </div>
+                                        <div class="col-6 technique-img-div">
+                                            <section class="box">
+                                                <img height="100%" width="100%" style="border: 0px solid;"
+                                                src="../images/UMich_Group.png">
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div id="nando" class="blog-card">
+                                <div class="blog-card-content">
+                                    <h3><b>Responsible AI for Science and Engineering (RAISE group)</b></h3>
+                                    <h4>
+                                    <i>
+                                        Ferdinando Fioretto (Assistant Professor of Computer Science, UVA) 
+                                    </i>
+                                    </h4>
+                                    <h4>
+                                        <i>
+                                            Saswat Das (Computer Science, UVA)
+                                        </i>
+                                    </h4>
+                                    <h4>
+                                        <i>
+                                            Razane Tajeddine (Department of Computer Science, University of Helsinki, Finland)
+                                        </i>
+                                    </h4>
+                                    <h4>
+                                        <i>
+                                            Pranav Putta (Computer Science, Georgia Tech) 
+                                        </i>
+                                    </h4>
+                                    <div class="row row-12-mobilep">
+                                        <div class="col-6">
+                                            <section class="box">
+                                                <p>
+                                                    We work on foundational topics relating 
+                                                    to machine learning and optimization, 
+                                                    privacy and fairness. We often ground 
+                                                    our research in applications at the 
+                                                    intersection of physical sciences 
+                                                    and energy, as well as policy and 
+                                                    decision making.
+                                                </p>
+                                                <p><b>References:</b></p>
+                                                <ul>
+                                                    <li><a href="https://nandofioretto.github.io/group/">
+                                                        University of Virginia Responsible AI 
+                                                        for Science and Engineering (RAISE) 
+                                                        Group
+                                                    </a></li>
+                                                </ul>
+                                                <p><b>CRC Related Products: </b> 
+                                                    <a href="workshop.html#saswat">
+                                                        Examining Deidentified Data Quality 
+                                                        using NIST Datasets and Tools
+                                                    </a>
+                                                </p>
+                                            </section>
+                                        </div>
+                                        <div class="col-6 technique-img-div">
+                                            <section class="box">
+                                                <img height="100%" width="100%" style="border: 0px solid;"
+                                                src="../images/RAISE_Group.png">
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+				</div>
+			</section>
+			<footer id="footer">
+
+				<p>This website uses:</p>
+				
+				<p>|  &nbsp<a href="https://html5up.net/alpha">
+					Alpha Template</a> from <a href="https://html5up.net/">HTML5UP</a>  &nbsp|</p>
+				<p>|  &nbsp<a href="attributions.html">Detailed Attributions</a>  &nbsp|</p>
+			</footer>
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

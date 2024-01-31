@@ -25,6 +25,7 @@
 
 		<script src="../assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="../nist_js/leave_notice.js"></script>
+		<script type="text/javascript" src="../scripts/sortResults.js"></script>
 		<link rel="stylesheet" type="text/css" href="../static/css/NISTLeaveNotice.css" />
 
 
@@ -59,6 +60,37 @@
 		<!-- <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> -->
 		<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
 
+		<style>
+			/* Adding styles for text wrapping and responsive table */
+			td, th {
+				word-wrap: break-word;
+				max-width: 150px;  /* Adjust based on your needs */
+			}
+	
+			.table-container {
+				overflow-x: auto;
+			}
+			/* Styling the sort icon to look like a button and aligning the dropdown and button inline */
+			#sortIcon {
+				cursor: pointer;
+				background-color: #ddd;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				margin-left: 10px;
+			}
+	
+			#controls {
+				display: flex;
+				align-items: center;
+				text-align: center;
+			}
+
+			#sortDirection {
+				margin-left: 10px;
+			}
+			
+		</style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -71,16 +103,16 @@
 						width="180px" height="50px" src="../images/image3.png"/>
 					</a>
 				</div>
-        <nav id="nav">
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="participate.html">Participate</a></li>
-				<li><a href="results_blog.html">Results Blog</a></li>
-				<li><a href="techniques.html">Techniques</a></li>
-				<li><a href="archive.html">Archive & Tools</a></li>
-				<li><a href="citing.html">How to Cite</a></li>
-			  </ul>
-        </nav>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="participate.html">Participate</a></li>
+                        <li><a href="techniques.html">Techniques</a></li>
+                        <li><a href="archive.html">Data & Tools</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="workshop.html">Workshop</a></li>
+                    </ul>
+                </nav>
       </header>
 			<!-- Main -->
 			<section id="main" class="container">
@@ -89,66 +121,146 @@
 					<p>The CRC seeks to equip the research community with resources to explore, evaluate, 
 						and discuss deidentification approaches.
 						</p>
-						<ul class="actions special">
-							<li><a href="../index.html" class="button">Home</a></li>
-							<li><a href="participate.html" class="button">Participate</a></li>
-							<li><a href="results_blog.html" class="button">Results Blog</a></li>
-							<li><a href="techniques.html" class="button">Techniques</a></li>
-							<li><a href="archive.html" class="button primary">Archive & Tools</a></li>
-							<li><a href="citing.html" class="button">How to Cite</a></li>
-						</ul>
+					<ul class="actions special">
+						<li><a href="../index.html" class="button">Home</a></li>
+						<li><a href="participate.html" class="button">Participate</a></li>
+						<li><a href="techniques.html" class="button">Techniques</a></li>
+						<li><a href="archive.html" class="button primary">Data & Tools</a></li>
+						<li><a href="research.html" class="button">Research</a></li>
+						<li><a href="workshop.html" class="button">Workshop</a></li>
+					</ul>
 				</header>
 				<div class="box separators">
 					<!-- <div class="image featured"></div> -->
+					<!--
+The Collaborative Research Cycle uses the Diverse Communities Data Excerpts [link: https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts ] serve as the target data for this program. All deidentification techniques [link to techniques tab] in our directory have been run on this input data, and the resulting examples of deidentified data are available in the archive below.   
+ 
+The Diverse Community Data Excerpts includes three benchmark datasets – the Massachusetts data is from north of Boston, the Texas data is from near Dallas, and the National data is a collection of very diverse communities from around the nation. The data is derived from the 2019 American Community Survey; the 24 features in the complete scheme were chosen because they capture many of the complexities from real-world data, while still being small, and simple enough to make more formal analysis feasible. The data folder includes lovely postcard documentation about the communities and a JSON data dictionary to make it easy to configure your privacy technique. The usage guidance section in the readme has helpful configuration hints (watch out for 'N').  
+
+Additionally data from 2018 has been provided as a control; this may be useful for configuring differentially private algorithms or calibrating privacy metrics.  The 2018 data covers the same schema (features and geography) but does not share any individuals with the 2019 data. 
+(4) The new Deidentification
+					-->
 					<h3>Contents:</h3>
+					<h4><a href="archive.html#benchmark-data">
+							Benchmark Data
+					</a></h4>
+					<h4><a href="archive.html#acceleration-bundle">
+						Deidentified Data Archive
+					</a></h4>
+					<h4><a href="archive.html#algorithm-summary">
+							Deidentification Algorithm Summary Table
+					</a></h4>
+					<h4><a href="archive.html#notebooks">
+							Meta-analysis Tutorial Notebooks
+					</a></h4>
 					<ul>
-						<li><h4><a href="archive.html#acceleration-bundle">
-							Deidentified Data Archives
-						</a></h4></li>
-						<li><h4><a href="archive.html#notebooks">
-							Tutorial Notebooks
-						</a></h4></li>
-						<li><h4><a href="archive.html#pca-tool">
-							Pair-wise PCA Inspection Tool
-						</a></h4></li>
+						<li><a href="archive.html#nb1">
+							Analyzing k-marginal score of deidentified datasets.
+						</a></li>
+						<li><a href="archive.html#nb2">
+							Imposter plot (propensity scores and inconsistencies).
+						</a></li>
+						<li><a href="archive.html#nb3">
+							Race distribution metric
+						</a></li>
+						<li><a href="archive.html#nb4">
+							Privacy utility trade-off
+						</a></li>
 					</ul>
-					<hr>
-					<h3 id="acceleration-bundle">
-						Deidentified Data Archives
-					</h3>
-					<p style="margin-bottom: 10px">
-						Download the  
-						<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/">
-						Research Acceleration Bundle 
-						</a>
-						and explore! This archive of deidentified data samples 
-						and evaluation metric results provides a broad, 
-						representative sample of data deidentification as a whole.  
-					</p>
-					<p style="margin-bottom: 10px">
-						The target data for this project are the 
-						<a href="https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts"> 
-						NIST Diverse Communities Excerpts
-						</a>
-						, curated data drawn from the American Community Survey. 
-						The archive is comprised of deidentified versions of the 
-						Excerpts data as generated by a wide variety of deidentification algorithms, 
-						libraries and privacy definitions. 
-						Check out our 
-						<a href="results_blog.html#algorithm-summary">
-						Algorithm Summary Table
-						</a>
-						for 
-						a high level glimpse of the current archive contents.
-					</p>
-					<p style="margin-bottom: 20px">
-						The bundle also includes tools and reports designed 
-						to support meta-research which we hope will 
-						lead to a more foundational understanding of 
-						the mechanics of privacy, utility and equity on diverse populations.
-						 Scroll down this page for a tour of the exploration tools we 
-						 provide along with the bundle. 
-					</p>
+					<h4><a href="archive.html#pca-tool">
+							Pair-wise PCA Inspection Tool
+					</a></h4>
+					<section>
+						<hr>
+						<h3 id="benchmark-data">
+							Benchmark Data
+						</h3>
+						<p style="margin-bottom: 10px">
+							The Collaborative Research Cycle uses 
+							the 
+							<a href="https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts">
+							Diverse Communities Data Excerpts 
+							</a> serve as the target data for 
+							this program. All deidentification 
+							<a href="techniques.html">
+							techniques
+							</a>
+							in our directory have been run on 
+							this input data, and the resulting 
+							examples of deidentified data are 
+							available in the archive below.
+						</p>
+						<p style="margin-bottom: 10px">
+							The Diverse Community Data Excerpts 
+							includes three benchmark datasets 
+							– the Massachusetts data is 
+							from north of Boston, the Texas data 
+							is from near Dallas, and the National 
+							data is a collection of very diverse 
+							communities from around the nation. 
+							The data is derived from the 2019 
+							American Community Survey; the 24 
+							features in the complete scheme were 
+							chosen because they capture many of 
+							the complexities from real-world data, 
+							while still being small, and simple 
+							enough to make more formal analysis feasible. 
+							The data folder includes lovely postcard 
+							documentation about the communities and a 
+							JSON data dictionary to make it easy to 
+							configure your privacy technique. The usage 
+							guidance section in the readme has helpful 
+							configuration hints (watch out for 'N').
+						</p>
+						<p style="margin-bottom: 20px">
+							Additionally data from 2018 has 
+							been provided as a control; this 
+							may be useful for configuring 
+							differentially private algorithms or 
+							calibrating privacy metrics. The 2018 data 
+							covers the same schema (features 
+							and geography) but does not share any 
+							individuals with the 2019 data. 
+						</p>
+					</section>
+					<section>
+						<hr>
+						<h3 id="acceleration-bundle">
+							Deidentified Data Archives
+						</h3>
+						<p style="margin-bottom: 10px">
+							Download the  
+							<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/">
+							Research Acceleration Bundle 
+							</a>
+							and explore! This archive of deidentified data samples 
+							and evaluation metric results provides a broad, 
+							representative sample of data deidentification as a whole.  
+						</p>
+						<p style="margin-bottom: 10px">
+							The target data for this project are the 
+							<a href="https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts"> 
+							NIST Diverse Communities Excerpts
+							</a>
+							, curated data drawn from the American Community Survey. 
+							The archive is comprised of deidentified versions of the 
+							Excerpts data as generated by a wide variety of deidentification algorithms, 
+							libraries and privacy definitions. 
+							Check out our 
+							<a href="archive.html#algorithm-summary">
+							Algorithm Summary Table
+							</a>
+							for 
+							a high level glimpse of the current archive contents.
+						</p>
+						<p style="margin-bottom: 20px">
+							The bundle also includes tools and reports designed 
+							to support meta-research which we hope will 
+							lead to a more foundational understanding of 
+							the mechanics of privacy, utility and equity on diverse populations.
+							Scroll down this page for a tour of the exploration tools we 
+							provide along with the bundle. 
+						</p>
 						<ul>
 							<li> <a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/"> 
 								Link to the Research Acceleration Bundle respository and documentation. </a>
@@ -168,192 +280,961 @@
 							</ul>
 
 						</ul>
-					<hr>
-					<h3 id="notebooks">Tutorial notebooks</h3>
-					<p>Included in the version 1.1 of the CRC Research Acceleration Bundle,
-						 we provide a 
-						 <a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/tree/research-acceleration-bundle/crc_data_and_metric_bundle_1.1/notebooks">
-							notebooks directory
-						</a> 
-						containing a complete set 
-						 of tools to make the archive widely accessible for programmatic 
-						 navigation and analysis. </p>
+					</section>
+					<section>
+						<hr>
+						<h3 id="algorithm-summary">
+							Deidentification Algorithm Summary Table
+						</h3>
+						<p style="margin-bottom: 10px">
+							This table provides a very high level 
+							summary of the deidentification algorithms 
+							in our archive. Unique Exact Match (UEM) 
+							is a simple privacy metric that counts 
+							the percentage of singleton records in 
+							the target that are also present in 
+							the deidentified data; these uniquely 
+							identifiable individuals leaked through 
+							the deidentification process. The 
+							Subsample Equivalent (SsE) utility 
+							metric uses an analogy between 
+							deidentification error and sampling 
+							error to communicate utility; a score 
+							of 5% indicates the edit distance 
+							between the target and deidentified 
+							data distributions is similar to the 
+							sampling error induced by randomly 
+							discarding 95% of the data. Edit distance 
+							is based on the k-marginal metric for 
+							sparse distributions. 
+						</p>
+						<p style="margin-bottom: 10px">
+							Note that this isn't a leaderboard--- you can 
+							select any column in the dropdown menu and 
+							reorder the table according to that column. 
+							Algorithms with high utility (high SsE) may 
+							have a lot of privacy leakage (high UEM),
+							 algorithms with low privacy leakage (low UEM) 
+							 may have poor utility (low SsE). 
+							 Algorithms that have only been run on 
+							 small subsets of the schema may perform 
+							 differently on larger feature spaces 
+							 (Avg Feat. Space Size). And, in general, 
+							 SsE and UEM are very simple, reductive metrics. 
+							 If you're curious about a deidentification method, 
+							 we recommend checking out its full evaluation 
+							 results in 
+							 <a href="#acceleration-bundle">
+							 the metareports archive 
+							 </a>
+						</p>
+						<br>
+						<h4>Select Column for Sorting</h4>
+						<div id="controls">
+							<select id="sortDropdown" onchange="sortTable()">
+								<option value="0">Library</option>
+								<option value="1">Algorithm</option>
+								<option value="2">Team</option>
+								<option value="3">#Entries</option>
+								<option value="4">#Feature sets</option>
+								<option value="5">Avg. Feat. Space Size</option>
+								<option value="6">ε</option>
+								<option value="7" selected>Utility: SsE</option>
+								<option value="8">Privacy Leak: UEM</option>
+							</select>
+							<span id="sortDirection">DESC</span> <!-- This element will display the current sort direction -->
+							<i id="sortIcon" class="fas fa-sort" onclick="toggleSortDirection()"></i>
+						</div>
+						<div class="table-container">
+							<table>
+								<thead>
+								  <tr>
+									<th>Library</th>
+									<th>Algorithm</th>
+									<th>Team</th>
+									<th># Entries</th>
+									<th># Feat. sets</th>
+									<th>Avg. Feat. Space Size</th>
+									<th>ε values</th>
+									<th>Utility: SSE</th>
+									<th>Privacy Leak: UEM</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">ipf_NonDP</td>
+									<td>Rsynthpop-categorical</td>
+									<td>1</td>
+									<td>1</td>
+									<td>3e+08</td>
+									<td></td>
+									<td>50.0</td>
+									<td>15.82</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">catall_NonDP</td>
+									<td>Rsynthpop-categorical</td>
+									<td>1</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td></td>
+									<td>50.0</td>
+									<td>63.37</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">subsample_40pcnt</td>
+									<td class="colored-text">subsample_40pcnt</td>
+									<td>CRC</td>
+									<td>15</td>
+									<td>5</td>
+									<td>4e+25</td>
+									<td></td>
+									<td>40.67</td>
+									<td>39.93</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">cart</td>
+									<td>CRC</td>
+									<td>12</td>
+									<td>4</td>
+									<td>3e+20</td>
+									<td></td>
+									<td>40.0</td>
+									<td>16.14</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">AI-Fairness</td>
+									<td class="colored-text">smote</td>
+									<td>UT Dallas DSPL</td>
+									<td>9</td>
+									<td>1</td>
+									<td>2e+26</td>
+									<td></td>
+									<td>40.0</td>
+									<td>17.51</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdcmicro</td>
+									<td class="colored-text">pram</td>
+									<td>CRC</td>
+									<td>12</td>
+									<td>3</td>
+									<td>1e+11</td>
+									<td></td>
+									<td>38.33</td>
+									<td>56.27</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">Anonos Data Embassy SDK</td>
+									<td class="colored-text">Anonos Data Embassy SDK</td>
+									<td>Anonos</td>
+									<td>3</td>
+									<td>1</td>
+									<td>2e+26</td>
+									<td></td>
+									<td>30.0</td>
+									<td>0.01</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">MostlyAI SD</td>
+									<td class="colored-text">MostlyAI SD</td>
+									<td>MOSTLY AI</td>
+									<td>6</td>
+									<td>1</td>
+									<td>2e+26</td>
+									<td></td>
+									<td>30.0</td>
+									<td>0.01</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">aindo-synth</td>
+									<td class="colored-text">aindo-synth</td>
+									<td>Aindo</td>
+									<td>3</td>
+									<td>1</td>
+									<td>2e+26</td>
+									<td></td>
+									<td>30.0</td>
+									<td>0.01</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">aim</td>
+									<td>CRC</td>
+									<td>48</td>
+									<td>6</td>
+									<td>4e+25</td>
+									<td>1</td>
+									<td>25.0</td>
+									<td>9.12</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">aim</td>
+									<td>CRC</td>
+									<td>48</td>
+									<td>6</td>
+									<td>4e+25</td>
+									<td>5</td>
+									<td>25.0</td>
+									<td>9.12</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">aim</td>
+									<td>CRC</td>
+									<td>48</td>
+									<td>6</td>
+									<td>4e+25</td>
+									<td>10</td>
+									<td>25.0</td>
+									<td>9.12</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">catall</td>
+									<td>Rsynthpop-categorical</td>
+									<td>6</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>1</td>
+									<td>22.33</td>
+									<td>47.24</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">catall</td>
+									<td>Rsynthpop-categorical</td>
+									<td>6</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>10</td>
+									<td>22.33</td>
+									<td>47.24</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">catall</td>
+									<td>Rsynthpop-categorical</td>
+									<td>6</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>100</td>
+									<td>22.33</td>
+									<td>47.24</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">cart</td>
+									<td>CBS-NL</td>
+									<td>3</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td></td>
+									<td>21.67</td>
+									<td>28.6</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">tumult</td>
+									<td class="colored-text">DPHist</td>
+									<td>CRC</td>
+									<td>5</td>
+									<td>2</td>
+									<td>6e+07</td>
+									<td>1</td>
+									<td>18.8</td>
+									<td>92.14</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">tumult</td>
+									<td class="colored-text">DPHist</td>
+									<td>CRC</td>
+									<td>5</td>
+									<td>2</td>
+									<td>6e+07</td>
+									<td>2</td>
+									<td>18.8</td>
+									<td>92.14</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">tumult</td>
+									<td class="colored-text">DPHist</td>
+									<td>CRC</td>
+									<td>5</td>
+									<td>2</td>
+									<td>6e+07</td>
+									<td>4</td>
+									<td>18.8</td>
+									<td>92.14</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">tumult</td>
+									<td class="colored-text">DPHist</td>
+									<td>CRC</td>
+									<td>5</td>
+									<td>2</td>
+									<td>6e+07</td>
+									<td>10</td>
+									<td>18.8</td>
+									<td>92.14</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">mst</td>
+									<td>CRC</td>
+									<td>50</td>
+									<td>7</td>
+									<td>3e+25</td>
+									<td>1</td>
+									<td>14.7</td>
+									<td>7.06</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">mst</td>
+									<td>CRC</td>
+									<td>50</td>
+									<td>7</td>
+									<td>3e+25</td>
+									<td>5</td>
+									<td>14.7</td>
+									<td>7.06</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">mst</td>
+									<td>CRC</td>
+									<td>50</td>
+									<td>7</td>
+									<td>3e+25</td>
+									<td>10</td>
+									<td>14.7</td>
+									<td>7.06</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">ydata-sdk</td>
+									<td class="colored-text">YData Fabric Synthesizers</td>
+									<td>YData</td>
+									<td>33</td>
+									<td>4</td>
+									<td>1e+26</td>
+									<td></td>
+									<td>11.85</td>
+									<td>9.7</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">Genetic SD</td>
+									<td class="colored-text">Genetic SD</td>
+									<td>DataEvolution</td>
+									<td>19</td>
+									<td>2</td>
+									<td>9e+25</td>
+									<td>1</td>
+									<td>11.84</td>
+									<td>0.11</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">Genetic SD</td>
+									<td class="colored-text">Genetic SD</td>
+									<td>DataEvolution</td>
+									<td>19</td>
+									<td>2</td>
+									<td>9e+25</td>
+									<td>10</td>
+									<td>11.84</td>
+									<td>0.11</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">ipf</td>
+									<td>CRC</td>
+									<td>10</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>1</td>
+									<td>11.3</td>
+									<td>10.47</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">ipf</td>
+									<td>CRC</td>
+									<td>10</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>2</td>
+									<td>11.3</td>
+									<td>10.47</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">ipf</td>
+									<td>CRC</td>
+									<td>10</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>10</td>
+									<td>11.3</td>
+									<td>10.47</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">ipf</td>
+									<td>CRC</td>
+									<td>10</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>100</td>
+									<td>11.3</td>
+									<td>10.47</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">LostInTheNoise</td>
+									<td class="colored-text">MWEM+PGM</td>
+									<td>LostInTheNoise</td>
+									<td>1</td>
+									<td>1</td>
+									<td>5e+26</td>
+									<td>1</td>
+									<td>10.0</td>
+									<td>0.0</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">bayesian_network</td>
+									<td>CRC</td>
+									<td>12</td>
+									<td>4</td>
+									<td>6e+25</td>
+									<td></td>
+									<td>7.17</td>
+									<td>17.86</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">ydata-synthetic</td>
+									<td class="colored-text">ctgan</td>
+									<td>DCAI Community</td>
+									<td>1</td>
+									<td>1</td>
+									<td>6e+14</td>
+									<td></td>
+									<td>5.0</td>
+									<td>0.33</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">subsample_5pcnt</td>
+									<td class="colored-text">subsample_5pcnt</td>
+									<td>CRC</td>
+									<td>4</td>
+									<td>4</td>
+									<td>1e+26</td>
+									<td></td>
+									<td>5.0</td>
+									<td>4.97</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">Sarus SDG</td>
+									<td class="colored-text">Sarus SDG</td>
+									<td>Sarus</td>
+									<td>1</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>10</td>
+									<td>5.0</td>
+									<td>13.99</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdv</td>
+									<td class="colored-text">ctgan</td>
+									<td>CBS-NL</td>
+									<td>6</td>
+									<td>1</td>
+									<td>2e+26</td>
+									<td></td>
+									<td>4.33</td>
+									<td>0.0</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">privbayes</td>
+									<td>CRC</td>
+									<td>18</td>
+									<td>3</td>
+									<td>1e+11</td>
+									<td>1</td>
+									<td>4.33</td>
+									<td>4.75</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">privbayes</td>
+									<td>CRC</td>
+									<td>18</td>
+									<td>3</td>
+									<td>1e+11</td>
+									<td>10</td>
+									<td>4.33</td>
+									<td>4.75</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">mwem</td>
+									<td>CRC</td>
+									<td>5</td>
+									<td>5</td>
+									<td>2e+11</td>
+									<td>10</td>
+									<td>4.2</td>
+									<td>3.52</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdv</td>
+									<td class="colored-text">tvae</td>
+									<td>CRC</td>
+									<td>13</td>
+									<td>4</td>
+									<td>6e+25</td>
+									<td></td>
+									<td>3.15</td>
+									<td>5.76</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdv</td>
+									<td class="colored-text">fastml</td>
+									<td>CRC</td>
+									<td>4</td>
+									<td>2</td>
+									<td>9e+24</td>
+									<td></td>
+									<td>3.0</td>
+									<td>1.15</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">tvae</td>
+									<td>CRC</td>
+									<td>12</td>
+									<td>4</td>
+									<td>6e+25</td>
+									<td></td>
+									<td>3.0</td>
+									<td>4.69</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">ipf</td>
+									<td>Rsynthpop-categorical</td>
+									<td>2</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>1</td>
+									<td>3.0</td>
+									<td>7.1</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">rsynthpop</td>
+									<td class="colored-text">ipf</td>
+									<td>Rsynthpop-categorical</td>
+									<td>2</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td>2</td>
+									<td>3.0</td>
+									<td>7.1</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdcmicro</td>
+									<td class="colored-text">kanonymity</td>
+									<td>CRC</td>
+									<td>21</td>
+									<td>3</td>
+									<td>1e+11</td>
+									<td></td>
+									<td>2.67</td>
+									<td>23.41</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">pacsynth</td>
+									<td>CRC</td>
+									<td>28</td>
+									<td>5</td>
+									<td>2e+11</td>
+									<td>1</td>
+									<td>2.39</td>
+									<td>5.23</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">pacsynth</td>
+									<td>CRC</td>
+									<td>28</td>
+									<td>5</td>
+									<td>2e+11</td>
+									<td>5</td>
+									<td>2.39</td>
+									<td>5.23</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">pacsynth</td>
+									<td>CRC</td>
+									<td>28</td>
+									<td>5</td>
+									<td>2e+11</td>
+									<td>10</td>
+									<td>2.39</td>
+									<td>5.23</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">patectgan</td>
+									<td>CRC</td>
+									<td>41</td>
+									<td>7</td>
+									<td>3e+25</td>
+									<td>1</td>
+									<td>2.17</td>
+									<td>3.64</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">patectgan</td>
+									<td>CRC</td>
+									<td>41</td>
+									<td>7</td>
+									<td>3e+25</td>
+									<td>5</td>
+									<td>2.17</td>
+									<td>3.64</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">smartnoise-synth</td>
+									<td class="colored-text">patectgan</td>
+									<td>CRC</td>
+									<td>41</td>
+									<td>7</td>
+									<td>3e+25</td>
+									<td>10</td>
+									<td>2.17</td>
+									<td>3.64</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">pategan</td>
+									<td>CRC</td>
+									<td>24</td>
+									<td>4</td>
+									<td>6e+25</td>
+									<td>1</td>
+									<td>1.5</td>
+									<td>2.29</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">pategan</td>
+									<td>CRC</td>
+									<td>24</td>
+									<td>4</td>
+									<td>6e+25</td>
+									<td>10</td>
+									<td>1.5</td>
+									<td>2.29</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">adsgan</td>
+									<td>CCAIM</td>
+									<td>1</td>
+									<td>1</td>
+									<td>5e+26</td>
+									<td></td>
+									<td>1.0</td>
+									<td>0.0</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdv</td>
+									<td class="colored-text">copula-gan</td>
+									<td>CRC</td>
+									<td>1</td>
+									<td>1</td>
+									<td>3e+24</td>
+									<td></td>
+									<td>1.0</td>
+									<td>0.0</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdv</td>
+									<td class="colored-text">ctgan</td>
+									<td>CRC</td>
+									<td>6</td>
+									<td>1</td>
+									<td>5e+26</td>
+									<td></td>
+									<td>1.0</td>
+									<td>0.0</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">dpgan</td>
+									<td>CCAIM</td>
+									<td>1</td>
+									<td>1</td>
+									<td>5e+26</td>
+									<td>1</td>
+									<td>1.0</td>
+									<td>0.0</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdv</td>
+									<td class="colored-text">gaussian-copula</td>
+									<td>Blizzard Wizard</td>
+									<td>2</td>
+									<td>1</td>
+									<td>5e+11</td>
+									<td></td>
+									<td>1.0</td>
+									<td>0.0</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">pategan</td>
+									<td>CCAIM</td>
+									<td>1</td>
+									<td>1</td>
+									<td>5e+26</td>
+									<td>1</td>
+									<td>1.0</td>
+									<td>0.0</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">sdv</td>
+									<td class="colored-text">gaussian-copula</td>
+									<td>CommunityData</td>
+									<td>1</td>
+									<td>1</td>
+									<td>2e+08</td>
+									<td></td>
+									<td>1.0</td>
+									<td>0.52</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">subsample_1pcnt</td>
+									<td class="colored-text">subsample_1pcnt</td>
+									<td>CRC</td>
+									<td>4</td>
+									<td>4</td>
+									<td>1e+26</td>
+									<td></td>
+									<td>1.0</td>
+									<td>0.98</td>
+								  </tr>
+								  <tr>
+									<td class="colored-text">synthcity</td>
+									<td class="colored-text">adsgan</td>
+									<td>CRC</td>
+									<td>12</td>
+									<td>4</td>
+									<td>6e+25</td>
+									<td></td>
+									<td>1.0</td>
+									<td>1.54</td>
+								  </tr>
+								</tbody>
+							  <table>
+						</div>
+					</section>
 
-					<h4><b>Notebook Utility List (libs)</b></h4>
-					<p style="margin-bottom:10px">
-						The notebooks folder includes a 
-						<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/tree/
-						research-acceleration-bundle/crc_data_and_metric_bundle_1.1/notebooks/libs">
-							library
-						</a>
-						 of utilities to assist with navigating 
-						the deidentified data archive (Data and Metrics Bundle):
-					</p>
-					<ul >
-						<li>Index.csv file with metadata (library, algorithm type, 
-							privacy type, research paper doi, parameter settings, 
-							etc) on every technique and deidentified data sample in the archive.</li>
-						<li>Utility to provide easy access to the index.csv file, 
-							including help function with metadata definitions. </li>
-						<li>Utility to assist navigation through metrics available in report.json files. 
-							Utility to assist navigation through archive file hierarchy.</li>
-						<li>Utility to easily generate bar charts and scatterplots with configurable colored highlighting 
-							by deid technique metadata. Utility to make human-readable 
-							display labels for deid samples </li>
-						<li>Utility to configure and display collections of 
-							metric visualizations from the SDNist reports </li>
-					</ul>
-					<br>
-					<h4><b>For newcomers to python/pandas:  </b></h4>
-					<p style="margin-bottom:10px">
-						Welcome! We also teach 
-						<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/blob/research-acceleration-bundle
-						/crc_data_and_metric_bundle_1.1/notebooks/nb0_intro.ipynb">
-						everything
-						</a> you need to know about pandas 
-						dataframes:
-					</p>
-					<ul >
-						<li>Reading data from csv file, creating new data frames</li>
-						<li>Displaying excerpts of data frames</li>
-						<li>Adding new columns, updating and operating on columns</li>
-						<li>Filtering rows, iterating over rows </li>
-						<li>Sorting rows based on selected columns </li>
-					</ul>
-					<br>
-					<h4><b>Introduction Tutorial:</b></h4>
-					<img src="../archive/intro_notebook.png"
-					style="display: block; margin-left: auto; margin-right: auto">
-					<p style="margin-bottom:10px">
-						We teach all the 
-						<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/blob/research-acceleration-bundle
-						/crc_data_and_metric_bundle_1.1/notebooks/nb0_intro.ipynb">
-						basics
-						</a> for performing meta-analysis 
-						on the deidentified data archive: 
-					</p>
-					<ol >
-						<li>Setup notebook.</li>
-						<li>Load deid datasets index file (index.csv).</li>
-						<li>Select specific deid. datasets from the index dataframe.</li>
-						<li>Working with the deidentified data csv files.</li>
-						<li>Working with the target data csv files. </li>
-						<li>Compare target and deid datasets.</li>
-						<li>Use index.csv to highlight plots by algorithm properties.</li>
-						<li>Access SDNIST evaluation reports.</li>
-						<li>Show relationship between two evaluation metrics.</li>
-						<li>Identify specific data samples of interest.</li>
-						<li>Show images from SDNist evaluation reports.</li>
-						<li>Get evaluation metrics for specific samples of interest.</li>
-					</ol>
-					<br>
-					<h4><b>Quickstart Example Jupyter Notebooks:</b></h4>
-					<p style="margin-bottom:25px">
-						For folks more familiar with pandas and jupyter notebooks, we 
-						include quickstart example notebooks to demonstrate common tasks. 
-					</p>
-					<h4><b><a style="color: rgb(76, 76, 185)" 
-						href="https://github.com/usnistgov/privacy_collaborative_research_cycle
-						/blob/research-acceleration-bundle/crc_data_and_metric_bundle_1.1
-						/notebooks/nb1_k_marginal_barplot.ipynb">
-						Example Notebook 1: Analyzing k-marginal 
-						score of deidentified datasets.</a></b></h4>
-						<div id="1-introductory-slides" class="blog-card">
-							<div class="blog-card-content">
-								<div class="row row-12-mobilep">
-									<div class="col-5">
-										<section class="box">
-											<p style="margin-bottom:25px">
-												We demonstrate using a notebook to collect utility scores from 
-												the report.json files for all of the deidentified data submissions
-												 in the archive. We use the CRC plotting utility to display these 
-												 scores as bar plots based on different algorithm properties. 
-											</p>
-										</section>
-									</div>
-									<div class="col-7 technique-img-div">
-										<section class="box">
-											<img
-											height="90%" width="100%"
-											src="../archive/kmarg_notebook.png">
-										</section>
-									</div>
-								</div>
-							</div>
-						</div>
-					<br>
-					<h4><b>
-						<a style="color: rgb(76, 76, 185)" 
-						href="https://github.com/usnistgov/privacy_collaborative_research_cycl
-						e/blob/research-acceleration-bundle/crc_data_and_metric_bundle_1.1/note
-						books/nb2_imposter_plot.ipynb">
-						Example Notebook 2: Imposter plot 
-						(propensity scores and inconsistencies).</a></b></h4>
-						<div id="1-introductory-slides" class="blog-card">
-							<div class="blog-card-content">
-								<div class="row row-12-mobilep">
-									<div class="col-5">
-										<section class="box">
-											<p style="margin-bottom:25px">
-												We show how to collect the counts of individuals in the 100% 
-												confidence propensity bin (obviously synthetic records, 
-												'imposters') across all deidentified data submissions.  
-												We then provide a scatterplot comparing imposter 
-												count with inconsistencies count. This notebook 
-												demonstrates accessing metrics in report.json files and metric 
-												result .csv files, and using the CRC plotting utility to make 
-												highlighted scatter plots. 
-											</p>
-										</section>
-									</div>
-									<div class="col-7 technique-img-div">
-										<section class="box">
+					<section>
+						<hr>
+						<h3 id="notebooks">Tutorial notebooks</h3>
+						<p>Included in the version 1.1 of the CRC Research Acceleration Bundle,
+							 we provide a 
+							 <a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/tree/research-acceleration-bundle/crc_data_and_metric_bundle_1.1/notebooks">
+								notebooks directory
+							</a> 
+							containing a complete set 
+							 of tools to make the archive widely accessible for programmatic 
+							 navigation and analysis. </p>
+	
+						<h4><b>Notebook Utility List (libs)</b></h4>
+						<p style="margin-bottom:10px">
+							The notebooks folder includes a 
+							<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/tree/
+							research-acceleration-bundle/crc_data_and_metric_bundle_1.1/notebooks/libs">
+								library
+							</a>
+							 of utilities to assist with navigating 
+							the deidentified data archive (Data and Metrics Bundle):
+						</p>
+						<ul >
+							<li>Index.csv file with metadata (library, algorithm type, 
+								privacy type, research paper doi, parameter settings, 
+								etc) on every technique and deidentified data sample in the archive.</li>
+							<li>Utility to provide easy access to the index.csv file, 
+								including help function with metadata definitions. </li>
+							<li>Utility to assist navigation through metrics available in report.json files. 
+								Utility to assist navigation through archive file hierarchy.</li>
+							<li>Utility to easily generate bar charts and scatterplots with configurable colored highlighting 
+								by deid technique metadata. Utility to make human-readable 
+								display labels for deid samples </li>
+							<li>Utility to configure and display collections of 
+								metric visualizations from the SDNist reports </li>
+						</ul>
+						<br>
+						<h4><b>For newcomers to python/pandas:  </b></h4>
+						<p style="margin-bottom:10px">
+							Welcome! We also teach 
+							<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/blob/research-acceleration-bundle
+							/crc_data_and_metric_bundle_1.1/notebooks/nb0_intro.ipynb">
+							everything
+							</a> you need to know about pandas 
+							dataframes:
+						</p>
+						<ul >
+							<li>Reading data from csv file, creating new data frames</li>
+							<li>Displaying excerpts of data frames</li>
+							<li>Adding new columns, updating and operating on columns</li>
+							<li>Filtering rows, iterating over rows </li>
+							<li>Sorting rows based on selected columns </li>
+						</ul>
+						<br>
+						<h4><b>Introduction Tutorial:</b></h4>
+						<img src="../archive/intro_notebook.png"
+						style="display: block; margin-left: auto; margin-right: auto">
+						<p style="margin-bottom:10px">
+							We teach all the 
+							<a href="https://github.com/usnistgov/privacy_collaborative_research_cycle/blob/research-acceleration-bundle
+							/crc_data_and_metric_bundle_1.1/notebooks/nb0_intro.ipynb">
+							basics
+							</a> for performing meta-analysis 
+							on the deidentified data archive: 
+						</p>
+						<ol >
+							<li>Setup notebook.</li>
+							<li>Load deid datasets index file (index.csv).</li>
+							<li>Select specific deid. datasets from the index dataframe.</li>
+							<li>Working with the deidentified data csv files.</li>
+							<li>Working with the target data csv files. </li>
+							<li>Compare target and deid datasets.</li>
+							<li>Use index.csv to highlight plots by algorithm properties.</li>
+							<li>Access SDNIST evaluation reports.</li>
+							<li>Show relationship between two evaluation metrics.</li>
+							<li>Identify specific data samples of interest.</li>
+							<li>Show images from SDNist evaluation reports.</li>
+							<li>Get evaluation metrics for specific samples of interest.</li>
+						</ol>
+						<br>
+						<h4><b>Quickstart Example Jupyter Notebooks:</b></h4>
+						<p style="margin-bottom:25px">
+							For folks more familiar with pandas and jupyter notebooks, we 
+							include quickstart example notebooks to demonstrate common tasks. 
+						</p>
+						<h4 id="nb1"><b><a style="color: rgb(76, 76, 185)" 
+							href="https://github.com/usnistgov/privacy_collaborative_research_cycle
+							/blob/research-acceleration-bundle/crc_data_and_metric_bundle_1.1
+							/notebooks/nb1_k_marginal_barplot.ipynb">
+							Example Notebook 1: Analyzing k-marginal 
+							score of deidentified datasets.</a></b></h4>
+							<div id="1-introductory-slides" class="blog-card">
+								<div class="blog-card-content">
+									<div class="row row-12-mobilep">
+										<div class="col-5">
+											<section class="box">
+												<p style="margin-bottom:25px">
+													We demonstrate using a notebook to collect utility scores from 
+													the report.json files for all of the deidentified data submissions
+													 in the archive. We use the CRC plotting utility to display these 
+													 scores as bar plots based on different algorithm properties. 
+												</p>
+											</section>
+										</div>
+										<div class="col-7 technique-img-div">
+											<section class="box">
 												<img
 												height="90%" width="100%"
-												src="../archive/imposter_notebook.png">
-										</section>
+												src="../archive/kmarg_notebook.png">
+											</section>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					<br>
-					<h4><b>
-						<a style="color: rgb(76, 76, 185)" 
-						href="https://github.com/usnistgov/privacy_collaborative_research_c
-						ycle/blob/research-acceleration-bundle/crc_data_and_metric_bundle_
-						1.1/notebooks/nb3_race_distribution.ipynb">
-						Example Notebook 3: Race distribution</a></b></h4>
-						<div id="1-introductory-slides" class="blog-card">
-							<div class="blog-card-content">
-								<div class="row row-12-mobilep">
-									<div class="col-5">
-										<section class="box">
-											<p style="margin-bottom:25px">
-												We show how to check deidentification impact on race 
-												distribution by directly counting individuals in 
-												the target and deidentified data csv files. 
-												We filter the index.csv metadata to print a data 
-												frame containing this score alongside relevant algorithm properties.
-											</p>
-										</section>
-									</div>
-									<div class="col-7 technique-img-div">
-										<section class="box">
-												<img
-												height="90%" width="100%"
-												src="../archive/race_dist_notebook.png">
-										</section>
+						<br>
+						<h4 id="nb2"><b>
+							<a style="color: rgb(76, 76, 185)" 
+							href="https://github.com/usnistgov/privacy_collaborative_research_cycl
+							e/blob/research-acceleration-bundle/crc_data_and_metric_bundle_1.1/note
+							books/nb2_imposter_plot.ipynb">
+							Example Notebook 2: Imposter plot 
+							(propensity scores and inconsistencies).</a></b></h4>
+							<div id="1-introductory-slides" class="blog-card">
+								<div class="blog-card-content">
+									<div class="row row-12-mobilep">
+										<div class="col-5">
+											<section class="box">
+												<p style="margin-bottom:25px">
+													We show how to collect the counts of individuals in the 100% 
+													confidence propensity bin (obviously synthetic records, 
+													'imposters') across all deidentified data submissions.  
+													We then provide a scatterplot comparing imposter 
+													count with inconsistencies count. This notebook 
+													demonstrates accessing metrics in report.json files and metric 
+													result .csv files, and using the CRC plotting utility to make 
+													highlighted scatter plots. 
+												</p>
+											</section>
+										</div>
+										<div class="col-7 technique-img-div">
+											<section class="box">
+													<img
+													height="90%" width="100%"
+													src="../archive/imposter_notebook.png">
+											</section>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					<br>
-					<h4><b>
-						<a style="color: rgb(76, 76, 185)" 
-						href="https://github.com/usnistgov/privacy_collaborative_research_cyc
-						le/blob/research-acceleration-bundle/crc_data_and_metric_bundle_
-						1.1/notebooks/nb4_privacy_utility_tradeoff.ipynb">
-						Example Notebook 4: Privacy utility trade-off </a></b></h4>
+						<br>
+						<h4 id="nb3"><b>
+							<a style="color: rgb(76, 76, 185)" 
+							href="https://github.com/usnistgov/privacy_collaborative_research_c
+							ycle/blob/research-acceleration-bundle/crc_data_and_metric_bundle_
+							1.1/notebooks/nb3_race_distribution.ipynb">
+							Example Notebook 3: Race distribution metric</a></b></h4>
+							<div id="1-introductory-slides" class="blog-card">
+								<div class="blog-card-content">
+									<div class="row row-12-mobilep">
+										<div class="col-5">
+											<section class="box">
+												<p style="margin-bottom:25px">
+													We show how to check deidentification impact on race 
+													distribution by directly counting individuals in 
+													the target and deidentified data csv files. 
+													We filter the index.csv metadata to print a data 
+													frame containing this score alongside relevant algorithm properties.
+												</p>
+											</section>
+										</div>
+										<div class="col-7 technique-img-div">
+											<section class="box">
+													<img
+													height="90%" width="100%"
+													src="../archive/race_dist_notebook.png">
+											</section>
+										</div>
+									</div>
+								</div>
+							</div>
+						<br>
+						<h4 id="nb4"><b>
+							<a style="color: rgb(76, 76, 185)" 
+							href="https://github.com/usnistgov/privacy_collaborative_research_cyc
+							le/blob/research-acceleration-bundle/crc_data_and_metric_bundle_
+							1.1/notebooks/nb4_privacy_utility_tradeoff.ipynb">
+							Example Notebook 4: Privacy utility trade-off </a></b></h4>
 						<div id="1-introductory-slides" class="blog-card">
 							<div class="blog-card-content">
 								<div class="row row-12-mobilep">
@@ -378,7 +1259,7 @@
 								</div>
 							</div>
 						</div>
-
+					</section>
 					<hr>
 					<h3 id="pca-tool">Pair-wise PCA Inspection Tool</h3>
 					<p style="margin-bottom: 10px">
