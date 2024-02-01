@@ -17,8 +17,6 @@ The original data contains 24 features. We also have a list of recommended reduc
 
 ## What do we have here? 
 
-## What do we have here? 
-
 This repository contains all submissions made in 2023. Additional submissions will be added with the next drop (expected in summer 2024). The repository contains the navigable structure for the entire bundle. You can find all of the compressed data in [Releases](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/tag/v1.2) or you can use the links at the top of this readme.
 
 The `crc-data-and-metrics-bundle` file contains: 
