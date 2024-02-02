@@ -1,15 +1,25 @@
-crc_data_and_metric_bundle_1.0/index.csv filter=lfs diff=lfs merge=lfs -text
-crc_data_and_metric_bundle_1.0/version.json filter=lfs diff=lfs merge=lfs -text
-crc_data_and_metric_bundle_1.0/deid_data filter=lfs diff=lfs merge=lfs -text
-crc_data_and_metric_bundle_1.0/diverse_communities_data_excerpts filter=lfs diff=lfs merge=lfs -text
-crc_data_and_metric_bundle_1.0/ filter=lfs diff=lfs merge=lfs -text
-crc_metareport_bundle_1.0/ filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_metareport_bundle_1.0/geneticsd/detailed_data_reports.zip filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_metareport_bundle_1.0/synthcity/detailed_data_reports.zip filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_metareport_bundle_1.0/smartnoise/detailed_data_reports.zip filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_metareport_bundle_1.0/rsynthpop/detailed_data_reports.zip filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_metareport_bundle_1.0/sdcmicro/detailed_data_reports.zip filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_metareport_bundle_1.0/mostlyai/detailed_data_reports.zip filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_metareport_bundle_1.0/sdv/detailed_data_reports.zip filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_metareport_bundle_1.0/subsample/detailed_data_reports.zip filter=lfs diff=lfs merge=lfs -text
-/Users/gsh3/Documents/GitHub/privacy_collaborative_research_cycle/crc_data_and_metric_bundle_1.0/deid_data/tumult_dphist/national/report_dphist_e_1_cf8_na2019_05-19-2023T18.01.12/report.json filter=lfs diff=lfs merge=lfs -text
+crc_data_and_metric_bundle_1.2/deid_data/** filter=lfs diff=lfs merge=lfs -text
+
+crc_metareport_bundle_1.2/**/*.png filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/**/*.zip filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/**/*.csv filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/**/*.html filter=lfs diff=lfs merge=lfs -text
+
+crc_metareport_bundle_1.2/aindo-synth/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/Anonos[[:space:]]Data[[:space:]]Embassy[[:space:]]SDK/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/Genetic[[:space:]]SD/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/LostInTheNoise/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/MostlyAI[[:space:]]SD/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/rsynthpop/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/Sarus[[:space:]]SDG/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/sdcMicro/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/sdv/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/smartnoise-synth/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/subsample/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/synthcity/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/tumult/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/UTDallas-AIFairness/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/ydata-sdk/**/*.json filter=lfs diff=lfs merge=lfs -text
+crc_metareport_bundle_1.2/ydata-synthetic/**/*.json filter=lfs diff=lfs merge=lfs -text
+

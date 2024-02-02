@@ -1,0 +1,6 @@
+scipy==1.12.0
+notebook==7.0.7
+numpy==1.26.3
+pandas==2.2.0
+matplotlib==3.8.2
+ipykernel==6.29.0
