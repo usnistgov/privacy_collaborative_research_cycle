@@ -1,0 +1,186 @@
+---
+title: "Explore NIST CRC data: Survey Weights (R Notebook)"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Load useful packages
+
+```{r Load Packages, message=TRUE, warning=FALSE}
+library(dplyr) #for piping and data manipulation
+library(survey) #for survey analysis
+```
+
+# Subset Synthetic Data
+Look at the national data set using all features (including weights)
+
+```{r Import Data}
+index <- read.csv(file = "crc_data_and_metric_bundle_1.1/index.csv") %>% #piping to next line
+            filter(target.dataset == "national2019" & feature.set.name == "all-features")
+
+```
+
+Select dataset in first row (change rid for another)
+```{r}
+rid <- 1
+datapath <- paste0("https://raw.githubusercontent.com/usnistgov/privacy_collaborative_research_cycle/research-acceleration-bundle/crc_data_and_metric_bundle_1.1/", index$data.path[rid])
+testdat <- read.csv(file = datapath)
+```
+```{r}
+head(testdat)
+```
+# Run some summary statistics
+## Create Survey Design Object
+https://walker-data.com/tidycensus/articles/pums-data.html
+https://usa.ipums.org/usa/repwt.shtml (no replicate weights on the files)
+
+Since household ID and survey replicate weights are not available, (1) assume persons are independent samples within PUMA strata (liberal) or (2) assume PUMA are clusters and sample has arbitrary dependence within PUMA (conservative)
+```{r}
+syn_des1 <- svydesign(ids= ~1, strata = ~ PUMA,weights = ~PWGTP,data = testdat)
+syn_des2 <- svydesign(ids= ~PUMA ,weights = ~PWGTP,data = testdat)
+```
+
+## Create Survey Weighted Histograms
+```{r}
+svyhist(~AGEP, syn_des1)
+```
+
+## Compare Standard Errors across variance estimation methods
+```{r}
+mean_uw <- c(mean = mean(testdat$AGEP), SE =sqrt(var(testdat$AGEP)/length(testdat$AGEP)))
+mean1 <- svymean(~AGEP, syn_des1)
+mean2 <- svymean(~AGEP, syn_des2)
+
+print(mean_uw)
+print(mean1)
+print(mean2)
+```
+Notice large differences for SE between the two approaches
+
+```{r}
+med_uw <- quantile(testdat$AGEP, prob = 0.5)
+med1 <- svyquantile(~AGEP, syn_des1, quantiles = 0.5)
+med2 <- svyquantile(~AGEP, syn_des2, quantiles = 0.5)
+
+print(med_uw)
+print(med1$AGEP)
+print(med2$AGEP)
+```
+Same for median age
+# Now Use Original PUMS Data
+#nist diverse communities data excerpts/national/national2019.csv
+```{r}
+datapath_target <- paste0("https://media.githubusercontent.com/media/usnistgov/SDNist/main/nist%20diverse%20communities%20data%20excerpts/national/national2019.csv")
+targdat <- read.csv(file = datapath_target)
+```
+
+```{r}
+head(targdat)
+```
+# Run some summary statistics
+## Create Survey Design Object
+
+```{r}
+acs_des1 <- svydesign(ids= ~1, strata = ~ PUMA,weights = ~PWGTP,data = targdat)
+acs_des2 <- svydesign(ids= ~PUMA ,weights = ~PWGTP,data = targdat)
+```
+
+## Merge output/Plots
+ 
+## Create Survey Weighted Histograms
+```{r}
+svyhist(~AGEP, acs_des1)
+```
+
+## Compare Standard Errors across variance estimation methods
+```{r}
+acs_mean_uw <- c(mean = mean(targdat$AGEP), SE =sqrt(var(targdat$AGEP)/length(targdat$AGEP)))
+acs_mean1 <- svymean(~AGEP, acs_des1)
+acs_mean2 <- svymean(~AGEP, acs_des2)
+
+print(acs_mean_uw)
+print(acs_mean1)
+print(acs_mean2)
+```
+## Now look at medians
+```{r}
+acs_med_uw <- quantile(targdat$AGEP, prob = 0.5)
+acs_med1 <- svyquantile(~AGEP, acs_des1, quantiles = 0.5)
+acs_med2 <- svyquantile(~AGEP, acs_des2, quantiles = 0.5)
+
+print(acs_med_uw)
+print(acs_med1$AGEP)
+print(acs_med2$AGEP)
+```
+# Combine Results/Plots
+```{r}
+hist(targdat$AGEP, col = NA, main = "Age Comparison (Unweighted)", xlab = "AGEP")
+hist(testdat$AGEP, col = NA, add = TRUE, lty = 2)
+```
+
+Now Using the Weights
+```{r}
+svyhist(~AGEP, acs_des1, main = "Age Comparison (Weighted)", xlab = "AGEP", ylim = c(0, 0.02))
+svyhist(~AGEP, syn_des1, add = TRUE, lty = 2)
+```
+
+
+
+## Look at correlations between weights and response (AGEP)
+```{r}
+cor(targdat$PWGTP, targdat$AGEP, method = "spearman")
+cor(testdat$PWGTP, testdat$AGEP, method = "spearman")
+```
+Look at plots using loess smoother
+```{r}
+ls_targ <- loess(PWGTP~AGEP, data = targdat)
+ls_syn <- loess(PWGTP~AGEP, data = testdat)
+```
+```{r}
+plot(ls_targ, xlab = "Age", ylab = "Weight", log = "y")
+lines(1:90,predict(ls_targ, newdata = data.frame(AGEP = 1:90)), col = "blue")
+plot(ls_syn, xlab = "Age", ylab = "Weight", log = "y")
+lines(1:90,predict(ls_syn, newdata = data.frame(AGEP = 1:90)), col = "red")
+
+```
+Try a different plot:hexbin
+
+```{r warning=FALSE}
+library(hexbin)
+```
+```{r}
+h1 <- hexbin(x = targdat$AGEP, y = targdat$PWGTP)
+h2 <- hexbin(x = testdat$AGEP, y = testdat$PWGTP)
+
+plot(h1)
+plot(h2)
+```
+
+
+
+## Combine estimates and SE's
+
+Look at medians again (weighted)
+```{r}
+meddat <- data.frame(rbind(med1$AGEP, med2$AGEP, acs_med1$AGEP, acs_med2$AGEP))
+rownames(meddat)<- c("Syn Strata", "Syn Clust", "Target Strata", "Target Cluster")
+meddat$type <- rep(c("strata", "cluster"), times = 2)
+meddat$data <- rep(c("Synth", "ACS"), each = 2)
+```
+
+```{r warning=FALSE}
+library(ggplot2)
+```
+
+```{r}
+plt <- ggplot(data = meddat) + geom_point(aes(y = quantile, x = type, group = data, col = data))
+plot(plt)
+```
+```{r}
+plt <- ggplot(data = meddat) + 
+    geom_segment(aes(y = ci.2.5, yend = ci.97.5, x = type, xend = type, group = data, col = data), linewidth = 2, alpha = 0.3) +
+    geom_point(aes(y = quantile, x = type, group = data, col = data))+
+    ylab("Median Age Estimate")+xlab("Variance Assumption")
+plot(plt)
+```
