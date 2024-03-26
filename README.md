@@ -61,23 +61,31 @@ These data are available for any investigation a user sees fit. NIST hosts the C
 
 If you use these resources, we ask that you cite the elements of this work. Here are the suggested citations. 
 
+***CRC General Citation****
+```
+Sen, A., Task, C., Kapur, D., Howarth, G. & Bhagat, K. Diverse Community Data for Benchmarking Data Privacy Algorithms. in Advances in Neural Information Processing Systems vol. 36 51409–51420.
+
+bibtex:
+@inproceedings{sen_diverse_2023, title = {Diverse {Community} {Data} for {Benchmarking} {Data} {Privacy} {Algorithms}}, volume = {36}, url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/a15032f8199511ced4d7a8e2bbb487a5-Paper-Datasets_and_Benchmarks.pdf}, booktitle = {Advances in {Neural} {Information} {Processing} {Systems}}, publisher = {Curran Associates, Inc.}, author = {Sen, Aniruddha and Task, Christine and Kapur, Dhruv and Howarth, Gary and Bhagat, Karan}, year = {2023}, pages = {51409--51420}
+
+```
+
+
 ***CRC Research Acceleration Bundle***
 ```
-Task C., Bhagat K., Howarth G.S. (2023), NIST Collaborative Research Cycle Acceleration Bundle, National Institute of Standards and Technology, https://doi.org/10.18434/mds2-3024
-(NOTE: DOI is not yet active, but should be live by June 2023)
+Task C., Bhagat K., Howarth G.S. (2024), NIST Collaborative Research Cycle Acceleration Bundle, National Institute of Standards and Technology, https://doi.org/10.18434/mds2-3024
 
-bibtex: 
- @misc{task_CRC_2023, author = {Task, Christine and Bhagat, Karan and Howarth, Gary}, doi = {10.18434/MDS2-3024}, month = mar, publisher = {National Institute of Standards and Technology}, shorttitle = {{SDNist} v2}, title = {{NIST} {Collaborative} {Research} {Cycle} {Acceleration} {Bundle}}, url = {https://data.nist.gov/od/id/mds2-3024}, year = {2023}}
+bibtex:
+@misc{task_nist_2024, title = {{NIST} {Collaborative} {Research} {Cycle} {Data} and {Metrics} {Archive}}, url = {https://data.nist.gov/od/id/mds2-3024}, doi = {10.18434/MDS2-3024}, author = {Task, Christine and Bhagat, Karan and Howarth, Gary}, month = feb, year = {2024}}
 
 ```
 
 ***NIST Diverse Communities Data Excerpts***
 ```
 Task C., Bhagat K., Streat D., Simpson A., and Howarth G.S. (2023), NIST Diverse Communities Data Excerpts, National Institute of Standards and Technology, https://doi.org/10.18434/mds2-2895
-(NOTE: DOI is not yet active, but should be live by June 2023)
 
 bibtex:
-@misc{task_nist_2022, author = {Task, Christine and Bhagat, Karan and Damon, Streat and Howarth, Gary}, doi = {10.18434/MDS2-2895}, month = dec, publisher = {National Institute of Standards and Technology}, title = {{NIST} {Diverse} {Community} {Excerpts} {Data}}, url = {https://data.nist.gov/od/id/mds2-2895}, year = {2022}} 
+@misc{task_nist_2022, author = {Task, Christine and Bhagat, Karan and Damon, Streat and Howarth, Gary}, doi = {10.18434/MDS2-2895}, month = dec, publisher = {National Institute of Standards and Technology}, title = {{NIST} {Diverse} {Community} {Excerpts} {Data}}, url = {https://data.nist.gov/od/id/mds2-2895}, year = {2023}} 
 ```
 
 ***SDNist***
