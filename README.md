@@ -1,6 +1,13 @@
-# Privacy Collaborative Research Cycle
+# NIST Collaborative Research Cycle
 
-This is the source code that powers the NIST Pages instance of the Privacy Collaborative Research Cycle. To view the page with its intended interface please go to [https://pages.nist.gov/privacy_collaborative_research_cycle](https://pages.nist.gov/privacy_collaborative_research_cycle/). Contact [Gary.Howarth@nist.gov](mailto:gary.howarth@nist.gov) with questions.
+## If you're looking for the CRC homepage:
+This is the source code that powers the NIST Pages instance of the Privacy Collaborative Research Cycle. To view the page with its intended interface please go to [https://pages.nist.gov/privacy_collaborative_research_cycle](https://pages.nist.gov/privacy_collaborative_research_cycle/). 
+
+## If you're looking for the CRC Data and Metrics Archive: 
+You can find the [CRC Data and Metrics Archive (aka Research Acceleration Bundle) on the Research Accelertion Bundle branch of this same repository.](https://github.com/usnistgov/privacy_collaborative_research_cycle/tree/research-acceleration-bundle)
+
+
+Contact [Gary.Howarth@nist.gov](mailto:gary.howarth@nist.gov) with questions.
 
 The pages site was built with html5up :
 
