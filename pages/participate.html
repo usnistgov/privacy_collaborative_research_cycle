@@ -139,15 +139,6 @@
 							How to Cite CRC Resources
 						</a></li>
 					</ul>
-					<h4>Help Explore the Deidentified Data Archive</h4>
-					<ul>
-						<li><a href="participate.html#explanatory-workshop">
-							NIST Explanatory Workshop
-						</a></li>
-						<li><a href="participate.html#papers-guide">
-							Tiny Paper Guidance 
-						</a></li>
-					</ul>
 				</section>
 				<hr>
 				<section>
@@ -178,12 +169,6 @@
 									<a href="https://opendp.slack.com/archives/C050A67BPE3">
 										Join our slack channel (hosted by our friends 
 										at OpenDP) to engage with the community:
-									</a>
-								</li>
-								<li>
-									<a href="https://meet.google.com/rqz-epbs-mtm">
-										Drop in on our Google Meet office 
-										hour every wednesday at 11a ET / 8a PT / 4p GMT 
 									</a>
 								</li>
 								<!--
@@ -889,7 +874,7 @@
 									</li>
 									<li>
 										<h4> If you publish work that utilizes the NIST Excerpts Benchmark Data, please cite the resource. Citation recommendation:</h4>
-										<blockquote>Task C., Bhagat K., Streat D., and Howarth G.S. (2023), NIST Diverse Communities Data Excerpts, National 
+										<blockquote>Task C., Bhagat K., Streat D., and Howarth G.S. (2023), NIST Excerpts Benchmark Data, National 
 											Institute of Standards and Technology, 
 											<a href="https://doi.org/10.18434/mds2-2895">https://doi.org/10.18434/mds2-2895</a>.
 											<br>
@@ -900,7 +885,7 @@
 												doi = {10.18434/MDS2-2895},
 												month = dec,
 												publisher = {National Institute of Standards and Technology},
-												title = {{NIST} {Diverse} {Community} {Excerpts} {Data}},
+												title = {{NIST} {Excerpts} {Benchmark} {Data}},
 												url = {https://data.nist.gov/od/id/mds2-2895},
 												year = {2022}}
 											<br></blockquote>
@@ -911,128 +896,6 @@
 					</div>
 				</section>
 				<hr>
-				<section>
-					<div>
-						<h3>Help Explore the Deidentified Data Archive</h3>
-						<section id="explanatory-workshop">
-							<h4 style="font-size:larger;"><b>
-								NIST Explanatory Workshop
-							</b></h4>
-							<p>
-								The CRC program solicits 4-page 
-								Research Reports (Tiny Papers) 
-								exploring our resources, for 
-								potential inclusion in an annual 
-								peer-reviewed NIST workshop summarizing 
-								the year's progress on the reliable, 
-								equitable deidentification problem.
-							</p>
-							<ul>
-								<li>
-									Check out our 2023 Call for papers 
-									<a href="https://pages.nist.gov/privacy_collaborative_research_cycle/pages/CRC_2023_Call_for_Papers_v1.1.pdf">
-										here.
-									</a>
-								</li>
-								<li>
-									Check out the previous NIST 
-									CRC Explanatory Workshop 
-									Proceedings 
-									<a href="workshop.html">
-										here
-									</a>
-									.
-								</li>
-								<li>
-									And check out the guidance below 
-									for ideas about tiny research 
-									reports and the power of 
-									exploratory, explanatory research.
-								</li>
-							</ul>
-						</section>
-						<br>
-						<section id="papers-guide">
-							<h4 style="font-size:larger;"><b>
-								Tiny Paper Guidance
-							</b></h4>
-							<p>
-								<b>Tiny Papers?: </b>
-								We're basing it off 
-								the 
-								<a href="https://iclr.cc/Conferences/2023/CallForTinyPapers">								
-								ICLR tiny paper track 
-								</a>
-								– you can 
-								see some great examples there. 
-								We'd like you to describe your 
-								research concept/contribution as 
-								simply and clearly as you can, 
-								making it easy for reviewers and 
-								other readers to follow along. 
-								Incremental or initial results are 
-								just fine. We don't expect you to 
-								have everything solved, but we want 
-								to know what you've noticed about 
-								our data/algorithms and what you've 
-								figured out so far. Proofs, detailed 
-								experiment results, extended related 
-								works, and technical background can 
-								go in the appendix.
-							</p>
-							<div>
-								<p><b>Contribution Type:</b> We invite participation from all areas 
-									of expertise. Purely theoretical and purely empirical submissions 
-									are both welcome, as are any mix of the two. </p>
-								<p>
-									<b>Some Open Problems:</b> What sorts of problems might you 
-									explore in your tiny research paper? There’s a lot of 
-									possibilities, but here are some potential things to start 
-									thinking about (check out our <a href="workshop.html#orientation">
-										PPAI kick-off slide deck</a> for more context):
-								</p>
-								<ul>
-									<li><p><b>Through the looking glass:</b> Why (and how, and when) 
-										do data-modeling techniques magnify some parts of 
-										the population and shrink others?  
-										What’s happening when GANs introduce artifacts 
-										or when marginal methods reduce diversity? </p></li>
-									<li><p><b>Equity and bias:</b> What happens when a minority 
-										demographic has a different pattern of feature 
-										correlations than the majority (see regression metric)? 
-										Which methods are more or less expressive for retaining 
-										these differences and why?</p></li>
-									<li><p><b>Consistency:</b> Not only why do some methods automatically 
-										avoid record inconsistencies and others 
-										don’t – Why do different methods do better on 
-										<i>different</i> feature categories? 
-										How does epsilon impact this? 
-										How can we improve results? </p></li>
-									<li><p><b>Granularity:</b> What happens when a feature definition 
-										gives fine-grained information on a particular demographic 
-										group, causing only that group to be more sparsely spread 
-										out across the data space? 
-										(Consider RAC1P and AIANHN, or DVET and military veterans). 
-										Which privacy approaches handle this more or less gracefully? 
-										How can we improve?</p></li>
-									<li><p><b>More exciting feature sets:</b> 
-										How do these results change when you’re 
-										running on 15 features instead of 10? Or all 24? 
-										What if you consider weights or household joins?</p></li>
-									<li><p><b>Verification:</b> How can you verify 
-										that the “Publicly Verified Differential Privacy” 
-										submissions are in fact differentially private? 
-										Try out your preferred verification approach on 
-										these real solutions submitted by the community.</p></li>
-								</ul>
-	
-							</div>
-						</section>
-					</div>
-				</section>
-
-			</div>
-		</section>
 		<footer id="footer">
 
 			<p>This website uses:</p>
