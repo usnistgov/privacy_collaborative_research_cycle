@@ -138,11 +138,11 @@
 							deidentified data (synthetic and other techniques) remains difficult. 
 							NIST seeks to assist the research community by releasing new data and 
 							evaluation tools, drawn from real-world expertise, designed to more deeply 
-							understand data deidentification techniques and their behavior on diverse, real-world data.  
+							understand data deidentification techniques and their behavior on challenging, real-world data.  
 						</p>
 						<p>The 
-							<a href="https://github.com/usnistgov/SDNist/tree/main/nist%20diverse%20communities%20data%20excerpts">
-							Diverse Communities Data Excerpts</a> are 
+							<a href="https://github.com/usnistgov/SDNist/tree/main/BenchmarkData">
+							NIST ACS Data Excerpts</a> are 
 							real-world, limited-feature data (24 columns), drawn from 
 							the American Community Survey and divided into three distinct 
 							geographic partitions. The complimentary 
@@ -158,11 +158,27 @@
 						</p>
 						<p>
 							The CRC collects, evaluates, and packages contributed 
-							deidentified Diverse Communities Data Excerpts as a <a href= "https://github.com/usnistgov/privacy_collaborative_research_cycle/" style="color: var(--alt-text-color);">  research acceleration bundle</a>. 
+							NIST ACS Data Excerpts as a <a href= "https://github.com/usnistgov/privacy_collaborative_research_cycle/" style="color: var(--alt-text-color);">  research acceleration bundle</a>. 
 							The CRC plan to update the acceleration bundle at least once during the program 
 							to allow for on-going submissions.
 							The CRC invites researchers to use this <a href= "https://github.com/usnistgov/privacy_collaborative_research_cycle/" style="color: var(--alt-text-color);">  research acceleration bundle</a>.   for investigation, comparison, and 
 							analysis and to submit their findings to a workshop.
+						</p>
+						<p>
+							The original NIST ACS Data Excerpts released in 2023 has only 24 
+							features and 40K records, and is designed to support the fine 
+							grained analysis of the behavior of data deidentification 
+							algorithms. In 2025 we have added a new data set, the 
+							<a href="https://github.com/usnistgov/SDNist/tree/main/BenchmarkData">
+							NIST 2007 SBO Data Excerpts</a>, to provide a 
+							platform for stress-testing successful methods on much larger 
+							schema (130 features) features and data sets (161K records). 
+							This data is drawn from the US Census Survey of Business Owners 
+							and includes a mix of demographic, temporal and financial features. 
+							Because privacy metrics may be sensitive to schema changes, 
+							the <a href="pages/archive.html#red-team">
+								NIST CRC Red-teaming project</a>.
+							will feature the NIST SBO Data Excerpts in its second phase. 
 						</p>
 						<div class="row">
 							<div class="row-6 row-12-mobilep">
@@ -172,8 +188,7 @@
 
 									-->
 									The CRC invites researchers to contribute 
-									deidentified records from the NIST Diverse 
-									Communities Data Excerpts, along with a brief 
+									deidentified records from the NIST ACS Data Excerpts, along with a brief 
 									abstract listing their methods. The CRC has 
 									released a machine-readable research acceleration 
 									bundle of all contributions, along with detailed 
