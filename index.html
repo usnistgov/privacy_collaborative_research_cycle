@@ -78,7 +78,6 @@
 							<li><a href="pages/techniques.html">Techniques</a></li>
 							<li><a href="pages/archive.html">Data & Tools</a></li>
 							<li><a href="pages/research.html">Research</a></li>
-							<li><a href="pages/workshop.html">Workshop</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -101,7 +100,6 @@
 						<li><a href="pages/techniques.html" class="button">Techniques</a></li>
 						<li><a href="pages/archive.html" class="button">Data & Tools</a></li>
 						<li><a href="pages/research.html" class="button">Research</a></li>
-						<li><a href="pages/workshop.html" class="button">Workshop</a></li>
 					</ul>
 				</section>
 
@@ -167,68 +165,32 @@
 							analysis and to submit their findings to a workshop.
 						</p>
 						<p>
-							The original NIST ACS Data Excerpts released in 2023 has only 24 
-							features and 40K records, and is designed to support the fine 
-							grained analysis of the behavior of data deidentification 
-							algorithms. In 2025 we have added a new data set, the 
-							<a href="https://github.com/usnistgov/SDNist/tree/main/BenchmarkData">
-							NIST SBO Data Excerpts</a>, to provide a 
+							<p>							The original NIST ACS Data Excerpts released in 2023 has only 24 features and 
+							40K records, and is designed to support the fine grained analysis of the 
+							behavior of data deidentification algorithms. In two years since then 
+							we've seen significant advances in the state of synthetic data generation, 
+							including some incredibly robust high fidelity performance--on our 24 feature 
+							excerpt data. Check out our <a href="pages/archive.html#algorithm-summary">
+							algorithms summary table</a> and data and 
+							<a href="link">metrics archive</a> to see all of the results for yourself. 
+							</p>
+							<p>
+							In 2025 we now have two additional questions: How well do these algorithms scale 
+							to larger data?  And, are they providing genuinely good protection against 
+							sophisticated reidentification attacks?  
+							We've added the <a href="https://github.com/usnistgov/SDNist/tree/main/BenchmarkData">NIST SBO Data Excerpts</a> to 
+							the NIST Excerpts Benchmarks collection, to provide a 
 							platform for stress-testing successful methods on much larger 
-							schema (130 features) features and data sets (161K records). 
-							This data is drawn from the US Census Survey of Business Owners 
-							and includes a mix of demographic, temporal and financial features. 
-							Because privacy metrics may be sensitive to schema changes, 
-							the <a href="pages/archive.html#red-team">
-								NIST CRC Red-teaming project</a>.
-							will feature the NIST SBO Data Excerpts in its second phase. 
+							schema (130 features) and data sets (161K records).  
+							</p>
+							<p>
+							We'll be using both Excerpts (the ACS and SBO) in a 
+							<a href="pages/red_team.html">Community Red Team</a> exercise launching in March 2025 
+							to explore the privacy protection of selected high performing algorithms 
+							in the CRC deidentified data archive.  Can you hack the CRC? 
+							</p>
 						</p>
 						<div class="row">
-							<div class="row-6 row-12-mobilep">
-								<h3>Program Summary</h3>
-								<p>
-									<!--
-
-									-->
-									The CRC invites researchers to contribute 
-									deidentified records from the NIST ACS Data Excerpts, along with a brief 
-									abstract listing their methods. The CRC has 
-									released a machine-readable research acceleration 
-									bundle of all contributions, along with detailed 
-									evaluations using the 
-									<a href="pages/archive.html#acceleration-bundle">
-										SDNist report tool 
-									</a>.  
-									We invite researchers to use the acceleration 
-									bundle to perform analysis and submit their 
-									findings in 4-page-or-less tiny papers to a 
-									workshop to be held in December 2024. 
-									Submitted papers and NIST-contributed 
-									research will be packaged in a set of conference 
-									proceedings we expect to release in January 2025. 
-									Prizes and awards are not part of this program. 
-									For more information see the links below: 
-									<ul>
-										<li><a href="pages/participate.html">Participate</a>
-										: Learn more about how to participate.</li>
-										
-										<li><a href ="pages/techniques.html">Techniques</a>
-										: Look through our current collection of privacy approaches 
-										(if you’d like to add one we’re missing, 
-										<a href="pages/participate.html#submit-walkthrough">go here!</a>).</li>
-										
-										<li><a href="pages/research.html">Research</a>
-											: Directory of research groups working with CRC resources</li>
-										<li><a href="pages/archive.html">Data and Tools</a>
-											: Current CRC resources including benchmark data, 
-											an archive of over 450 deidentified data
-											 examples, and a selection of analysis and 
-											 exploration tools.
-										</li>	
-										<li><a href="pages/workshop.html">Workshop</a>
-										: Proceedings from previous NIST CRC Explanatory Workshops.
-									</ul>
-								</p>
-							</div>
 
 							<div class="row-6 row-12-mobilep">
 								<h3>Questions</h3>
