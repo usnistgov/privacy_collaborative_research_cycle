@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Participate - CRC</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<!--open graph data-->
+	<meta property="og:title" content="NIST Collaborative Research Cycle 2023" />
+	<meta property="og:description"
+		content="The NIST Privacy Engineering Program has launched the Collaborative Research Cycle (CRC) to spur research, innovation, and understanding of data deidentification techniques." />
+
+	<meta property="og:site_name" content="pages.nist.gov/privacy_collaborative_research_cycle/" />
+	<meta property="og:image" content="https://pages.nist.gov/privacy_collaborative_research_cycle/images/image4.png" />
+	<meta property="og:image:alt" content="CRC 2023: Research, Engineering and Engagement Cycle." />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+
+	<script src="../assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../nist_js/leave_notice.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/NISTLeaveNotice.css" />
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// Mark external (non-nist.gov) A tags with class "external"
+			//If the adress start with https and ends with nist.gov
+			var re_nist = new RegExp('^https?:\/\/((^\/)*\.)*nist\\.gov(\/|$)');
+			//Regex to find address that start with https 
+			var re_absolute_address = new RegExp('^((https?:)?\/\/)');
+			$("a").each(function () {
+				var url = $(this).attr('href');
+				if (re_nist.test(url) || !re_absolute_address.test(url)) {
+					$(this).addClass('local');
+				} else {
+					$(this).addClass('external');
+				}
+			});
+			// Add leaveNotice to external A elements 
+			$('a.external').leaveNotice({
+				siteName: 'NIST CRC-2023',
+			});
+		});
+	</script>
+
+	<!-- NIST CSS -->
+	<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+	<link rel="stylesheet" href="../static/css/NISTPages.css">
+	<link rel="stylesheet" href="../assets/css/main.css" />
+
+	<!-- NIST Javascript -->
+	<!-- <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> -->
+	<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript"
+		defer="defer"></script>
+
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header-wrap">
+			<header id="header" class="alt">
+				<div>
+					<a style="border-bottom: 0px" href="../index.html">
+						<img style="margin-left: 5px; margin-top: 0.45%" width="180px" height="50px"
+							src="../images/crc2025logo.png" />
+					</a>
+				</div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="participate.html">Submit Data</a></li>
+                        <li><a href="red_team.html">New: Red Team</a></li>
+                        <li><a href="techniques.html">Techniques</a></li>
+                        <li><a href="archive.html">Data & Tools</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="workshop.html">Workshop</a></li>
+                    </ul>
+                </nav>
+			</header>
+		</div>
+
+		<!-- Main -->
+		<section id="main" class="container">
+			<header id="page-header">
+				<h2>Red Team</h2>
+				<p></p>
+					<ul class="actions special">
+						<li><a href="../index.html" class="button">Home</a></li>
+						<li><a href="participate.html" class="button">Submit Data</a></li>
+                        <li><a href="red_team.html" class="button primary">New: Red Team</a></li>
+						<li><a href="techniques.html" class="button">Techniques</a></li>
+						<li><a href="archive.html" class="button">Data & Tools</a></li>
+						<li><a href="research.html" class="button">Research</a></li>
+						<li><a href="workshop.html" class="button">Workshop</a></li>
+					</ul>
+			</header>
+			<div class="box participate separators">
+				<section>
+					<h3>Contents:</h3>
+                </a></h4>
+                <h4><a href="red_team.html#fcsm_2024_talk">
+                    FCSM 2024 Talk
+                </a></h4>
+                <hr>
+                <section>
+                    <div>
+                        <section>
+                            <div id="orientation" class="blog-card">
+                                <div class="blog-card-content">
+                                    <h4 id="fcsm_2024_talk" style="font-size:larger;"><b>FCSM 2024 Talk</b></h4>
+                                    <!-- <p><i>
+                                        Gary Howarth (NIST)<br>
+                                        Christine Task (Knexus Research Corporation)<br>
+                                        Damon Streat (Knexus Research Corporation)<br>
+                                        Karan Bhagat (Knexus Research Corporation)<br>
+                                    </i>
+                                    </p> -->
+                                    <div class="row row-12-mobilep">
+                                        <div class="col-6">
+                                            <section class="box">
+                                                <p>Deidentification includes any processing to 
+                                                    microdata that produces microdata in the same 
+                                                    schema and is intended to be resistant to individual 
+                                                    reidentification: SDC, synthetic data, differential 
+                                                    privacy. But are they really?
+                                                    This talk provides an overview of a cornucopia of 
+                                                    empirical privacy metrics used to measure how 
+                                                    resistant deidentified data is to attacks on 
+                                                    membership privacy, attribute privacy, and 
+                                                    protection against reidentification and singling out, and 
+                                                    uses the resources of the NIST Collaborative Research Cycle 
+                                                    to see how they play out in practice. Where the metrics agree? 
+                                                    How much do they disagree? Can do we better?
+                                                    The NIST CRC Red Teaming Challenge, launching in 
+                                                    Spring 2025 will bring the community together to answer 
+                                                    these questions.
+                                                </p>
+                                                <h4><a target="_tab" href="https://github.com/usnistgov/privacy_collaborative_research_cycle/raw/refs/heads/nist-pages/PDFs/syncity/NISTCRC_RedTeam_FCSM2024.pdf">
+                                                    <b>FCSM 2024 Talk Slides</b></a></h4>
+                                            </section>
+                                        </div>
+                                        <div class="col-6 technique-img-div">
+                                            <section class="box">
+                                                <a target="_tab" href="https://github.com/usnistgov/privacy_collaborative_research_cycle/raw/refs/heads/nist-pages/PDFs/syncity/NISTCRC_RedTeam_FCSM2024.pdf">
+                                                    <img class="blog-img" height="70%" width="80%"
+                                                    src="../images/NISTCRC_RedTeam_FCSM2024.png">
+                                                </a>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <br>
+                    </div>
+                </section>
+				<hr>
+                <footer id="footer">
+
+                    <p>This website uses:</p>
+
+                    <p>| &nbsp<a href="https://html5up.net/alpha">
+                            Alpha Template</a> from <a href="https://html5up.net/">HTML5UP</a> &nbsp|</p>
+                    <p>| &nbsp<a href="attributions.html">Detailed Attributions</a> &nbsp|</p>
+                </footer>
+            </div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.dropotron.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -3302,6 +3302,12 @@
 			min-width: 12em;
 			font-weight: normal;
 		}
+		#banner .button.new {
+			color: #fe0000;
+			font-weight: 500; /* Bold, thick text */
+			text-shadow: 0px 0px 1px rgb(255, 0, 0); /* Slight shadow for raised effect */
+			letter-spacing: 1px; /* Slightly increase letter spacing for emphasis */
+		}
 
 			#banner input[type="submit"]:hover,
 			#banner input[type="reset"]:hover,
@@ -3333,10 +3339,16 @@
 	#page-header .button {
 		background-color: transparent;
 		box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.5);
-		color: #525252 !important;
+		color: #525252;
 		min-width: 12em;
 		background-image: linear-gradient(var(--banner-g-1), var(--banner-g-2));
 		animation: move-bg 8s infinite linear;
+	}
+	#page-header .button.new {
+		color: #fe0000;
+		font-weight: 500; /* Bold, thick text */
+		text-shadow: 0px 0px 1px rgb(255, 0, 0); /* Slight shadow for raised effect */
+		letter-spacing: 1px; /* Slightly increase letter spacing for emphasis */
 	}
 
 	#page-header input[type="submit"]:hover,
