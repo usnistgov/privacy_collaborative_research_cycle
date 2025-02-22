@@ -1,4 +1,8 @@
 crc_data_bundle.zip filter=lfs diff=lfs merge=lfs -text
+crc_acs_data.zip filter=lfs diff=lfs merge=lfs -text
+crc_acs_reports.zip filter=lfs diff=lfs merge=lfs -text
+crc_sbo_data.zip filter=lfs diff=lfs merge=lfs -text
+crc_sbo_reports.zip filter=lfs diff=lfs merge=lfs -text
 crc_privacy_metric_benchmark_data.zip filter=lfs diff=lfs merge=lfs -text
 
 crc_data_and_metric_bundle_1.2/deid_data/** filter=lfs diff=lfs merge=lfs -text
