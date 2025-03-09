@@ -243,7 +243,9 @@
 							<h4> <strong> Problem Files for the MST Deidentification Algorithm: </strong> </h4> 
 							 <img class"blog-img" width="40%"src="../images/Problems5-10.png">
 							<br>
-							<h4> Instructions for Red teaming with the Competitor's Pack: </h4>
+							<br>
+`
+							<h4> <strong> Instructions for Red teaming with the Competitor's Pack: </strong> </h4>
 							<ul>
 							  <li>
 							  To submit a reconstruction attack against a problem, edit the AttackTargets.csv file to append your predictions for the confidential columns for that problem (the columns that are present in the deidentified file, but missing in the attack targets file).  Your submitted file should begin with the Targets column that contains the record ID's, and include the same set of columns as the Deid.csv file.  
@@ -265,12 +267,13 @@
 							Problem 25 includes the full ground truth data and one deidentified data for each of our algorithms.  You can practice your reconstruction techniques here before submitting.
 							</li>
 							</ul>
-							<h4> Scoring: </h4>
+							<h4> <strong> Scoring: </strong> </h4>
 							<p> In real world data some features are very skewed, such that nearly everyone has the same value.  It's debatable that reconstructing (or guessing) extremely common values is really an invasion of privacy. For the leaderboard scores, we will award more points to correct predictions on more rare feature values, as shown below.   
 							</p>
 							 </br> 
 				      <img class"blog-img" width="60%"src="../images/CRC_Scoring.png">
-							</br>
+							<br>
+							<br>
 					<h4 id="Notes" style="font-size:larger;">Notes on the Problem Design:</h4>
 							<p>
 							<b>Disjoint Samples:</b> Note that each reconstruction problem uses a different set of individuals, with different ID#'s, but all data excerpts come from uniform random samples of the same populations and have similar distributions.
