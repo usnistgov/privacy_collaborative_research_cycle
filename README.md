@@ -1,5 +1,7 @@
 ## CRC Data Bundle v1.3
 
+Download the data and analysis notebooks from [Releases](https://github.com/usnistgov/privacy_collaborative_research_cycle/releases/tag/v1.3)
+
 This Bundle contains all deidentified data submitted to the CRC from 2023 through 2024. The [CRC homepage](https://pages.nist.gov/privacy_collaborative_research_cycle/index.html) provides more detailed information about the program, its goals, and how to participate.   In short, the CRC seeks to equip the research community with resources to explore, evaluate, and discuss deidentification approaches.  
 
 The crc-data-bundle file contains:
